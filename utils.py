@@ -32,10 +32,11 @@ def boundary_of_ball(G, v=0, r=0, nodes_in_ball=None):
         - r: the radius (non-negative integer)
         - nodes_in_ball: precalculated set of nodes in ball centered on node v
 
-
     Returns:
         - Frontier of ball of radius r centered in node v
     """
+
+    #if a ball is not provided, the ball of radius r centered in v is calculated
     if nodes_in_ball is None:
         nodes_in_ball = ball_of_radius(G, v, r)
 
@@ -45,7 +46,6 @@ def boundary_of_ball(G, v=0, r=0, nodes_in_ball=None):
         boundary.update(neighbors - nodes_in_ball)
 
     return boundary
-
 
 
 # ----------------------------------------------------

@@ -1,3 +1,149 @@
+import numpy as np
+import networkx as nx
+
+
+def majority_vote_inference(G, sampled_nodes, sampled_opinions, boundary):
+    """
+    Infierne las opiniones de los nodos en la frontera externa mediante votación mayoritaria entre sus vecinos muestreados.
+
+    Parámetros:
+    - G (networkx.Graph): El grafo.
+    - sampled_nodes (set): Conjunto de IDs de nodos muestreados.
+    - sampled_opinions (dict): Diccionario de nodos muestreados y sus opiniones.
+    - boundary (set): Conjunto de IDs de nodos en la frontera externa.
+
+    Retorna:
+    - inferred_opinions (dict): Diccionario de opiniones inferidas para nodos en la frontera externa.
+    """
+    inferred_opinions = {}
+    for node in boundary:
+        # Encuentra vecinos del nodo que están en el conjunto muestreados
+        neighbors_in_S = set(G.neighbors(node)) & sampled_nodes
+        if neighbors_in_S:
+            neighbor_opinions = [sampled_opinions[neighbor] for neighbor in neighbors_in_S]
+            opinion_counts = Counter(neighbor_opinions)
+            majority_opinion = opinion_counts.most_common(1)[0][0]
+            inferred_opinions[node] = majority_opinion
+        else:
+            inferred_opinions[node] = 0  # Por defecto, votante indeciso si no hay vecinos muestreados
+    return inferred_opinions
+
+def weighted_majority_vote_inference(G, sampled_nodes, sampled_opinions, boundary):
+    """
+    Infierne las opiniones utilizando votación mayoritaria ponderada por el grado de los nodos muestreados.
+
+    Parámetros:
+    - G (networkx.Graph): El grafo.
+    - sampled_nodes (set): Nodos muestreados.
+    - sampled_opinions (dict): Opiniones de los nodos muestreados.
+    - boundary (set): Nodos en la frontera.
+
+    Retorna:
+    - inferred_opinions (dict): Opiniones inferidas para los nodos en la frontera.
+    """
+    inferred_opinions = {}
+    degrees = dict(G.degree())
+    for node in boundary:
+        neighbors_in_S = set(G.neighbors(node)) & sampled_nodes
+        if neighbors_in_S:
+            weights = {}
+            for neighbor in neighbors_in_S:
+                opinion = sampled_opinions[neighbor]
+                weight = degrees[neighbor]  # Ponderación por grado
+                if opinion in weights:
+                    weights[opinion] += weight
+                else:
+                    weights[opinion] = weight
+            # Obtener la opinión con mayor peso
+            majority_opinion = max(weights.items(), key=lambda x: x[1])[0]
+            inferred_opinions[node] = majority_opinion
+        else:
+            inferred_opinions[node] = 0  # Valor por defecto
+    return inferred_opinions
+
+def label_propagation_inference(G, sampled_nodes, sampled_opinions, boundary, max_iter=1000):
+    """
+    Infierne las opiniones utilizando el algoritmo de Label Propagation (original).
+
+    Parámetros:
+    - G (networkx.Graph): El grafo.
+    - sampled_nodes (set): Nodos muestreados.
+    - sampled_opinions (dict): Opiniones de los nodos muestreados.
+    - boundary (set): Nodos en la frontera.
+    - max_iter (int): Número máximo de iteraciones.
+
+    Retorna:
+    - inferred_opinions (dict): Opiniones inferidas para los nodos en la frontera.
+    """
+    # Preparar datos para LabelPropagation
+    nodes = list(G.nodes())
+    node_index = {node: idx for idx, node in enumerate(nodes)}
+    num_nodes = len(nodes)
+
+    # Crear matriz de adyacencia
+    adjacency = nx.to_scipy_sparse_array(G, format='csr')
+
+    # Map labels to 0,1,2
+    label_mapping = {-1: 0, 0: 1, 1: 2}
+    inverse_label_mapping = {v: k for k, v in label_mapping.items()}
+
+    labels = np.full(num_nodes, -1)
+    for node in sampled_nodes:
+        labels[node_index[node]] = label_mapping[sampled_opinions[node]]
+
+    # Aplicar LabelPropagation
+    label_prop = LabelPropagation(max_iter=max_iter)
+    label_prop.fit(adjacency, labels)
+
+    # Extraer las etiquetas inferidas para la frontera
+    inferred_opinions = {}
+    for node in boundary:
+        inferred_label = label_prop.transduction_[node_index[node]]
+        inferred_opinions[node] = inverse_label_mapping.get(int(inferred_label), 0)
+    return inferred_opinions
+
+def voter_model_inference(G, sampled_nodes, sampled_opinions, boundary, num_simulations=10, num_steps=5000):
+    """
+    Infierne las opiniones re-ejecutando el modelo del votante múltiples veces y tomando la opinión más frecuente.
+
+    Parámetros:
+    - G (networkx.Graph): El grafo.
+    - sampled_nodes (set): Nodos muestreados.
+    - sampled_opinions (dict): Opiniones de los nodos muestreados.
+    - boundary (set): Nodos en la frontera.
+    - num_simulations (int): Número de simulaciones a ejecutar.
+    - num_steps (int): Número de pasos en cada simulación.
+
+    Retorna:
+    - inferred_opinions (dict): Opiniones inferidas para los nodos en la frontera.
+    """
+    opinions_counts = {node: Counter() for node in boundary}
+
+    for _ in tqdm(range(num_simulations), desc="Running Voter Model Simulations"):
+        # Inicializar opiniones
+        opinions = {}
+        for node in G.nodes():
+            if node in sampled_nodes:
+                opinions[node] = sampled_opinions[node]
+            else:
+                opinions[node] = np.random.choice([-1, 0, 1])
+
+        # Simular modelo del votante
+        opinions = simulate_voter_model(G, opinions, num_steps=num_steps, stubborn_fraction=0)
+
+        # Registrar opiniones de los nodos en la frontera
+        for node in boundary:
+            opinions_counts[node][opinions[node]] += 1
+
+    # Determinar la opinión más frecuente para cada nodo en la frontera
+    inferred_opinions = {}
+    for node in boundary:
+        majority_opinion = opinions_counts[node].most_common(1)[0][0]
+        inferred_opinions[node] = majority_opinion
+
+    return inferred_opinions
+
+
 def bayesian_inference(G, sampled_nodes, sampled_opinions, boundary, beta=1.0, max_iter=50, tol=1e-5):
     """
     Infers opinions using belief propagation (Bayesian inference).
