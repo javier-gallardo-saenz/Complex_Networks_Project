@@ -22,7 +22,7 @@ def ball_of_radius(graph, v, r):
     return set(lengths.keys())
 
 
-def boundary_of_ball(G, v, r, ball=None):
+def boundary_of_ball(G, v=0, r=0, nodes_in_ball=None):
     """
     Computes the boundary of a ball centered on a node v in a graph.
 
@@ -30,12 +30,15 @@ def boundary_of_ball(G, v, r, ball=None):
         - G: networkx.Graph, the input graph
         - v: the vertex from which distances are measured
         - r: the radius (non-negative integer)
+        - nodes_in_ball: precalculated set of nodes in ball centered on node v
 
 
     Returns:
         - Frontier of ball of radius r centered in node v
     """
-    nodes_in_ball = ball_of_radius(G, v, r)
+    if nodes_in_ball is None:
+        nodes_in_ball = ball_of_radius(G, v, r)
+
     boundary = set()
     for node in nodes_in_ball:
         neighbors = set(G.neighbors(node))
