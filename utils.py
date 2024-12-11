@@ -1,5 +1,9 @@
 import networkx as nx
 
+# ----------------------------------------------------
+# Get ball, get frontier of ball
+# ----------------------------------------------------
+
 def ball_of_radius(graph, v, r):
     """
     Computes the ball of radius r centered on a node v in a graph.
@@ -16,6 +20,34 @@ def ball_of_radius(graph, v, r):
     lengths = nx.single_source_shortest_path_length(graph, v, cutoff=r)
     # Return all nodes with distance <= r
     return set(lengths.keys())
+
+
+def boundary_of_ball(G, v, r, ball=None):
+    """
+    Computes the boundary of a ball centered on a node v in a graph.
+
+    Parameters:
+        - G: networkx.Graph, the input graph
+        - v: the vertex from which distances are measured
+        - r: the radius (non-negative integer)
+
+
+    Returns:
+        - Frontier of ball of radius r centered in node v
+    """
+    nodes_in_ball = ball_of_radius(G, v, r)
+    boundary = set()
+    for node in nodes_in_ball:
+        neighbors = set(G.neighbors(node))
+        boundary.update(neighbors - nodes_in_ball)
+
+    return boundary
+
+
+
+# ----------------------------------------------------
+# Graph loading utils
+# ----------------------------------------------------
 
 def load_snap_graph(file_path, directed=False):
     """
