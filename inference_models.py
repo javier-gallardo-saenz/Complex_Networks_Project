@@ -19,14 +19,14 @@ def bayesian_inference(G, sampled_nodes, sampled_opinions, boundary, beta=1.0, m
     num_states = len(possible_opinions)
 
     # Mapping from opinion to index
-    opinion_to_index = {opinion: idx for idx, opinion in enumerate(possible_opinions)}
-    index_to_opinion = {idx: opinion for idx, opinion in enumerate(possible_opinions)}
+    opinion_to_index = {opinion: idx for idx, opinion in enumerate(possible_opinions)}    # diccionario {-1:0, 0:1, 1:2}
+    index_to_opinion = {idx: opinion for idx, opinion in enumerate(possible_opinions)}    # diccionario {0:-1, 1:0, 2:1}
 
     # Initialize messages: For each directed edge, store a message (array of size num_states)
     messages = {}
     for edge in G.edges():
         u, v = edge
-        messages[(u, v)] = np.ones(num_states) / num_states
+        messages[(u, v)] = np.ones(num_states) / num_states    # asigna vector (1/3, 1/3, 1/3) a cada edge (porque hay 3 stages)
         messages[(v, u)] = np.ones(num_states) / num_states
 
     # For observed nodes, fix their messages
