@@ -5,8 +5,9 @@ from utils import *
 
 
 class MajorityVote(GraphInference):
-    def label_inference(self, v, r):
+    def label_inference(self, v, r, label='opinion'):
         """
+        Infers the attribute label for the nodes in the boundary of a ball
         Infierne las opiniones de los nodos en la frontera externa mediante votación mayoritaria entre sus vecinos muestreados.
 
         Parámetros:
@@ -31,6 +32,7 @@ class MajorityVote(GraphInference):
             else:
                 inferred_opinions[node] = 0  # Por defecto, votante indeciso si no hay vecinos muestreados
         return inferred_opinions
+
 
 
 # ----------------------------------------------------
