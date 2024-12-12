@@ -155,4 +155,4 @@ def boundary_of_ball(G, v=0, r=0, nodes_in_ball=None):
         neighbors = set(G.neighbors(node))
         boundary.update(neighbors - nodes_in_ball)
 
-    return boundaryv
+    return boundary

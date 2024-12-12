@@ -4,6 +4,33 @@ from collections import Counter
 from utils import *
 
 
+class MajorityVote(GraphInference):
+    def label_inference(self, v, r):
+        """
+        Infierne las opiniones de los nodos en la frontera externa mediante votación mayoritaria entre sus vecinos muestreados.
+
+        Parámetros:
+        - G (networkx.Graph): El grafo.
+        - sampled_nodes (set): Conjunto de IDs de nodos muestreados.
+        - sampled_opinions (dict): Diccionario de nodos muestreados y sus opiniones.
+        - boundary (set): Conjunto de IDs de nodos en la frontera externa.
+
+        Retorna:
+        - inferred_opinions (dict): Diccionario de opiniones inferidas para nodos en la frontera externa.
+        """
+        ball, boundary = self.get_ball_and_boundary(r, v)
+        inferred_opinions = {}
+        for node in boundary:
+            # Encuentra vecinos del nodo que están en el conjunto muestreados
+            neighbors_in_S = set(G.neighbors(node)) & sampled_nodes
+            if neighbors_in_S:
+                neighbor_opinions = [sampled_opinions[neighbor] for neighbor in neighbors_in_S]
+                opinion_counts = Counter(neighbor_opinions)
+                majority_opinion = opinion_counts.most_common(1)[0][0]
+                inferred_opinions[node] = majority_opinion
+            else:
+                inferred_opinions[node] = 0  # Por defecto, votante indeciso si no hay vecinos muestreados
+        return inferred_opinions
 
 
 # ----------------------------------------------------
@@ -176,14 +203,15 @@ def bayesian_inference(G, sampled_nodes, sampled_opinions, boundary, beta=1.0, m
     num_states = len(possible_opinions)
 
     # Mapping from opinion to index
-    opinion_to_index = {opinion: idx for idx, opinion in enumerate(possible_opinions)}    # diccionario {-1:0, 0:1, 1:2}
-    index_to_opinion = {idx: opinion for idx, opinion in enumerate(possible_opinions)}    # diccionario {0:-1, 1:0, 2:1}
+    opinion_to_index = {opinion: idx for idx, opinion in enumerate(possible_opinions)}  # diccionario {-1:0, 0:1, 1:2}
+    index_to_opinion = {idx: opinion for idx, opinion in enumerate(possible_opinions)}  # diccionario {0:-1, 1:0, 2:1}
 
     # Initialize messages: For each directed edge, store a message (array of size num_states)
     messages = {}
     for edge in G.edges():
         u, v = edge
-        messages[(u, v)] = np.ones(num_states) / num_states    # asigna vector (1/3, 1/3, 1/3) a cada edge (porque hay 3 stages)
+        messages[(u, v)] = np.ones(
+            num_states) / num_states  # asigna vector (1/3, 1/3, 1/3) a cada edge (porque hay 3 stages)
         messages[(v, u)] = np.ones(num_states) / num_states
 
     # For observed nodes, fix their messages
@@ -268,7 +296,6 @@ def bayesian_inference(G, sampled_nodes, sampled_opinions, boundary, beta=1.0, m
     return inferred_opinions
 
 
-
 def heuristic_based_inference(G, sampled_nodes, sampled_opinions, boundary):
     """
     Infers opinions using a heuristic-based method that considers node centrality.
@@ -306,4 +333,3 @@ def heuristic_based_inference(G, sampled_nodes, sampled_opinions, boundary):
             # Default to swing (0) if no sampled neighbors
             inferred_opinions[node] = 0
     return inferred_opinions
-
