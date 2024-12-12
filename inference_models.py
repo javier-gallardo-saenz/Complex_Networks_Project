@@ -59,7 +59,6 @@ class LabelPropagation(GraphInference):
             majority_opinion = opinion_counts.most_common(1)[0][0]
             self.graph.nodes[node][inferred_label] = majority_opinion
 
-        return inferred_label
 
 
 
