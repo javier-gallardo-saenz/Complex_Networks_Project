@@ -1,6 +1,14 @@
 import numpy as np
-import networkx as nx
+from tqdm import tqdm
+from collections import Counter
+from utils import *
 
+
+
+
+# ----------------------------------------------------
+# Old functions that are now implemented in a class
+# ----------------------------------------------------
 
 def majority_vote_inference(G, sampled_nodes, sampled_opinions, boundary):
     """
@@ -27,6 +35,7 @@ def majority_vote_inference(G, sampled_nodes, sampled_opinions, boundary):
         else:
             inferred_opinions[node] = 0  # Por defecto, votante indeciso si no hay vecinos muestreados
     return inferred_opinions
+
 
 def weighted_majority_vote_inference(G, sampled_nodes, sampled_opinions, boundary):
     """
@@ -60,6 +69,7 @@ def weighted_majority_vote_inference(G, sampled_nodes, sampled_opinions, boundar
         else:
             inferred_opinions[node] = 0  # Valor por defecto
     return inferred_opinions
+
 
 def label_propagation_inference(G, sampled_nodes, sampled_opinions, boundary, max_iter=1000):
     """
@@ -101,6 +111,7 @@ def label_propagation_inference(G, sampled_nodes, sampled_opinions, boundary, ma
         inferred_label = label_prop.transduction_[node_index[node]]
         inferred_opinions[node] = inverse_label_mapping.get(int(inferred_label), 0)
     return inferred_opinions
+
 
 def voter_model_inference(G, sampled_nodes, sampled_opinions, boundary, num_simulations=10, num_steps=5000):
     """
