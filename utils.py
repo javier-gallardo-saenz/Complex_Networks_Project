@@ -1,10 +1,20 @@
 import networkx as nx
 
 
+def name_inferred_label(label, node, radius):
+    """
+    Standardized labeling of an inferred attribute on the boundary of the ball of radius centered in node
+
+    :param label: label over which inference is going to be performed
+    :param node: node that defines the "known" ball
+    :param radius: radius of the "known" ball
+    """
+    return label + '_inferred_' + str(node) + '_' + str(radius)
+
+
 #This class allows is a backbone for inference models that makes sure a ball and its frontier cannot be inputed by
 #the user directly. Once a ball is computed, it stores it in the cache memory so that it can be reused by the
 #different inference methods, which inherit this class
-
 class GraphInference:
     def __init__(self, graph):
         """
@@ -66,11 +76,6 @@ class GraphInference:
         if key not in self.cache:
             self.cache[key] = self.ball_and_boundary(node, radius)
         return self.cache[key]
-
-
-
-
-
 
 
 # ----------------------------------------------------

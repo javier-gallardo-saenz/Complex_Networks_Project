@@ -1,37 +1,65 @@
 import numpy as np
+import random
 from tqdm import tqdm
 from collections import Counter
 from utils import *
 
 
 class MajorityVote(GraphInference):
-    def label_inference(self, v, r, label='opinion'):
+    def discrete_label_inference(self, node, radius, label='opinion'):
         """
-        Infers the attribute label for the nodes in the boundary of a ball
-        Infierne las opiniones de los nodos en la frontera externa mediante votación mayoritaria entre sus vecinos muestreados.
+        Infers the discrete attribute label for the nodes in the boundary of a ball using label propagation
 
-        Parámetros:
-        - G (networkx.Graph): El grafo.
-        - sampled_nodes (set): Conjunto de IDs de nodos muestreados.
-        - sampled_opinions (dict): Diccionario de nodos muestreados y sus opiniones.
-        - boundary (set): Conjunto de IDs de nodos en la frontera externa.
+        :param node: node
+        :param radius: radius
+        :param label: label of the attribute to be inferred
 
-        Retorna:
-        - inferred_opinions (dict): Diccionario de opiniones inferidas para nodos en la frontera externa.
         """
-        ball, boundary = self.get_ball_and_boundary(r, v)
-        inferred_opinions = {}
+        ball, boundary = self.get_ball_and_boundary(node, radius)
+        inferred_label = name_inferred_label(label, node, radius)
         for node in boundary:
             # Encuentra vecinos del nodo que están en el conjunto muestreados
-            neighbors_in_S = set(G.neighbors(node)) & sampled_nodes
-            if neighbors_in_S:
-                neighbor_opinions = [sampled_opinions[neighbor] for neighbor in neighbors_in_S]
-                opinion_counts = Counter(neighbor_opinions)
-                majority_opinion = opinion_counts.most_common(1)[0][0]
-                inferred_opinions[node] = majority_opinion
-            else:
-                inferred_opinions[node] = 0  # Por defecto, votante indeciso si no hay vecinos muestreados
-        return inferred_opinions
+            neighbors_in_ball = set(self.graph.neighbors(node)) & ball
+            neighbor_opinions = [self.graph.nodes[neighbor][label] for neighbor in neighbors_in_ball]
+            opinion_counts = Counter(neighbor_opinions)
+            majority_opinion = opinion_counts.most_common(1)[0][0]
+            self.graph.nodes[node][inferred_label] = majority_opinion
+
+
+
+class LabelPropagation(GraphInference):
+    def discrete_label_inference(self, node, radius, label='opinion', num_steps=100000):
+        """
+        Infers the discrete attribute label for the nodes in the boundary of a ball using label propagation
+
+        :param node: node
+        :param radius: radius
+        :param label: label of the attribute to be inferred
+        :param num_steps: number of steps
+
+        """
+        ball, boundary = self.get_ball_and_boundary(node, radius)
+        inferred_label = name_inferred_label(label, node, radius)
+
+        for node in boundary:
+            # first infer an opinion for every node in boundary
+            neighbors_in_ball = set(self.graph.neighbors(node)) & ball
+            neighbor_opinions = [self.graph.nodes[neighbor][label] for neighbor in neighbors_in_ball]
+            opinion_counts = Counter(neighbor_opinions)
+            majority_opinion = opinion_counts.most_common(1)[0][0]
+            self.graph.nodes[node][inferred_label] = majority_opinion
+
+        for _ in tqdm(range(num_steps), desc="Performing label propagation after all nodes have had an "
+                                             "opinion assigned"):
+            # now perform label propagation on them
+            node = random.choice(list(boundary))
+            neighbors_in_ball = set(self.graph.neighbors(node)) & ball
+            neighbor_opinions = [self.graph.nodes[neighbor][label] for neighbor in neighbors_in_ball]
+            opinion_counts = Counter(neighbor_opinions)
+            majority_opinion = opinion_counts.most_common(1)[0][0]
+            self.graph.nodes[node][inferred_label] = majority_opinion
+
+        return inferred_label
 
 
 
