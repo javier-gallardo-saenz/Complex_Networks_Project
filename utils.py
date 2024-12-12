@@ -1,15 +1,17 @@
 import networkx as nx
+import inference_models
 
 
-def name_inferred_label(label, node, radius):
+def name_inferred_label(label, node, radius, method_name):
     """
     Standardized labeling of an inferred attribute on the boundary of the ball of radius centered in node
 
     :param label: label over which inference is going to be performed
     :param node: node that defines the "known" ball
     :param radius: radius of the "known" ball
+    :param method_name: (string) name of the inference method used
     """
-    return label + '_inferred_' + str(node) + '_' + str(radius)
+    return label + '_inferred_' + str(node) + '_' + str(radius) + '_' + method_name
 
 
 #This class allows is a backbone for inference models that makes sure a ball and its frontier cannot be inputed by
@@ -23,10 +25,15 @@ class GraphInference:
         self.graph = graph
         self.cache = {}  # To store precomputed balls and frontiers
 
+    def _attach_methods(self):
+        for name in dir(inference_models):
+            method = getattr(inference_models, name)
+            if callable(method):
+                setattr(self, name, lambda *args, **kwargs: method(self, *args, **kwargs))
+
     # ----------------------------------------------------
     # Get ball, get frontier of ball
     # ----------------------------------------------------
-
     def ball_of_radius(self, v, r):
         """
         Computes the ball of radius r centered on a node v in a graph.
@@ -43,7 +50,6 @@ class GraphInference:
         lengths = nx.single_source_shortest_path_length(self.graph, v, cutoff=r)
         # Return all nodes with distance <= r
         return set(lengths.keys())
-
 
 
     def ball_and_boundary(self, node, radius):
@@ -67,7 +73,6 @@ class GraphInference:
         return nodes_in_ball, boundary
 
 
-
     def get_ball_and_boundary(self, node, radius):
         """
         Retrieve the cached ball and frontier or compute them if not already cached.
@@ -77,9 +82,15 @@ class GraphInference:
             self.cache[key] = self.ball_and_boundary(node, radius)
         return self.cache[key]
 
+    # ----------------------------------------------------
+    # Utilities
+    # ----------------------------------------------------
+    def clear_cache(self):
+        self.cache = {}
+
 
 # ----------------------------------------------------
-# Graph loading utils
+# Graph loading utils (NO LONGER CLASS GRAPH_INFERENCE)
 # ----------------------------------------------------
 
 def load_snap_graph(file_path, directed=False):
@@ -112,7 +123,6 @@ def load_snap_graph(file_path, directed=False):
         print("Convirtiendo grafo dirigido a no dirigido para compatibilidad con las funciones existentes.")
 
     return G
-
 
 
 # ----------------------------------------------------
