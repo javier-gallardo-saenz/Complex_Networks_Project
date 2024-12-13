@@ -1,4 +1,5 @@
 import networkx as nx
+
 def visualize_graph(G, labels):
     """
     Visualizes the graph with nodes colored by their labels.

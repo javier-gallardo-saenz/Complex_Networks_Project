@@ -28,7 +28,7 @@ def discrete_majority_voting(graph_inference, node, radius, label='opinion'):
         graph_inference.graph.nodes[node][inferred_label] = majority_opinion
 
 
-def weighted_majority_vote_inference(graph_inference, node, radius, label='opinion'):
+def weighted_majority_voting(graph_inference, node, radius, label='opinion'):
     """
     Infers the discrete attribute label for the nodes in the boundary of a ball
      using weighted majority voting by the degree of the sampled nodes
@@ -40,7 +40,7 @@ def weighted_majority_vote_inference(graph_inference, node, radius, label='opini
     """
 
     ball, boundary = graph_inference.get_ball_and_boundary(node, radius)
-    inferred_label = graph_inference.name_inferred_label(label, node, radius, 'dmv')
+    inferred_label = graph_inference.name_inferred_label(label, node, radius, 'dwmv')
 
     # shuffle nodes in boundary to ensure they are visited at a random order
     shuffled_boundary = list(boundary)
@@ -63,7 +63,7 @@ def weighted_majority_vote_inference(graph_inference, node, radius, label='opini
         graph_inference.graph.nodes[node][inferred_label] = majority_opinion
 
 
-def discrete_voter_model(graph_inference, node, radius, num_iterations, label='opinion'):
+def discrete_voter_model(graph_inference, node, radius, num_iterations=1000, label='opinion'):
     """
     Infers the discrete attribute label for every node in the graph by assigning them the label 
     of one of their neighbors chosen randomly.
@@ -101,7 +101,7 @@ def discrete_modified_biased_voter_model(graph_inference, node, radius, num_iter
     :param label: label of the attribute to be inferred
     """
     ball, boundary = graph_inference.get_ball_and_boundary(node, radius)
-    inferred_label = graph_inference.name_inferred_label(label, node, radius, 'dvm')
+    inferred_label = graph_inference.name_inferred_label(label, node, radius, 'dmbvm')
 
     for _ in range(num_iterations):
 
