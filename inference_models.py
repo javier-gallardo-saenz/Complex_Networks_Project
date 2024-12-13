@@ -28,6 +28,36 @@ def discrete_majority_voting(graph_inference, node, radius, label='opinion'):
         graph_inference.graph.nodes[node][inferred_label] = majority_opinion
 
 
+def discrete_voter_model(graph_inference, num_iterations, label='opinion'):
+    """
+    Infers the discrete attribute label for every node in the graph by assigning them the label 
+    of one of their neighbors chosen randomly.
+    :param graph_inference: inherits GraphInference class self and methods
+    :param num_iterations: number of iterations the process will be done
+    """
+    # graph_inference.initialize_opinions(label='opinion', states=[-1,1], probabilities=[0.4,0.6], opinion_values=None)
+    for _ in range(num_iterations):
+        for node in graph_inference.graph.nodes:
+            neighbors = set(graph_inference.graph.neighbors(node))
+            random_neighbor = random.choice(list(neighbors))
+            graph_inference.graph.nodes[node][label] = graph_inference.graph.nodes[random_neighbor][label]
+    return graph_inference
+
+def discrete_modified_biased_voter_model(graph_inference, num_iterations, delta, label='opinion'):
+    """
+    Infers the discrete attribute label for every node in the graph by assigning them the label 
+    of one of their neighbors chosen randomly with probability based on 'how close' opinions are.
+    :param graph_inference: inherits GraphInference class self and methods
+    :param num_iterations: number of iterations the process will be done
+    :param delta: fixed variable >=0 to fix a minimum probability for every vertex to change their label to their neighbor's
+    """
+    for _ in range(num_iterations):
+        for node in graph_inference.graph.nodes:
+            neighbors = set(graph_inference.graph.neighbors(node))
+            random_neighbor = random.choice(list(neighbors))
+            prob = abs(graph_inference.graph.nodes[node][label] + graph_inference.graph.nodes[random_neighbor][label]+delta)/(2+delta)
+            if random() < prob:
+                graph_inference.graph.nodes[node][label] = graph_inference.graph.nodes[random_neighbor][label]
 
 def discrete_label_propagation(graph_inference, node, radius, label='opinion', num_steps=100000):
     """
