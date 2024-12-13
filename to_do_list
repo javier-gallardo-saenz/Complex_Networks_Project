@@ -1,1 +1,2 @@
-- Plot class
+- Plots class
+- Convert inference_models functions to format methods of GraphInference class

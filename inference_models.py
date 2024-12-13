@@ -1,8 +1,6 @@
-import numpy as np
 import random
-from tqdm import tqdm
 from collections import Counter
-from utils import *
+from tqdm import tqdm
 
 
 def discrete_majority_voting(graph_inference, node, radius, label='opinion'):
@@ -15,7 +13,7 @@ def discrete_majority_voting(graph_inference, node, radius, label='opinion'):
 
     """
     ball, boundary = graph_inference.get_ball_and_boundary(node, radius)
-    inferred_label = name_inferred_label(label, node, radius, 'dmv')
+    inferred_label = graph_inference.name_inferred_label(label, node, radius, 'dmv')
 
     #shuffle nodes in boundary to ensure they are visited at a random order
     shuffled_boundary = list(boundary)
@@ -43,7 +41,7 @@ def discrete_label_propagation(graph_inference, node, radius, label='opinion', n
 
     """
     ball, boundary = graph_inference.get_ball_and_boundary(node, radius)
-    inferred_label = name_inferred_label(label, node, radius, 'dlp')
+    inferred_label = graph_inference.name_inferred_label(label, node, radius, 'dlp')
 
     # shuffle nodes in boundary
     shuffled_boundary = list(boundary)
@@ -76,7 +74,7 @@ def discrete_label_propagation(graph_inference, node, radius, label='opinion', n
 
 # def majority_vote_inference(G, sampled_nodes, sampled_opinions, boundary):
 #     """
-#     Infierne las opiniones de los nodos en la frontera externa mediante votación mayoritaria entre sus vecinos muestreados.
+#     Infierne opiniones nodos en la frontera externa mediante votación mayoritaria entre sus vecinos muestreados.
 #
 #     Parámetros:
 #     - G (networkx.Graph): El grafo.
