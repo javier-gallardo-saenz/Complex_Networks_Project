@@ -18,7 +18,7 @@ class GraphInference:
         """
         self.graph = graph
         self.cache = {}  # To store precomputed balls and frontiers
-        self.methods = ['dmv', 'dwmv', 'dvm', 'dmbvm',  ]
+        self.methods = ['dmv', 'dwmv', 'dvm', 'dmbvm']
 
     # ----------------------------------------------------
     # Get ball, get frontier of ball
