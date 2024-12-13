@@ -28,37 +28,94 @@ def discrete_majority_voting(graph_inference, node, radius, label='opinion'):
         graph_inference.graph.nodes[node][inferred_label] = majority_opinion
 
 
-def discrete_voter_model(graph_inference, num_iterations, label='opinion'):
+def weighted_majority_vote_inference(graph_inference, node, radius, label='opinion'):
+    """
+    Infers the discrete attribute label for the nodes in the boundary of a ball
+     using weighted majority voting by the degree of the sampled nodes
+
+    :param graph_inference: inherits GraphInference class self and methods
+    :param node: node
+    :param radius: radius
+    :param label: label of the attribute to be inferred
+    """
+
+    ball, boundary = graph_inference.get_ball_and_boundary(node, radius)
+    inferred_label = graph_inference.name_inferred_label(label, node, radius, 'dmv')
+
+    # shuffle nodes in boundary to ensure they are visited at a random order
+    shuffled_boundary = list(boundary)
+    random.shuffle(shuffled_boundary)
+
+    for node in shuffled_boundary:
+        weights = {}
+        neighbors_in_ball = set(graph_inference.graph.neighbors(node)) & ball
+        for neighbor in neighbors_in_ball:
+            opinion = graph_inference.graph.nodes[neighbor][label]
+            # Each opinion is counted as many times as the degree of the node
+            weight = graph_inference.graph.degree(neighbor)
+            if opinion in weights:
+                weights[opinion] += weight
+            else:
+                weights[opinion] = weight
+
+        #Get opinion with the most weight
+        majority_opinion = max(weights.items(), key=lambda x: x[1])[0]
+        graph_inference.graph.nodes[node][inferred_label] = majority_opinion
+
+
+def discrete_voter_model(graph_inference, node, radius, num_iterations, label='opinion'):
     """
     Infers the discrete attribute label for every node in the graph by assigning them the label 
     of one of their neighbors chosen randomly.
     :param graph_inference: inherits GraphInference class self and methods
+    :param node: node
+    :param radius: radius
     :param num_iterations: number of iterations the process will be done
+    :param label: label of the attribute to be inferred
     """
-    # graph_inference.initialize_opinions(label='opinion', states=[-1,1], probabilities=[0.4,0.6], opinion_values=None)
+    ball, boundary = graph_inference.get_ball_and_boundary(node, radius)
+    inferred_label = graph_inference.name_inferred_label(label, node, radius, 'dvm')
+
     for _ in range(num_iterations):
-        for node in graph_inference.graph.nodes:
-            neighbors = set(graph_inference.graph.neighbors(node))
-            random_neighbor = random.choice(list(neighbors))
-            graph_inference.graph.nodes[node][label] = graph_inference.graph.nodes[random_neighbor][label]
-    return graph_inference
+
+        # shuffle nodes in boundary to ensure they are visited at a random order
+        shuffled_boundary = list(boundary)
+        random.shuffle(shuffled_boundary)
+
+        for node in shuffled_boundary:
+            neighbors_in_ball = set(graph_inference.graph.neighbors(node)) & ball
+            random_neighbor = random.choice(list(neighbors_in_ball))
+            graph_inference.graph.nodes[node][inferred_label] = graph_inference.graph.nodes[random_neighbor][label]
 
 
-def discrete_modified_biased_voter_model(graph_inference, num_iterations, delta, label='opinion'):
+def discrete_modified_biased_voter_model(graph_inference, node, radius, num_iterations=1000, delta=0.1, label='opinion'):
     """
     Infers the discrete attribute label for every node in the graph by assigning them the label 
     of one of their neighbors chosen randomly with probability based on 'how close' opinions are.
     :param graph_inference: inherits GraphInference class self and methods
+    :param node: node
+    :param radius: radius
     :param num_iterations: number of iterations the process will be done
-    :param delta: fixed variable >=0 to fix a minimum probability for every vertex to change their label to their neighbor's
+    :param delta: fixed variable >=0 to fix a minimum probability for every vertex
+                  to change their label to their neighbor's
+    :param label: label of the attribute to be inferred
     """
+    ball, boundary = graph_inference.get_ball_and_boundary(node, radius)
+    inferred_label = graph_inference.name_inferred_label(label, node, radius, 'dvm')
+
     for _ in range(num_iterations):
-        for node in graph_inference.graph.nodes:
-            neighbors = set(graph_inference.graph.neighbors(node))
-            random_neighbor = random.choice(list(neighbors))
-            prob = abs(graph_inference.graph.nodes[node][label] + graph_inference.graph.nodes[random_neighbor][label]+delta)/(2+delta)
-            if random() < prob:
-                graph_inference.graph.nodes[node][label] = graph_inference.graph.nodes[random_neighbor][label]
+
+        # shuffle nodes in boundary to ensure they are visited at a random order
+        shuffled_boundary = list(boundary)
+        random.shuffle(shuffled_boundary)
+
+        for node in shuffled_boundary:
+            neighbors_in_ball = set(graph_inference.graph.neighbors(node)) & ball
+            random_neighbor = random.choice(list(neighbors_in_ball))
+            prob = abs(graph_inference.graph.nodes[node][label] +
+                       graph_inference.graph.nodes[random_neighbor][label]+delta)/(2+delta)
+            if prob > random.random():
+                graph_inference.graph.nodes[node][inferred_label] = graph_inference.graph.nodes[random_neighbor][label]
 
 
 def discrete_label_propagation(graph_inference, node, radius, label='opinion', num_steps=100000):
@@ -400,3 +457,38 @@ def discrete_label_propagation(graph_inference, node, radius, label='opinion', n
 #             # Default to swing (0) if no sampled neighbors
 #             inferred_opinions[node] = 0
 #     return inferred_opinions
+
+# def discrete_voter_model(graph_inference, num_iterations, label='opinion'):
+#     """
+#     Infers the discrete attribute label for every node in the graph by assigning them the label
+#     of one of their neighbors chosen randomly.
+#     :param graph_inference: inherits GraphInference class self and methods
+#     :param num_iterations: number of iterations the process will be done
+#     :param label: label of the attribute to be inferred
+#     """
+#     # graph_inference.initialize_opinions(label='opinion', states=[-1,1], probabilities=[0.4,0.6], opinion_values=None)
+#     for _ in range(num_iterations):
+#         for node in graph_inference.graph.nodes:
+#             neighbors = set(graph_inference.graph.neighbors(node))
+#             random_neighbor = random.choice(list(neighbors))
+#             graph_inference.graph.nodes[node][label] = graph_inference.graph.nodes[random_neighbor][label]
+#     return graph_inference
+#
+#
+# def discrete_modified_biased_voter_model(graph_inference, num_iterations, delta, label='opinion'):
+#     """
+#     Infers the discrete attribute label for every node in the graph by assigning them the label
+#     of one of their neighbors chosen randomly with probability based on 'how close' opinions are.
+#     :param graph_inference: inherits GraphInference class self and methods
+#     :param num_iterations: number of iterations the process will be done
+#     :param delta: fixed variable >=0 to fix a minimum probability for every vertex
+#                   to change their label to their neighbor's
+#     :param label: label of the attribute to be inferred
+#     """
+#     for _ in range(num_iterations):
+#         for node in graph_inference.graph.nodes:
+#             neighbors = set(graph_inference.graph.neighbors(node))
+#             random_neighbor = random.choice(list(neighbors))
+#             prob = abs(graph_inference.graph.nodes[node][label] + graph_inference.graph.nodes[random_neighbor][label]+delta)/(2+delta)
+#             if random() < prob:
+#                 graph_inference.graph.nodes[node][label] = graph_inference.graph.nodes[random_neighbor][label]
