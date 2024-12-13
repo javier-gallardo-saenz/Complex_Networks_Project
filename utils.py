@@ -127,6 +127,8 @@ class GraphInference:
         discrete_majority_voting(self, node, radius, label)
 
 
+    def discrete_label_propagation(self, node, radius, label='opinion', num_steps=100000):
+        discrete_label_propagation(self, node, radius, label, num_steps)
 
 
 
