@@ -146,6 +146,8 @@ class GraphInference:
 
 
 
+
+
 # ----------------------------------------------------
 # Old functions that are now implemented in a class
 # ----------------------------------------------------

@@ -43,6 +43,7 @@ def discrete_voter_model(graph_inference, num_iterations, label='opinion'):
             graph_inference.graph.nodes[node][label] = graph_inference.graph.nodes[random_neighbor][label]
     return graph_inference
 
+
 def discrete_modified_biased_voter_model(graph_inference, num_iterations, delta, label='opinion'):
     """
     Infers the discrete attribute label for every node in the graph by assigning them the label 
@@ -58,6 +59,7 @@ def discrete_modified_biased_voter_model(graph_inference, num_iterations, delta,
             prob = abs(graph_inference.graph.nodes[node][label] + graph_inference.graph.nodes[random_neighbor][label]+delta)/(2+delta)
             if random() < prob:
                 graph_inference.graph.nodes[node][label] = graph_inference.graph.nodes[random_neighbor][label]
+
 
 def discrete_label_propagation(graph_inference, node, radius, label='opinion', num_steps=100000):
     """
