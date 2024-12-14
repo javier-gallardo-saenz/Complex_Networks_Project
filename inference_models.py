@@ -28,7 +28,7 @@ def discrete_majority_voting(graph_inference, node, radius, label='opinion'):
         graph_inference.graph.nodes[node][inferred_label] = majority_opinion
 
 
-def weighted_majority_voting(graph_inference, node, radius, label='opinion'):
+def discrete_weighted_majority_voting(graph_inference, node, radius, label='opinion'):
     """
     Infers the discrete attribute label for the nodes in the boundary of a ball
      using weighted majority voting by the degree of the sampled nodes

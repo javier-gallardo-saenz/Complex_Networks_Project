@@ -39,8 +39,6 @@ def generate_albert_barabasi_graph(n, m):
     return G
 
 
-
-
 # Stochastic Block Model Generator
 def generate_sbm(sizes_sbm, p_intra, p_inter):
     # sizes_sbm: array - length of this array determines number of blocks,

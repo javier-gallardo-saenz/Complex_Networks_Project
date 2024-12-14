@@ -13,13 +13,16 @@ comms = [50] * 4  #communities
 intra_degree_seq = [15] * sum(comms)
 inter_degree_seq = [1] * sum(comms)
 G = generate_hierarchical_configuration_model(intra_degree_seq, inter_degree_seq, comms)
+v = random.choice(list(G.nodes()))  # choose random node
+r = 1  # radius of the known ball
 
 # ----------------------------------------------------
 # Opinion generation
 # ----------------------------------------------------
-opinion_dist = OpinionDistribution(G) # create instance of class OpinionDistribution with graph G
+opinion_dist = OpinionDistribution(G)  # create instance of class OpinionDistribution with graph G
 opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[0.4, 0.2, 0.4], label='opinion')
 opinion_dist.basic_opinion_generator(label='opinion', num_steps=100)
+
 
 # ----------------------------------------------------
 # Saving graphs?
@@ -28,17 +31,24 @@ opinion_dist.basic_opinion_generator(label='opinion', num_steps=100)
 # ----------------------------------------------------
 # Opinion inference
 # ----------------------------------------------------
-graph_inf = GraphInference(G)  # create instance of class GraphInference with graph G, now we can play with it
-v = random.choice(list(graph_inf.graph.nodes()))  # choose random node
-r = 1  # radius of the known ball
+graph_inf = GraphInference(opinion_dist.graph)  # create instance of class GraphInference with graph G, now we can play with it
+graph_inf.which_inference_methods()  # shows available inference methods
 graph_inf.discrete_majority_voting(node=v, radius=r, label='opinion')
-print(graph_inf.cache)
+
+# get true labels of the boundary of the ball
+true_labels = graph_inf.get_true_label(node=v, radius=r, label='opinion')
+# get inferred labels of the boundary of the ball
+inferred_labels = graph_inf.get_inferred_label(node=v, radius=r, method_name='dmv', label='opinion')
+print(true_labels)
+print(inferred_labels)
 #NOTE: label is the name of the node feature we are going to do inference over
 
 
 
 
-
+# ----------------------------------------------------
+# Plots
+# ----------------------------------------------------
 #cmap = plt.get_cmap("viridis")
 
 # Create a color mapping for the discrete 'opinion' values

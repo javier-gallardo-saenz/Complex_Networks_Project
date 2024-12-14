@@ -1,10 +1,12 @@
 from utils import *
 from inference_models import *
 
-method_abreviations_dictionary = {
-    "key1": "value1",
-    "key2": "value2",
-    "key3": "value3",
+method_abbreviations_dictionary = {
+    "dmv": "Discrete Majority Voting",
+    "dwmv": "Discrete Weighted Majority Voting",
+    "dvm": "Discrete Voter Model",
+    "dmbvm": "Discrete Modified Biased Voter Model",
+    "dlp": "Discrete Label Propagation"
 }
 
 
@@ -18,7 +20,8 @@ class GraphInference:
         """
         self.graph = graph
         self.cache = {}  # To store precomputed balls and frontiers
-        self.methods = ['dmv', 'dwmv', 'dvm', 'dmbvm']
+        self.methods = method_abbreviations_dictionary
+        # ideally this could be implemented so the names of the methods are retrieved automatically and stored here
 
     # ----------------------------------------------------
     # Get ball, get frontier of ball
@@ -72,19 +75,6 @@ class GraphInference:
     # ----------------------------------------------------
     # Utilities
     # ----------------------------------------------------
-    def clear_cache(self):
-        self.cache = {}
-
-    def clear_inferred_opinions(self, label, node, radius, method_name):
-
-        label_to_be_cleared = self.name_inferred_label(label, node, radius, method_name)
-        _, boundary = self.get_ball_and_boundary(node, radius)
-
-        for node in boundary:
-            if label_to_be_cleared in self.graph[node]:
-                del self.graph[node][label_to_be_cleared]
-
-
     @staticmethod
     def name_inferred_label(label, node, radius, method_name):
         """
@@ -97,6 +87,67 @@ class GraphInference:
         """
         return label + '_inferred_' + str(node) + '_' + str(radius) + '_' + method_name
 
+
+    def clear_cache(self):
+        self.cache = {}
+
+    def clear_inferred_opinions(self, node, radius, method_name, label='opinion'):
+        """
+        Clears the inferred opinions over the boundary of a given ball using a given inference method.
+        """
+        label_to_be_cleared = self.name_inferred_label(label, node, radius, method_name)
+        _, boundary = self.get_ball_and_boundary(node, radius)
+
+        for node in boundary:
+            if label_to_be_cleared in self.graph[node]:
+                del self.graph[node][label_to_be_cleared]
+
+
+    def which_inference_methods(self):
+        """
+        Shows the available inference methods
+        """
+        print(self.methods)
+
+    def get_inferred_label(self, node, radius, method_name, label='opinion'):
+        """
+        Gets the inferred label of a given ball using a given inference method.
+        :param label: label over which inference was performed
+        :param node: node that defines the "known" ball
+        :param radius: radius of the "known" ball
+        :param method_name: (string) name of the inference method used
+
+        Returns a dictionary with the inferred label for each node in the boundary of the set
+        """
+        if method_name not in self.methods.keys():
+            raise ValueError("Method '" + method_name + "' has not been implemented.")
+
+        label_to_be_retrieved = self.name_inferred_label(label, node, radius, method_name)
+        _, boundary = self.get_ball_and_boundary(node, radius)
+
+        opinions = {}
+        for node in boundary:
+            if label_to_be_retrieved not in self.graph.nodes[node]:
+                raise ValueError("Method '" + method_name + "' has not been executed on the given ball.")
+            opinions[node] = self.graph.nodes[node][label_to_be_retrieved]
+
+        return opinions
+
+
+    def get_true_label(self, node, radius, label='opinion'):
+        """
+        Gets the true label of the nodes in the boundary of a ball.
+        """
+        _, boundary = self.get_ball_and_boundary(node, radius)
+
+        opinions = {}
+        for node in boundary:
+            if label not in self.graph.nodes[node]:
+                raise ValueError("Method '" + label + "' has not been initiated properly")
+            opinions[node] = self.graph.nodes[node][label]
+
+        return opinions
+
     # ----------------------------------------------------
     # Inference methods
     # ----------------------------------------------------
@@ -107,12 +158,12 @@ class GraphInference:
         """
         discrete_majority_voting(self, node, radius, label)
 
-    def weighted_majority_voting(self, node, radius, label='opinion'):
+    def discrete_weighted_majority_voting(self, node, radius, label='opinion'):
         """
         This method saves its results on the label name_inferred_label(label, node, radius, 'dwmv')
         See documentation inference_models.py
         """
-        weighted_majority_voting(self, node, radius, label)
+        discrete_weighted_majority_voting(self, node, radius, label)
 
     def discrete_voter_model(self, node, radius, num_iterations=1000, label='opinion'):
         """
@@ -135,3 +186,7 @@ class GraphInference:
         See documentation inference_models.py
         """
         discrete_label_propagation(self, node, radius, label, num_iterations)
+
+    # ----------------------------------------------------
+    # Metrics
+    # ----------------------------------------------------
