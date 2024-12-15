@@ -13,15 +13,15 @@ comms = [50] * 4  #communities
 intra_degree_seq = [15] * sum(comms)
 inter_degree_seq = [1] * sum(comms)
 G = generate_hierarchical_configuration_model(intra_degree_seq, inter_degree_seq, comms)
-v = random.choice(list(G.nodes()))  # choose random node
-r = 1  # radius of the known ball
+v = list(G.nodes())  # choose all nodes
+r_values = [1, 2, 3]  # radius of the known ball
 
 # ----------------------------------------------------
 # Opinion generation
 # ----------------------------------------------------
 opinion_dist = OpinionDistribution(G)  # create instance of class OpinionDistribution with graph G
 opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[0.4, 0.2, 0.4], label='opinion')
-opinion_dist.basic_opinion_generator(label='opinion', num_steps=100)
+opinion_dist.basic_opinion_generator(label='opinion', num_steps=10000)
 
 # ----------------------------------------------------
 # Saving graphs?
@@ -33,18 +33,21 @@ opinion_dist.basic_opinion_generator(label='opinion', num_steps=100)
 # create instance of class GraphInference with graph G, now we can play with it
 graph_inf = GraphInference(opinion_dist.graph)
 graph_inf.which_inference_methods()  # shows available inference methods
-results_dmv = graph_inf.discrete_voter_model(node_set=v, radius_values=r, label='opinion',
+results_dmv = graph_inf.discrete_majority_voting(node_set=v, radius_values=r_values, label='opinion',
                                                           count_results=True, clear_results=False)
-print(f"The fraction of correct guesses was {results_dmv[0] / results_dmv[2]}.")
-print(f"The average distance of the inferred opinion to the true opinion was {results_dmv[1] / results_dmv[2]}.")
+for r in r_values:
+    print(f"The fraction of correct guesses with r = {r} was {results_dmv[r][0] / results_dmv[r][2]}.")
+    print(f"The average distance of the inferred opinion to the true opinion with r = {r} "
+          f"was {results_dmv[r][1] / results_dmv[r][2]}.")
 
-# get true labels of the boundary of the ball
-true_labels = graph_inf.get_true_label(node=v, radius=r, label='opinion')
-# get inferred labels of the boundary of the ball
-inferred_labels = graph_inf.get_inferred_label(node=v, radius=r, method_name='dmv', label='opinion')
-print(true_labels)
-print(inferred_labels)
-#NOTE: label is the name of the node feature we are going to do inference over
+
+# # get true labels of the boundary of the ball
+# true_labels = graph_inf.get_true_label(node=v, radius=r, label='opinion')
+# # get inferred labels of the boundary of the ball
+# inferred_labels = graph_inf.get_inferred_label(node=v, radius=r, method_name='dmv', label='opinion')
+# print(true_labels)
+# print(inferred_labels)
+# #NOTE: label is the name of the node feature we are going to do inference over
 
 
 # ----------------------------------------------------

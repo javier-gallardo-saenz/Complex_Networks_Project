@@ -171,7 +171,7 @@ class GraphInference:
         # first element of list results counts prediction successes
         # second element of list results keeps sum of  distance from predictions to true value
         # third element of list results counts total nodes in which we have performed inference
-        results = [0] * 3
+        results = {key: [0, 0, 0] for key in radius_values}
 
         #perform inference
         for r in radius_values:
@@ -187,11 +187,11 @@ class GraphInference:
                     inferred_label = self.get_inferred_label(v, r, 'dmv',  label)
                     true_label = self.get_true_label(v, r, label)
                     for node in inferred_label:
-                        results[2] += 1
+                        results[r][2] += 1
                         aux = abs(inferred_label[node] - true_label[node])
-                        results[1] += aux
+                        results[r][1] += aux
                         if aux == 0:
-                            results[0] += 1
+                            results[r][0] += 1
 
                 self.clear_cache()
                 if clear_results:
@@ -214,7 +214,7 @@ class GraphInference:
         # first element of list results counts prediction successes
         # second element of list results keeps sum of  distance from predictions to true value
         # third element of list results counts total nodes in which we have performed inference
-        results = [0] * 3
+        results = {key: [0, 0, 0] for key in radius_values}
 
         # perform inference
         for r in radius_values:
@@ -230,11 +230,11 @@ class GraphInference:
                     inferred_label = self.get_inferred_label(v, r, 'dwmv', label)
                     true_label = self.get_true_label(v, r, label)
                     for node in inferred_label:
-                        results[2] += 1
+                        results[r][2] += 1
                         aux = abs(inferred_label[node] - true_label[node])
-                        results[1] += aux
+                        results[r][1] += aux
                         if aux == 0:
-                            results[0] += 1
+                            results[r][0] += 1
 
                 self.clear_cache()
                 if clear_results:
@@ -256,7 +256,7 @@ class GraphInference:
         # first element of list results counts prediction successes
         # second element of list results keeps sum of  distance from predictions to true value
         # third element of list results counts total nodes in which we have performed inference
-        results = [0] * 3
+        results = {key: [0, 0, 0] for key in radius_values}
 
         # perform inference
         for r in radius_values:
@@ -272,11 +272,11 @@ class GraphInference:
                     inferred_label = self.get_inferred_label(v, r, 'dvm', label)
                     true_label = self.get_true_label(v, r, label)
                     for node in inferred_label:
-                        results[2] += 1
+                        results[r][2] += 1
                         aux = abs(inferred_label[node] - true_label[node])
-                        results[1] += aux
+                        results[r][1] += aux
                         if aux == 0:
-                            results[0] += 1
+                            results[r][0] += 1
 
                 self.clear_cache()
                 if clear_results:
@@ -298,7 +298,7 @@ class GraphInference:
         # first element of list results counts prediction successes
         # second element of list results keeps sum of  distance from predictions to true value
         # third element of list results counts total nodes in which we have performed inference
-        results = [0] * 3
+        results = {key: [0, 0, 0] for key in radius_values}
 
         # perform inference
         for r in radius_values:
@@ -314,11 +314,11 @@ class GraphInference:
                     inferred_label = self.get_inferred_label(v, r, 'dmbvm', label)
                     true_label = self.get_true_label(v, r, label)
                     for node in inferred_label:
-                        results[2] += 1
+                        results[r][2] += 1
                         aux = abs(inferred_label[node] - true_label[node])
-                        results[1] += aux
+                        results[r][1] += aux
                         if aux == 0:
-                            results[0] += 1
+                            results[r][0] += 1
 
                 self.clear_cache()
                 if clear_results:
@@ -340,7 +340,7 @@ class GraphInference:
         # first element of list results counts prediction successes
         # second element of list results keeps sum of  distance from predictions to true value
         # third element of list results counts total nodes in which we have performed inference
-        results = [0] * 3
+        results = {key: [0, 0, 0] for key in radius_values}
 
         # perform inference
         for r in radius_values:
@@ -356,11 +356,11 @@ class GraphInference:
                     inferred_label = self.get_inferred_label(v, r, 'dlp', label)
                     true_label = self.get_true_label(v, r, label)
                     for node in inferred_label:
-                        results[2] += 1
+                        results[r][2] += 1
                         aux = abs(inferred_label[node] - true_label[node])
-                        results[1] += aux
+                        results[r][1] += aux
                         if aux == 0:
-                            results[0] += 1
+                            results[r][0] += 1
 
                 self.clear_cache()
                 if clear_results:
