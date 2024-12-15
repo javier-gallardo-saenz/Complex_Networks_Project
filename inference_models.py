@@ -63,7 +63,7 @@ def discrete_weighted_majority_voting(graph_inference, node, radius, label='opin
         graph_inference.graph.nodes[node][inferred_label] = majority_opinion
 
 
-def discrete_voter_model(graph_inference, node, radius, num_iterations=1000, label='opinion'):
+def discrete_voter_model(graph_inference, node, radius, label='opinion', num_iterations=1000):
     """
     Infers the discrete attribute label for every node in the graph by assigning them the label 
     of one of their neighbors chosen randomly.
@@ -88,7 +88,8 @@ def discrete_voter_model(graph_inference, node, radius, num_iterations=1000, lab
             graph_inference.graph.nodes[node][inferred_label] = graph_inference.graph.nodes[random_neighbor][label]
 
 
-def discrete_modified_biased_voter_model(graph_inference, node, radius, num_iterations=1000, delta=0.1, label='opinion'):
+def discrete_modified_biased_voter_model(graph_inference, node, radius, label='opinion', num_iterations=1000,
+                                         delta=0.1):
     """
     Infers the discrete attribute label for every node in the graph by assigning them the label 
     of one of their neighbors chosen randomly with probability based on 'how close' opinions are.
@@ -118,7 +119,7 @@ def discrete_modified_biased_voter_model(graph_inference, node, radius, num_iter
                 graph_inference.graph.nodes[node][inferred_label] = graph_inference.graph.nodes[random_neighbor][label]
 
 
-def discrete_label_propagation(graph_inference, node, radius, num_steps=100000, label='opinion'):
+def discrete_label_propagation(graph_inference, node, radius, label='opinion', num_steps=100000):
     """
     Infers the discrete attribute label for the nodes in the boundary of a ball using label propagation
 

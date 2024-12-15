@@ -33,12 +33,16 @@ opinion_dist.basic_opinion_generator(label='opinion', num_steps=10000)
 # create instance of class GraphInference with graph G, now we can play with it
 graph_inf = GraphInference(opinion_dist.graph)
 graph_inf.which_inference_methods()  # shows available inference methods
-results_dmv = graph_inf.discrete_majority_voting(node_set=v, radius_values=r_values, label='opinion',
-                                                          count_results=True, clear_results=False)
-for r in r_values:
-    print(f"The fraction of correct guesses with r = {r} was {results_dmv[r][0] / results_dmv[r][2]}.")
-    print(f"The average distance of the inferred opinion to the true opinion with r = {r} "
-          f"was {results_dmv[r][1] / results_dmv[r][2]}.")
+methods = {'dvm'}
+results_dmv = graph_inf.do_inference(node_set=v, radius_values=r_values, methods=methods, label='opinion',
+                                                          count_results=True, clear_results=False, num_iterations=1000)
+
+for method in methods:
+    for r in r_values:
+        print(f"The fraction of correct guesses with r = {r} and method {method}"
+              f" was {results_dmv[method][r][0] / results_dmv[method][r][2]}.")
+        print(f"The average distance of the inferred opinion to the true opinion with r = {r} and method {method}"
+              f" was {results_dmv[method][r][1] / results_dmv[method][r][2]}.")
 
 
 # # get true labels of the boundary of the ball
