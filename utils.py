@@ -1,7 +1,6 @@
 import networkx as nx
 
 
-
 # ----------------------------------------------------
 # Graph loading utils (NO LONGER CLASS GRAPH_INFERENCE)
 # ----------------------------------------------------

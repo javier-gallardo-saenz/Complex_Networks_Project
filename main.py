@@ -23,7 +23,6 @@ opinion_dist = OpinionDistribution(G)  # create instance of class OpinionDistrib
 opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[0.4, 0.2, 0.4], label='opinion')
 opinion_dist.basic_opinion_generator(label='opinion', num_steps=100)
 
-
 # ----------------------------------------------------
 # Saving graphs?
 # ----------------------------------------------------
@@ -31,9 +30,13 @@ opinion_dist.basic_opinion_generator(label='opinion', num_steps=100)
 # ----------------------------------------------------
 # Opinion inference
 # ----------------------------------------------------
-graph_inf = GraphInference(opinion_dist.graph)  # create instance of class GraphInference with graph G, now we can play with it
+# create instance of class GraphInference with graph G, now we can play with it
+graph_inf = GraphInference(opinion_dist.graph)
 graph_inf.which_inference_methods()  # shows available inference methods
-graph_inf.discrete_majority_voting(node=v, radius=r, label='opinion')
+results_dmv = graph_inf.discrete_voter_model(node_set=v, radius_values=r, label='opinion',
+                                                          count_results=True, clear_results=False)
+print(f"The fraction of correct guesses was {results_dmv[0] / results_dmv[2]}.")
+print(f"The average distance of the inferred opinion to the true opinion was {results_dmv[1] / results_dmv[2]}.")
 
 # get true labels of the boundary of the ball
 true_labels = graph_inf.get_true_label(node=v, radius=r, label='opinion')
@@ -42,8 +45,6 @@ inferred_labels = graph_inf.get_inferred_label(node=v, radius=r, method_name='dm
 print(true_labels)
 print(inferred_labels)
 #NOTE: label is the name of the node feature we are going to do inference over
-
-
 
 
 # ----------------------------------------------------

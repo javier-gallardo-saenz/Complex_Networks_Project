@@ -87,6 +87,14 @@ class GraphInference:
         """
         return label + '_inferred_' + str(node) + '_' + str(radius) + '_' + method_name
 
+    @staticmethod
+    def to_set(variable):
+        if isinstance(variable, int):  # If `v` is an integer
+            return {variable}  # Create a set containing the integer
+        elif isinstance(variable, (list, set, tuple)):  # If `v` is a list, set, or tuple
+            return set(variable)  # Convert it to a set
+        else:
+            raise ValueError("Input must be an integer or an iterable of integers")
 
     def clear_cache(self):
         self.cache = {}
@@ -101,7 +109,6 @@ class GraphInference:
         for node in boundary:
             if label_to_be_cleared in self.graph[node]:
                 del self.graph[node][label_to_be_cleared]
-
 
     def which_inference_methods(self):
         """
@@ -133,7 +140,6 @@ class GraphInference:
 
         return opinions
 
-
     def get_true_label(self, node, radius, label='opinion'):
         """
         Gets the true label of the nodes in the boundary of a ball.
@@ -151,41 +157,217 @@ class GraphInference:
     # ----------------------------------------------------
     # Inference methods
     # ----------------------------------------------------
-    def discrete_majority_voting(self, node, radius, label='opinion'):
+
+    def discrete_majority_voting(self, node_set, radius_values, label='opinion',
+                                 count_results=True, clear_results=False):
         """
         This method saves its results on the label name_inferred_label(label, node, radius, 'dmv')
         See documentation inference_models.py
         """
-        discrete_majority_voting(self, node, radius, label)
+        # Avoid double counting
+        node_set = self.to_set(node_set)
+        radius_values = self.to_set(radius_values)
 
-    def discrete_weighted_majority_voting(self, node, radius, label='opinion'):
+        # first element of list results counts prediction successes
+        # second element of list results keeps sum of  distance from predictions to true value
+        # third element of list results counts total nodes in which we have performed inference
+        results = [0] * 3
+
+        #perform inference
+        for r in radius_values:
+            if not isinstance(r, int) or r < 0:  # check r is a positive integer
+                raise ValueError("Radius must be a positive integer")
+
+            for v in node_set:
+                if v not in self.graph.nodes:
+                    raise ValueError("Node '" + v + "' does not exist in the graph")
+
+                discrete_majority_voting(self, v, r, label)
+                if count_results:
+                    inferred_label = self.get_inferred_label(v, r, 'dmv',  label)
+                    true_label = self.get_true_label(v, r, label)
+                    for node in inferred_label:
+                        results[2] += 1
+                        aux = abs(inferred_label[node] - true_label[node])
+                        results[1] += aux
+                        if aux == 0:
+                            results[0] += 1
+
+                self.clear_cache()
+                if clear_results:
+                    self.clear_inferred_opinions(v, r, label)
+
+        if count_results:
+            return results
+
+
+    def discrete_weighted_majority_voting(self, node_set, radius_values, label='opinion',
+                                          count_results=True, clear_results=False):
         """
         This method saves its results on the label name_inferred_label(label, node, radius, 'dwmv')
         See documentation inference_models.py
         """
-        discrete_weighted_majority_voting(self, node, radius, label)
+        # Avoid double counting
+        node_set = self.to_set(node_set)
+        radius_values = self.to_set(radius_values)
 
-    def discrete_voter_model(self, node, radius, num_iterations=1000, label='opinion'):
+        # first element of list results counts prediction successes
+        # second element of list results keeps sum of  distance from predictions to true value
+        # third element of list results counts total nodes in which we have performed inference
+        results = [0] * 3
+
+        # perform inference
+        for r in radius_values:
+            if not isinstance(r, int) or r < 0:  # check r is a positive integer
+                raise ValueError("Radius must be a positive integer")
+
+            for v in node_set:
+                if v not in self.graph.nodes:
+                    raise ValueError("Node '" + v + "' does not exist in the graph")
+
+                discrete_weighted_majority_voting(self, v, r, label)
+                if count_results:
+                    inferred_label = self.get_inferred_label(v, r, 'dwmv', label)
+                    true_label = self.get_true_label(v, r, label)
+                    for node in inferred_label:
+                        results[2] += 1
+                        aux = abs(inferred_label[node] - true_label[node])
+                        results[1] += aux
+                        if aux == 0:
+                            results[0] += 1
+
+                self.clear_cache()
+                if clear_results:
+                    self.clear_inferred_opinions(v, r, label)
+
+        if count_results:
+            return results
+
+    def discrete_voter_model(self, node_set, radius_values, num_iterations=1000, label='opinion',
+                             count_results=True, clear_results=False):
         """
         This method saves its results on the label name_inferred_label(label, node, radius, 'dvm')
         See documentation inference_models.py
         """
-        discrete_voter_model(self, node, radius, num_iterations, label)
+        # Avoid double counting
+        node_set = self.to_set(node_set)
+        radius_values = self.to_set(radius_values)
 
-    def discrete_modified_biased_voter_model(self, node, radius, num_iterations=1000, delta=1,
-                                             label='opinion'):
+        # first element of list results counts prediction successes
+        # second element of list results keeps sum of  distance from predictions to true value
+        # third element of list results counts total nodes in which we have performed inference
+        results = [0] * 3
+
+        # perform inference
+        for r in radius_values:
+            if not isinstance(r, int) or r < 0:  # check r is a positive integer
+                raise ValueError("Radius must be a positive integer")
+
+            for v in node_set:
+                if v not in self.graph.nodes:
+                    raise ValueError("Node '" + v + "' does not exist in the graph")
+
+                discrete_voter_model(self, v, r, num_iterations, label)
+                if count_results:
+                    inferred_label = self.get_inferred_label(v, r, 'dvm', label)
+                    true_label = self.get_true_label(v, r, label)
+                    for node in inferred_label:
+                        results[2] += 1
+                        aux = abs(inferred_label[node] - true_label[node])
+                        results[1] += aux
+                        if aux == 0:
+                            results[0] += 1
+
+                self.clear_cache()
+                if clear_results:
+                    self.clear_inferred_opinions(v, r, label)
+
+        if count_results:
+            return results
+
+    def discrete_modified_biased_voter_model(self, node_set, radius_values, num_iterations=1000, delta=1,
+                                             label='opinion', count_results=True, clear_results=False):
         """
         This method saves its results on the label name_inferred_label(label, node, radius, 'dmbvm')
         See documentation inference_models.py
         """
-        discrete_modified_biased_voter_model(self, node, radius, num_iterations, delta, label)
+        # Avoid double counting
+        node_set = self.to_set(node_set)
+        radius_values = self.to_set(radius_values)
 
-    def discrete_label_propagation(self, node, radius, label='opinion', num_iterations=100000):
+        # first element of list results counts prediction successes
+        # second element of list results keeps sum of  distance from predictions to true value
+        # third element of list results counts total nodes in which we have performed inference
+        results = [0] * 3
+
+        # perform inference
+        for r in radius_values:
+            if not isinstance(r, int) or r < 0:  # check r is a positive integer
+                raise ValueError("Radius must be a positive integer")
+
+            for v in node_set:
+                if v not in self.graph.nodes:
+                    raise ValueError("Node '" + v + "' does not exist in the graph")
+
+                discrete_modified_biased_voter_model(self, v, r, num_iterations, delta, label)
+                if count_results:
+                    inferred_label = self.get_inferred_label(v, r, 'dmbvm', label)
+                    true_label = self.get_true_label(v, r, label)
+                    for node in inferred_label:
+                        results[2] += 1
+                        aux = abs(inferred_label[node] - true_label[node])
+                        results[1] += aux
+                        if aux == 0:
+                            results[0] += 1
+
+                self.clear_cache()
+                if clear_results:
+                    self.clear_inferred_opinions(v, r, label)
+
+        if count_results:
+            return results
+
+    def discrete_label_propagation(self, node_set, radius_values, label='opinion', num_iterations=100000,
+                                   count_results=True, clear_results=False):
         """
         This method saves its results on the label name_inferred_label(label, node, radius, 'dlp')
         See documentation inference_models.py
         """
-        discrete_label_propagation(self, node, radius, label, num_iterations)
+        # Avoid double counting
+        node_set = self.to_set(node_set)
+        radius_values = self.to_set(radius_values)
+
+        # first element of list results counts prediction successes
+        # second element of list results keeps sum of  distance from predictions to true value
+        # third element of list results counts total nodes in which we have performed inference
+        results = [0] * 3
+
+        # perform inference
+        for r in radius_values:
+            if not isinstance(r, int) or r < 0:  # check r is a positive integer
+                raise ValueError("Radius must be a positive integer")
+
+            for v in node_set:
+                if v not in self.graph.nodes:
+                    raise ValueError("Node '" + v + "' does not exist in the graph")
+
+                discrete_label_propagation(self, v, r, num_iterations, label)
+                if count_results:
+                    inferred_label = self.get_inferred_label(v, r, 'dlp', label)
+                    true_label = self.get_true_label(v, r, label)
+                    for node in inferred_label:
+                        results[2] += 1
+                        aux = abs(inferred_label[node] - true_label[node])
+                        results[1] += aux
+                        if aux == 0:
+                            results[0] += 1
+
+                self.clear_cache()
+                if clear_results:
+                    self.clear_inferred_opinions(v, r, label)
+
+        if count_results:
+            return results
 
     # ----------------------------------------------------
     # Metrics

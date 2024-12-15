@@ -118,7 +118,7 @@ def discrete_modified_biased_voter_model(graph_inference, node, radius, num_iter
                 graph_inference.graph.nodes[node][inferred_label] = graph_inference.graph.nodes[random_neighbor][label]
 
 
-def discrete_label_propagation(graph_inference, node, radius, label='opinion', num_steps=100000):
+def discrete_label_propagation(graph_inference, node, radius, num_steps=100000, label='opinion'):
     """
     Infers the discrete attribute label for the nodes in the boundary of a ball using label propagation
 
