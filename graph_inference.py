@@ -207,7 +207,8 @@ class GraphInference:
         # first element of list results counts prediction successes
         # second element of list results keeps sum of  distance from predictions to true value
         # third element of list results counts total nodes in which we have performed inference
-        results = {method_name: {ball_radius: [0, 0, 0] for ball_radius in radius_values} for method_name in methods}
+        results = {method_name: {ball_radius: {'success': 0, 'acc_dist': 0, 'visited_nodes': 0}
+                                 for ball_radius in radius_values} for method_name in methods}
 
         # perform inference
         for r in radius_values:
@@ -236,11 +237,11 @@ class GraphInference:
                         inferred_label = self.get_inferred_label(v, r, method_name, label)
                         true_label = self.get_true_label(v, r, label)
                         for node in inferred_label:
-                            results[method_name][r][2] += 1
+                            results[method_name][r]['visited_nodes'] += 1
                             aux = abs(inferred_label[node] - true_label[node])
-                            results[method_name][r][1] += aux
+                            results[method_name][r]['acc_dist'] += aux
                             if aux == 0:
-                                results[method_name][r][0] += 1
+                                results[method_name][r]['success'] += 1
 
                     if clear_results:
                         self.clear_inferred_opinions(v, r, method_name, label)

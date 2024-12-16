@@ -41,9 +41,9 @@ results_dmv = graph_inf.do_inference(node_set=v, radius_values=r_values, methods
 for method in methods:
     for r in r_values:
         print(f"The fraction of correct guesses with r = {r} and method {method}"
-              f" was {results_dmv[method][r][0] / results_dmv[method][r][2]}.")
+              f" was {results_dmv[method][r]['success'] / results_dmv[method][r]['visited_nodes']}.")
         print(f"The average distance of the inferred opinion to the true opinion with r = {r} and method {method}"
-              f" was {results_dmv[method][r][1] / results_dmv[method][r][2]}.")
+              f" was {results_dmv[method][r]['acc_dist'] / results_dmv[method][r]['visited_nodes']}.")
 
 
 # # get true labels of the boundary of the ball
