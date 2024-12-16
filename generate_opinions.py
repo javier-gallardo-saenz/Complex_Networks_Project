@@ -152,3 +152,26 @@ def basic_opinion_generator(G, states=None, probabilities=None, num_steps=10000)
             opinions[node] = opinions[neighbor]
 
     return opinions
+
+def discrete_modified_biased_voter_model(G, node, label='opinion', num_iterations=1000,
+                                         delta=0.1):
+    """
+    Infers the discrete attribute label for every node in the graph by assigning them the label 
+    of one of their neighbors chosen randomly with probability based on 'how close' opinions are.
+    :param graph_inference: inherits GraphInference class self and methods
+    :param node: node
+    :param radius: radius
+    :param num_iterations: number of iterations the process will be done
+    :param delta: fixed variable >=0 to fix a minimum probability for every vertex
+                  to change their label to their neighbor's
+    :param label: label of the attribute to be inferred
+    """
+
+    for _ in range(num_iterations):
+        node = random.choice(list(G.nodes()))
+        neighbors = set(G.neighbors(node))
+        random_neighbor = random.choice(list(neighbors))
+        prob = abs(G.nodes[node][label] +
+                    G.nodes[random_neighbor][label]+delta)/(2+delta)
+        if prob > random.random():
+            G.nodes[node][label] = G.nodes[random_neighbor][label]
