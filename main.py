@@ -9,12 +9,13 @@ from graph_statistics import *
 from utils import *
 from graph_inference import *
 
-comms = [50] * 4  #communities
+comms = [500] * 4  #communities
 intra_degree_seq = [15] * sum(comms)
 inter_degree_seq = [1] * sum(comms)
-G = generate_hierarchical_configuration_model(intra_degree_seq, inter_degree_seq, comms)
-v = list(G.nodes())  # choose all nodes
-r_values = [1, 2, 3]  # radius of the known ball
+G = generate_sbm(comms, 0.75, 0.01)
+#v = random.choice(G) # choose one single node
+v = random.sample(list(G.nodes()), 100)  # choose a random set of nodes
+r_values = [1]  # radius of the known ball
 
 # ----------------------------------------------------
 # Opinion generation
@@ -35,7 +36,7 @@ graph_inf = GraphInference(opinion_dist.graph)
 graph_inf.which_inference_methods()  # shows available inference methods
 methods = {'dvm'}
 results_dmv = graph_inf.do_inference(node_set=v, radius_values=r_values, methods=methods, label='opinion',
-                                                          count_results=True, clear_results=False, num_iterations=1000)
+                                                          count_results=True, clear_results=False, num_iterations=1)
 
 for method in methods:
     for r in r_values:
@@ -60,11 +61,11 @@ for method in methods:
 #cmap = plt.get_cmap("viridis")
 
 # Create a color mapping for the discrete 'opinion' values
-opinion_colors = {-1: 'red', 0: 'blue', 1: 'green'}
+opinion_colors = {-1: 'red', -0.5: 'pink', 0: 'blue', 0.5: 'yellow', 1: 'green'}
 # Get the 'opinion' values and map them to colors
 node_colors = [opinion_colors[G.nodes[node]['opinion']] for node in G.nodes()]
 
-nx.draw(G, with_labels=True, node_color=node_colors, edge_color="gray", node_size=500, font_size=4)
-plt.show()
+#nx.draw(G, with_labels=True, node_color=node_colors, edge_color="gray", node_size=500, font_size=4)
+#plt.show()
 #print("Resulting Graph")
 #print(G.edges())

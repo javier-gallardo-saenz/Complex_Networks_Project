@@ -1,2 +1,9 @@
 - Plots class
-- Convert inference_models functions to format methods of GraphInference class
+- Add variance of the distance (Javi)
+- Get count for each inferred_opinion and each opinion value in do_inference (Javi)
+- Write advanced label propagation code (Javi)
+- Write preferential attachment with colors graph generation?(Lucia)
+- Facebook network analysis (Javi)
+- Is it worth it to do multiple random steps or just one step iterating over every node in the boundary (randomly)? (Lucia)
+- In each community, what is the proportion of each label as function of the num_steps of the opinion
+    generation algorithm? Remember communities are given by comms = [500] * 4  so community_1 = {0,499}, etc (Lucia)

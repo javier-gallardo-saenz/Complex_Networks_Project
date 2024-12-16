@@ -134,7 +134,7 @@ class GraphInference:
         opinions = {}
         for node in boundary:
             if label_to_be_retrieved not in self.graph.nodes[node]:
-                raise ValueError("Method '" + method_name + "' has not been executed on the given ball.")
+                raise ValueError("Method '" + method_name + "' has not been executed properly on the given ball.")
             opinions[node] = self.graph.nodes[node][label_to_be_retrieved]
 
         return opinions
