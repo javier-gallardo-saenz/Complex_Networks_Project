@@ -153,7 +153,7 @@ def basic_opinion_generator(G, states=None, probabilities=None, num_steps=10000)
 
     return opinions
 
-def discrete_modified_biased_voter_model(G, node, label='opinion', num_iterations=1000,
+def opinion_generator_biased_voter_model(G, node, label='opinion', num_iterations=1000,
                                          delta=0.1):
     """
     Infers the discrete attribute label for every node in the graph by assigning them the label 

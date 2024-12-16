@@ -17,7 +17,6 @@ class GraphInference:
                         "dmv": self.discrete_majority_voting,
                         "dwmv": self.discrete_weighted_majority_voting,
                         "dvm": self.discrete_voter_model,
-                        "dmbvm": self.discrete_modified_biased_voter_model,
                         "dlp": self.discrete_label_propagation
                         }
         # ideally this could be implemented so the names of the methods are retrieved automatically and stored here
@@ -179,12 +178,6 @@ class GraphInference:
         """
         discrete_voter_model(self, node, radius, label, num_iterations)
 
-    def discrete_modified_biased_voter_model(self, node, radius, label='opinion', num_iterations=1000, delta=1):
-        """
-        This method saves its results on the label name_inferred_label(label, node, radius, 'dmbvm')
-        See documentation inference_models.py
-        """
-        discrete_modified_biased_voter_model(self, node, radius, label, num_iterations, delta)
 
     def discrete_label_propagation(self, node, radius, label='opinion', num_iterations=1000):
         """

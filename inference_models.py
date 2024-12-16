@@ -88,35 +88,6 @@ def discrete_voter_model(graph_inference, node, radius, label='opinion', num_ite
             graph_inference.graph.nodes[node][inferred_label] = graph_inference.graph.nodes[random_neighbor][label]
 
 
-def discrete_modified_biased_voter_model(graph_inference, node, radius, label='opinion', num_iterations=1000,
-                                         delta=0.1):
-    """
-    Infers the discrete attribute label for every node in the graph by assigning them the label 
-    of one of their neighbors chosen randomly with probability based on 'how close' opinions are.
-    :param graph_inference: inherits GraphInference class self and methods
-    :param node: node
-    :param radius: radius
-    :param num_iterations: number of iterations the process will be done
-    :param delta: fixed variable >=0 to fix a minimum probability for every vertex
-                  to change their label to their neighbor's
-    :param label: label of the attribute to be inferred
-    """
-    ball, boundary = graph_inference.get_ball_and_boundary(node, radius)
-    inferred_label = graph_inference.name_inferred_label(label, node, radius, 'dmbvm')
-
-    for _ in range(num_iterations):
-
-        # shuffle nodes in boundary to ensure they are visited at a random order
-        shuffled_boundary = list(boundary)
-        random.shuffle(shuffled_boundary)
-
-        for node in shuffled_boundary:
-            neighbors_in_ball = set(graph_inference.graph.neighbors(node)) & ball
-            random_neighbor = random.choice(list(neighbors_in_ball))
-            prob = abs(graph_inference.graph.nodes[node][label] +
-                       graph_inference.graph.nodes[random_neighbor][label]+delta)/(2+delta)
-            if prob > random.random():
-                graph_inference.graph.nodes[node][inferred_label] = graph_inference.graph.nodes[random_neighbor][label]
 
 
 def discrete_label_propagation(graph_inference, node, radius, label='opinion', num_steps=100000):
