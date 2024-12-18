@@ -43,12 +43,13 @@ def proportion_of_labels(num_communities, nodes_per_comm, Graph, label):
     for n in range(num_communities):
         labels[n] = {}
         for node in range(n*nodes_per_comm, (n+1)*nodes_per_comm):
+            if Graph.nodes[node][label] is None:
+                raise KeyError(f"The node {node} does not have the label '{label}'.")
             if Graph.nodes[node][label] not in labels[n].keys():
                 labels[n][Graph.nodes[node][label]] = 1
             else:
                 labels[n][Graph.nodes[node][label]] += 1
-        for key in labels[n].keys():
-            print("In community " + str(n) + " the proportion of " + str(key) + "\'s is " + str(labels[n][key]/nodes_per_comm))
+        print(f"In community {n} the proportion of {[key for key in labels[n].keys()]} \'s is {[prop/nodes_per_comm for prop in labels[n].values()]}")
 
 
 
