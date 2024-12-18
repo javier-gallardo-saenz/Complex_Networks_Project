@@ -36,9 +36,19 @@ def load_snap_graph(file_path, directed=False):
 
     return G
 
-
-
-
+def proportion_of_labels(num_communities, nodes_per_comm, Graph, label):
+    if len(Graph.nodes) != num_communities*nodes_per_comm:
+        raise ValueError("Number of nodes of the graph must be equal to the number of communities times the number of nodes per community.")
+    labels = {}
+    for n in range(num_communities):
+        labels[n] = {}
+        for node in range(n*nodes_per_comm, (n+1)*nodes_per_comm):
+            if Graph.nodes[node][label] not in labels[n].keys():
+                labels[n][Graph.nodes[node][label]] = 1
+            else:
+                labels[n][Graph.nodes[node][label]] += 1
+        for key in labels[n].keys():
+            print("In community " + str(n) + " the proportion of " + str(key) + "\'s is " + str(labels[n][key]/nodes_per_comm))
 
 
 
