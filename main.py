@@ -25,7 +25,7 @@ r_values = [1]  # radius of the known ball
 opinion_dist = OpinionDistribution(G)  # create instance of class OpinionDistribution with graph G
 opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[0.4, 0.2, 0.4], label='opinion')
 opinion_dist.basic_opinion_generator(label='opinion', num_steps=10000)
-proportion_of_labels(nodes_per_comm=num_nodes, num_communities=num_comm, graph=G, label='opinion')
+proportion_of_labels(nodes_per_comm=num_nodes, num_communities=num_comm, Graph=G, label='opinion')
 
 # ----------------------------------------------------
 # Saving graphs?
