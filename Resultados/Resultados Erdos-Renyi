@@ -1,0 +1,48 @@
+Results for Erdos-Renyi with 500 nodes and 0.05 probability of an edge over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dvm of 10 iterations was 0.47750866114266427.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 10 iterations was 0.8351030204449028.
+The average fraction of correct guesses with r = 1 and method dwmv of 10 iterations was 0.48489421471445393.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 10 iterations was 0.8264566420175129.
+The average fraction of correct guesses with r = 1 and method dlp of 10 iterations was 0.4845187522810228.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 10 iterations was 0.8261930320785222.
+The average fraction of correct guesses with r = 1 and method dmv of 10 iterations was 0.4845187522810228.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 10 iterations was 0.8261930320785222.
+
+Results for Erdos-Renyi with 500 nodes and 0.1 probability of an edge over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dmv of 10 iterations was 0.5044455309624656.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 10 iterations was 0.7680877897982079.
+The average fraction of correct guesses with r = 1 and method dwmv of 10 iterations was 0.5042450647192431.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 10 iterations was 0.7692788777731966.
+The average fraction of correct guesses with r = 1 and method dvm of 10 iterations was 0.45433269005400756.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 10 iterations was 0.8282640002108425.
+The average fraction of correct guesses with r = 1 and method dlp of 10 iterations was 0.5044455309624656.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 10 iterations was 0.7680877897982079.
+
+Results for Erdos-Renyi with 500 nodes and 0.15 probability of an edge over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dwmv of 10 iterations was 0.48337617205079686.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 10 iterations was 0.8037825769745666.
+The average fraction of correct guesses with r = 1 and method dvm of 10 iterations was 0.4175781966137352.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 10 iterations was 0.8782729246199544.
+The average fraction of correct guesses with r = 1 and method dlp of 10 iterations was 0.48389787409817026.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 10 iterations was 0.80273663906423.
+The average fraction of correct guesses with r = 1 and method dmv of 10 iterations was 0.48389787409817026.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 10 iterations was 0.80273663906423.
+
+The average fraction of correct guesses with r = 1 and method dwmv of 10 iterations was 0.5347766412817478.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 10 iterations was 0.7422324294022189.
+The average fraction of correct guesses with r = 1 and method dmv of 10 iterations was 0.5349465116569252.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 10 iterations was 0.7419715182890554.
+The average fraction of correct guesses with r = 1 and method dlp of 10 iterations was 0.5349465116569252.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 10 iterations was 0.7419715182890554.
+The average fraction of correct guesses with r = 1 and method dvm of 10 iterations was 0.4417161529541169.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 10 iterations was 0.8640494017895225.
+
+Results for Erdos-Renyi with 1000 nodes and 0.05 probability of an edge over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dwmv of 10 iterations was 0.3794394234067209.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 10 iterations was 0.9244792693675754.
+The average fraction of correct guesses with r = 1 and method dvm of 10 iterations was 0.37178902746231735.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 10 iterations was 0.926739724560268.
+The average fraction of correct guesses with r = 1 and method dlp of 10 iterations was 0.37899122609438746.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 10 iterations was 0.92546098387479.
+The average fraction of correct guesses with r = 1 and method dmv of 10 iterations was 0.37899122609438746.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 10 iterations was 0.92546098387479.
