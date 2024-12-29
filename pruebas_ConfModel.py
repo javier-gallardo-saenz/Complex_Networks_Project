@@ -8,7 +8,7 @@ from generate_opinions import *
 from graph_statistics import *
 from utils import *
 from graph_inference import *
-import sqrt
+import math
 
 num_nodes = 1500
 mean = 50
@@ -18,7 +18,7 @@ r_values = [1]
 for n in range(num_nodes):
     deg_seq += [random.choices(
         population=range(num_nodes//2),
-        weights=[1/(sqrt(2*np.pi*var))*e^(-(k-mean)^2/2*var) for k in range(num_nodes//2)],
+        weights=[1/(math.sqrt(2*math.pi*var))*(math.e)**(-(k-mean)**2/2*var) for k in range(num_nodes//2)],
         k=1
     )[0]]
 

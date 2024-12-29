@@ -16,7 +16,7 @@ prob_intra = 0.75
 prob_inter= 0.15
 r_values = [1]  # radius of the known ball
 
-num_iterations = 10
+num_iterations = 5
 avg_correct_guesses = {}
 avg_distance = {}
 for n in range(num_iterations):

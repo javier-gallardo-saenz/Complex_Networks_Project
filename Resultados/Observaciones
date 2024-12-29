@@ -1,0 +1,7 @@
+Las métricas que sacamos tienen muchos problemas por la forma en la que se generan opiniones
+
+Con el Hierarchical las opiniones se generan bien usando el basic opinion generator solo si el grado inter comm 
+es muy bajo (tipo 1 o así, empeora muy rápido a lo poco que lo subas)
+
+Utilizando la generacion de etiquetas con el biased voter salen muy malos resultados, y el biased majority es muy 
+extremo (el 0 tiende a desaparecer o a acaparar todo)

@@ -1,0 +1,94 @@
+Results for Hierarchical with [200, 200, 200, 200] communities, 1 degree inter-communities and 15 degree intra-communities over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dmv of 1 iterations was 0.4193351941131693.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 1 iterations was 0.8383912712509516.
+The average fraction of correct guesses with r = 1 and method dvm of 1 iterations was 0.4176858665313372.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 1 iterations was 0.8382136513575235.
+The average fraction of correct guesses with r = 1 and method dwmv of 1 iterations was 0.4193351941131693.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 1 iterations was 0.8383912712509516.
+The average fraction of correct guesses with r = 1 and method dlp of 1 iterations was 0.4193351941131693.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 1 iterations was 0.8383912712509516.
+
+Results for Hierarchical with [200, 200, 200, 200] communities, 1 degree inter-communities and 15 degree intra-communities over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dwmv of 10 iterations was 0.44707849188564175.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 10 iterations was 0.8634958400097122.
+The average fraction of correct guesses with r = 1 and method dmv of 10 iterations was 0.44707849188564175.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 10 iterations was 0.8634958400097122.
+The average fraction of correct guesses with r = 1 and method dvm of 10 iterations was 0.4447706559544378.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 10 iterations was 0.8666863703366395.
+The average fraction of correct guesses with r = 1 and method dlp of 10 iterations was 0.44707849188564175.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 10 iterations was 0.8634958400097122.
+
+Results for Hierarchical with [500, 500, 500, 500] communities, 1 degree inter-communities and 15 degree intra-communities over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dmv of 10 iterations was 0.40794293381802005.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 10 iterations was 0.8788314879828321.
+The average fraction of correct guesses with r = 1 and method dwmv of 10 iterations was 0.40794293381802005.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 10 iterations was 0.8788314879828321.
+The average fraction of correct guesses with r = 1 and method dlp of 10 iterations was 0.40794293381802005.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 10 iterations was 0.8788314879828321.
+The average fraction of correct guesses with r = 1 and method dvm of 10 iterations was 0.407861850537279.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 10 iterations was 0.8789944043724585.
+
+Results for Hierarchical with [500, 500, 500, 500] communities, 10 degree inter-communities and 50 degree intra-communities over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dmv of 1 iterations was 0.38443102436438675.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 1 iterations was 0.9306804485419862.
+The average fraction of correct guesses with r = 1 and method dwmv of 1 iterations was 0.38443102436438675.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 1 iterations was 0.9306804485419862.
+The average fraction of correct guesses with r = 1 and method dvm of 1 iterations was 0.37546901917725234.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 1 iterations was 0.9343164909225148.
+The average fraction of correct guesses with r = 1 and method dlp of 1 iterations was 0.38443102436438675.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 1 iterations was 0.9306804485419862.
+
+Results for Hierarchical with [500, 500, 500, 500] communities, 5 degree inter-communities and 70 degree intra-communities over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dmv of 1 iterations was 0.375416860065227.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 1 iterations was 0.9395753963330101.
+The average fraction of correct guesses with r = 1 and method dwmv of 1 iterations was 0.375416860065227.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 1 iterations was 0.9395753963330101.
+The average fraction of correct guesses with r = 1 and method dlp of 1 iterations was 0.375416860065227.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 1 iterations was 0.9395753963330101.
+The average fraction of correct guesses with r = 1 and method dvm of 1 iterations was 0.36412085227107355.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 1 iterations was 0.9379577418401126.
+
+Results for Hierarchical with [300, 300, 300, 300, 300, 300] communities, 5 degree inter-communities and 50 degree intra-communities over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dvm of 1 iterations was 0.393462233411581.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 1 iterations was 0.9213210673046603.
+The average fraction of correct guesses with r = 1 and method dmv of 1 iterations was 0.41046733369036953.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 1 iterations was 0.9072364897669087.
+The average fraction of correct guesses with r = 1 and method dwmv of 1 iterations was 0.41046733369036953.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 1 iterations was 0.9072364897669087.
+The average fraction of correct guesses with r = 1 and method dlp of 1 iterations was 0.41046733369036953.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 1 iterations was 0.9072364897669087.
+
+Results for Hierarchical with [200, 200, 200, 200, 200, 200, 200, 200] communities, 3 degree inter-communities and 50 degree intra-communities over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dvm of 1 iterations was 0.3714694431198989.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 1 iterations was 0.9183683862097062.
+The average fraction of correct guesses with r = 1 and method dmv of 1 iterations was 0.3876494743225914.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 1 iterations was 0.9096232992449319.
+The average fraction of correct guesses with r = 1 and method dlp of 1 iterations was 0.3876494743225914.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 1 iterations was 0.9096232992449319.
+The average fraction of correct guesses with r = 1 and method dwmv of 1 iterations was 0.3876494743225914.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 1 iterations was 0.9096232992449319.
+
+
+Results using:
+ opinion_generator_majority_biased_voter_model(label='opinion', num_iterations=2000, delta=0.1)
+ initialize_opinions(states=[-1, 0, 1], probabilities=[0.33, 0.33, 0.34], label='opinion')
+
+Results for Hierarchical with [200, 200, 200, 200] communities, 1 degree inter-communities and 60 degree intra-communities over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dwmv of 1 iterations was 0.5734038164790002.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 1 iterations was 0.5787969993735963.
+The average fraction of correct guesses with r = 1 and method dmv of 1 iterations was 0.5734038164790002.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 1 iterations was 0.5787969993735963.
+The average fraction of correct guesses with r = 1 and method dvm of 1 iterations was 0.4955464226238675.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 1 iterations was 0.6753090003513972.
+The average fraction of correct guesses with r = 1 and method dlp of 1 iterations was 0.5734038164790002.
+Results for Hierarchical with [200, 200, 200, 200] communities, 1 degree inter-communities and 60 degree intra-communities over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dwmv of 1 iterations was 0.5734038164790002.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 1 iterations was 0.5787969993735963.
+The average fraction of correct guesses with r = 1 and method dmv of 1 iterations was 0.5734038164790002.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 1 iterations was 0.5787969993735963.
+The average fraction of correct guesses with r = 1 and method dvm of 1 iterations was 0.4955464226238675.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 1 iterations was 0.6753090003513972.
+The average fraction of correct guesses with r = 1 and method dlp of 1 iterations was 0.5734038164790002.
+03513972.
+The average fraction of correct guesses with r = 1 and method dlp of 1 iterations was 0.5734038164790002.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 1 iterations was 0.5787969993735963.

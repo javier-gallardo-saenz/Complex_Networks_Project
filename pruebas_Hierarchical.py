@@ -8,17 +8,18 @@ from generate_opinions import *
 from graph_statistics import *
 from utils import *
 from graph_inference import *
+from visualize_graphs import *
 
 num_nodes = 200
 num_comm = 4
 comms = [num_nodes] * num_comm  #communities
-degree_intra = 15
+degree_intra = 60
 degree_inter = 1
 intra_degree_seq = [degree_intra] * sum(comms)
 inter_degree_seq = [degree_inter] * sum(comms)
 r_values = [1]  # radius of the known ball
 
-num_iterations = 10
+num_iterations = 1
 avg_correct_guesses = {}
 avg_distance = {}
 for n in range(num_iterations):
@@ -27,13 +28,18 @@ for n in range(num_iterations):
                                                   community_sizes=comms)
     v = random.sample(list(G.nodes()), len(list(G.nodes()))//3)  # choose a random set of nodes
     opinion_dist = OpinionDistribution(G)  # create instance of class OpinionDistribution with graph G
-    opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[0.4, 0.2, 0.4], label='opinion')
+    opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[0.33, 0.33, 0.34], label='opinion')
     opinion_dist.basic_opinion_generator(label='opinion', num_steps=10000)
     graph_inf = GraphInference(opinion_dist.graph)
     graph_inf.which_inference_methods()  # shows available inference methods
     methods = {'dmv', 'dwmv', 'dvm', 'dlp'}
     results_dmv = graph_inf.do_inference(node_set=v, radius_values=r_values, methods=methods, label='opinion',
                                                         count_results=True, clear_results=False, num_iterations=1)
+    proportion_of_labels(num_communities=num_comm, nodes_per_comm=num_nodes, Graph=G, label='opinion')
+    #graph_labels={}
+    #for node in G.nodes:
+    #    graph_labels[node] = G.nodes[node]['opinion']
+    #visualize_graph(G, graph_labels)
     
     for method in methods:
         for r in r_values:
