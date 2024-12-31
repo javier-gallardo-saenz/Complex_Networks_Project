@@ -12,8 +12,8 @@ from graph_inference import *
 num_nodes = 200
 num_comm = 4
 sizes = [num_nodes] * num_comm 
-prob_intra = 0.75
-prob_inter= 0.15
+prob_intra = 0.6
+prob_inter= 0.05
 r_values = [1]  # radius of the known ball
 
 num_iterations = 5
@@ -23,8 +23,8 @@ for n in range(num_iterations):
     G = generate_sbm(sizes_sbm=sizes, p_inter=prob_inter, p_intra=prob_intra)
     v = random.sample(list(G.nodes()), len(list(G.nodes()))//3)  # choose a random set of nodes
     opinion_dist = OpinionDistribution(G)  # create instance of class OpinionDistribution with graph G
-    opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[0.4, 0.2, 0.4], label='opinion')
-    opinion_dist.basic_opinion_generator(label='opinion', num_steps=10000)
+    opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[0.33, 0.34, 0.33], label='opinion')
+    opinion_dist.opinion_generator_majority_biased_voter_model(label='opinion', num_iterations=2000, delta=0.1)
     graph_inf = GraphInference(opinion_dist.graph)
     graph_inf.which_inference_methods()  # shows available inference methods
     methods = {'dmv', 'dwmv', 'dvm', 'dlp'}

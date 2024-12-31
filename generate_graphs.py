@@ -220,5 +220,9 @@ def preferential_attachment_with_colors(num_nodes, num_edges, labels, size_init_
         label_counter = Counter(neighbor_labels)
         majority_label = label_counter.most_common(1)[0][0]  # Get the most common label
         graph.nodes[new_node][label] = majority_label
+    if not nx.is_connected(graph):
+        # Extrae el componente conectado más grande si el grafo no está conectado
+        print(f"Scale-Free graph with m={num_edges} is not connected. Extracting the largest connected component.")
+        graph = graph.subgraph(max(nx.connected_components(graph), key=len)).copy()
 
     return graph

@@ -1,7 +1,10 @@
 Las métricas que sacamos tienen muchos problemas por la forma en la que se generan opiniones
 
-Con el Hierarchical las opiniones se generan bien usando el basic opinion generator solo si el grado inter comm 
-es muy bajo (tipo 1 o así, empeora muy rápido a lo poco que lo subas)
+Creo que la forma más eficiente es inicializar las labels con las mismas probabibilidades y que se expandan de forma aleatoria por las comunidades
 
-Utilizando la generacion de etiquetas con el biased voter salen muy malos resultados, y el biased majority es muy 
-extremo (el 0 tiende a desaparecer o a acaparar todo)
+Con el Hierarchical las opiniones se generan bien usando el basic opinion generator solo si el grado inter comm es muy bajo (tipo 1 o así, empeora muy rápido a lo poco que lo subas)
+
+Utilizando la generacion de etiquetas con el biased voter salen muy malos resultados, y el biased majority es muy extremo (el 0 tiende a desaparecer o a acaparar todo)
+
+Utilizando el  majority biased (con un número de iteraciones no muy alto en proporción a los nodes del propio grafo, ya que si iteras mucho las comunidades tienden a converger) los grafos que se generan son aparentemente más realistas (y tienen mejores métricas), pero me da cosa que sea un poco trampa el hecho de que la forma de generar los labels es parecida a la forma de predecirlos.
+

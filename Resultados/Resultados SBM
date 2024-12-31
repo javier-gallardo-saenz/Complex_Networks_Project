@@ -20,3 +20,14 @@ The average distance of the inferred opinion to the true opinion with r = 1 and 
 The average fraction of correct guesses with r = 1 and method dwmv of 5 iterations was 0.45528432391018975.
 The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 5 iterations was 0.8451210039472707.
 
+Results with opinion generator majority biased voter, 2000 iterations (labels initialized with uniformly 
+distributed probabibilidades)
+Results for SBM with [200, 200, 200, 200] nodes/comm, 0.05 probability inter-communities and 0.6 probability intra-communities over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dlp of 5 iterations was 0.5727582738941299.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 5 iterations was 0.5922570353991121.
+The average fraction of correct guesses with r = 1 and method dvm of 5 iterations was 0.48432087671862806.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 5 iterations was 0.7039599860858126.
+The average fraction of correct guesses with r = 1 and method dwmv of 5 iterations was 0.5727732136782677.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 5 iterations was 0.5926609737866972.
+The average fraction of correct guesses with r = 1 and method dmv of 5 iterations was 0.5727582738941299.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 5 iterations was 0.5922570353991121.
