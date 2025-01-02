@@ -207,12 +207,7 @@ class GraphInference:
             if method_name not in self.methods:
                 raise ValueError(f"Method {method_name} is not registered.")
 
-        # first element of list results counts prediction successes
-        # second element of list results keeps sum of  distance from predictions to true value
-        # third element of list results counts total nodes in which we have performed inference
-        #results = {method_name: {ball_radius: [{'success': 0, 'acc_dist': 0, 'visited_nodes': 0}, ]
-        #                        for ball_radius in radius_values} for method_name in methods}
-        #Using simpler results output cause we do extra post processing
+
         if count_results == 2:
             results = {method_name: {ball_radius: {'inferred': [], 'true': []}
                        for ball_radius in radius_values} for method_name in methods}
@@ -257,8 +252,8 @@ class GraphInference:
                                 results[method_name][r]['success'] += 1
 
                     elif count_results == 2:
-                        results[method_name][r]['inferred'] = inferred_label.values()
-                        results[method_name][r]['true'] = true_label.values()
+                        results[method_name][r]['inferred'] = list(inferred_label.values())
+                        results[method_name][r]['true'] = list(true_label.values())
 
 
                     if clear_results:
