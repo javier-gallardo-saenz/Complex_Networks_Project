@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 from collections import Counter
 from generate_graphs import *
 from generate_opinions import *
-from graph_statistics import *
 from utils import *
 from graph_inference import *
 
