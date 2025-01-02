@@ -190,10 +190,13 @@ class GraphInference:
     # Swiss knife inference function
     # ----------------------------------------------------
     def do_inference(self, node_set, radius_values, methods, label='opinion',
-                     count_results=True, clear_results=False, **kwargs):
+                     count_results=2, clear_results=False, **kwargs):
         """
         :param methods: Names of the inference methods to be applied, using the abbreviation seen in self.methods
         """
+        # Check count_results is either 0,1, or 2
+        if count_results is not 0 and count_results is not 1 and count_results is not 2:
+            raise ValueError("count_results method must be either 0 or 1 or 2")
         # Avoid double counting
         node_set = self.to_set(node_set)
         radius_values = self.to_set(radius_values)
@@ -207,8 +210,16 @@ class GraphInference:
         # first element of list results counts prediction successes
         # second element of list results keeps sum of  distance from predictions to true value
         # third element of list results counts total nodes in which we have performed inference
-        results = {method_name: {ball_radius: {'success': 0, 'acc_dist': 0, 'visited_nodes': 0}
-                                 for ball_radius in radius_values} for method_name in methods}
+        #results = {method_name: {ball_radius: [{'success': 0, 'acc_dist': 0, 'visited_nodes': 0}, ]
+        #                        for ball_radius in radius_values} for method_name in methods}
+        #Using simpler results output cause we do extra post processing
+        if count_results == 2:
+            results = {method_name: {ball_radius: {'inferred': [], 'true': []}
+                       for ball_radius in radius_values} for method_name in methods}
+
+        elif count_results == 1:
+            results = {method_name: {ball_radius: [{'success': 0, 'acc_dist': 0, 'visited_nodes': 0}, ]
+                                     for ball_radius in radius_values} for method_name in methods}
 
         # perform inference
         for r in radius_values:
@@ -233,15 +244,22 @@ class GraphInference:
                     # Call the method with filtered arguments
                     method(*args, **filtered_kwargs)
 
-                    if count_results:
+                    if count_results == 1 or count_results == 2:
                         inferred_label = self.get_inferred_label(v, r, method_name, label)
                         true_label = self.get_true_label(v, r, label)
+
+                    if count_results == 1:
                         for node in inferred_label:
-                            results[method_name][r]['visited_nodes'] += 1
+                            results[method_name][r]['inferred'] += 1
                             aux = abs(inferred_label[node] - true_label[node])
                             results[method_name][r]['acc_dist'] += aux
                             if aux == 0:
                                 results[method_name][r]['success'] += 1
+
+                    elif count_results == 2:
+                        results[method_name][r]['inferred'] = inferred_label.values()
+                        results[method_name][r]['true'] = true_label.values()
+
 
                     if clear_results:
                         self.clear_inferred_opinions(v, r, method_name, label)
