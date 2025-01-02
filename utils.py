@@ -1,8 +1,59 @@
 import networkx as nx
+import matplotlib.pyplot as plt
+import math
 
 
 # ----------------------------------------------------
-# Graph loading utils (NO LONGER CLASS GRAPH_INFERENCE)
+# Statistics
+# ----------------------------------------------------
+
+# Obtain degree distribution of a graph and plot it
+def degree_distribution(g):
+    #g: graph
+    degrees_g = [d for n, d in g.degree()]
+    plt.figure(figsize=(8, 6))
+    plt.hist(degrees_g, bins=range(min(degrees_g), max(degrees_g) + 1), edgecolor='black')
+    plt.title("Degree Distribution")
+    plt.xlabel("Degree")
+    plt.ylabel("Frequency")
+    plt.show()
+    return degrees_g
+
+
+def get_all_stats(inferred_results, true_results):
+    n = len(inferred_results)
+    if n != len(true_results):
+        raise ValueError("Number of inferred results and true results do not match")
+
+    stats = {'success_rate': 0, 'error_mean': 0, 'error_std': 0}
+
+    aux = true_results[0] - inferred_results[0]
+    successes = 1 if aux == 0 else 0
+    cummulative_error = abs(aux)
+    welford_M = 0
+    previous_cummulative_error = cummulative_error
+
+    for i in range(1, n):
+        aux = true_results[i] - inferred_results[i]
+        if aux == 0:
+            successes += 1
+        else:
+            cummulative_error += abs(aux)
+
+        welford_M += (aux - previous_cummulative_error/i)(aux - cummulative_error/(i + 1))
+        previous_cummulative_error = cummulative_error
+
+    stats['success_rate'] = successes/n
+    stats['error_mean'] = cummulative_error/n
+    stats['error_std'] = math.sqrt(welford_M/(n-1))
+
+
+
+
+
+
+# ----------------------------------------------------
+# Graph loading utils
 # ----------------------------------------------------
 
 def load_snap_graph(file_path, directed=False):

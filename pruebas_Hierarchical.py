@@ -34,7 +34,7 @@ for n in range(num_iterations):
     graph_inf.which_inference_methods()  # shows available inference methods
     methods = {'dmv', 'dwmv', 'dvm', 'dlp'}
     results_dmv = graph_inf.do_inference(node_set=v, radius_values=r_values, methods=methods, label='opinion',
-                                                        count_results=True, clear_results=False, num_iterations=1)
+                                                        count_results=2, clear_results=False, num_iterations=1)
     proportion_of_labels(num_communities=num_comm, nodes_per_comm=num_nodes, Graph=G, label='opinion')
     #graph_labels={}
     #for node in G.nodes:

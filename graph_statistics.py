@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt
+
 
 
 # Obtain degree distribution of a graph and plot it
