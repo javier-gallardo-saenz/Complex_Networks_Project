@@ -195,7 +195,7 @@ class GraphInference:
         :param methods: Names of the inference methods to be applied, using the abbreviation seen in self.methods
         """
         # Check count_results is either 0,1, or 2
-        if count_results is not 0 and count_results is not 1 and count_results is not 2:
+        if count_results != 0 and count_results != 1 and count_results != 2:
             raise ValueError("count_results method must be either 0 or 1 or 2")
         # Avoid double counting
         node_set = self.to_set(node_set)
@@ -252,9 +252,8 @@ class GraphInference:
                                 results[method_name][r]['success'] += 1
 
                     elif count_results == 2:
-                        results[method_name][r]['inferred'] = list(inferred_label.values())
-                        results[method_name][r]['true'] = list(true_label.values())
-
+                        results[method_name][r]['inferred'] += list(inferred_label.values())
+                        results[method_name][r]['true'] += list(true_label.values())
 
                     if clear_results:
                         self.clear_inferred_opinions(v, r, method_name, label)

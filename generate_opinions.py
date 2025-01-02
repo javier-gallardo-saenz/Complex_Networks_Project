@@ -97,6 +97,8 @@ class OpinionDistribution:
                     else:
                         self.graph.nodes[node][label] = np.random.choice(emergency_states, p=emergency_probs)
                         self.graph.nodes[neighbor][label] = np.random.choice(emergency_states, p=emergency_probs)
+
+
     def opinion_generator_biased_voter_model(self, label='opinion', num_iterations=1000,
                                             delta=0.1):
         """

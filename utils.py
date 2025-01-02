@@ -40,14 +40,14 @@ def get_all_stats(inferred_results, true_results):
         else:
             cummulative_error += abs(aux)
 
-        welford_M += (aux - previous_cummulative_error/i)(aux - cummulative_error/(i + 1))
+        welford_M += (aux - previous_cummulative_error/i)*(aux - cummulative_error/(i + 1))
         previous_cummulative_error = cummulative_error
 
     stats['success_rate'] = successes/n
     stats['error_mean'] = cummulative_error/n
     stats['error_std'] = math.sqrt(welford_M/(n-1))
 
-
+    return stats
 
 
 

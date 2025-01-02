@@ -39,14 +39,20 @@ graph_inf = GraphInference(opinion_dist.graph)
 graph_inf.which_inference_methods()  # shows available inference methods
 methods = {'dvm'}
 results_dmv = graph_inf.do_inference(node_set=v, radius_values=r_values, methods=methods, label='opinion',
-                                                          count_results=True, clear_results=False, num_iterations=1)
+                                                          count_results=2, clear_results=False, num_iterations=1)
+
+# for method in methods:
+#     for r in r_values:
+#         print(f"The fraction of correct guesses with r = {r} and method {method}"
+#               f" was {results_dmv[method][r]['success'] / results_dmv[method][r]['visited_nodes']}.")
+#         print(f"The average distance of the inferred opinion to the true opinion with r = {r} and method {method}"
+#               f" was {results_dmv[method][r]['acc_dist'] / results_dmv[method][r]['visited_nodes']}.")
 
 for method in methods:
     for r in r_values:
-        print(f"The fraction of correct guesses with r = {r} and method {method}"
-              f" was {results_dmv[method][r]['success'] / results_dmv[method][r]['visited_nodes']}.")
-        print(f"The average distance of the inferred opinion to the true opinion with r = {r} and method {method}"
-              f" was {results_dmv[method][r]['acc_dist'] / results_dmv[method][r]['visited_nodes']}.")
+        aux = get_all_stats(results_dmv[method][r]['inferred'], results_dmv[method][r]['true'])
+        print(f"The stats for method {method} and r = {r} are:")
+        print(aux)
 
 
 # # get true labels of the boundary of the ball
