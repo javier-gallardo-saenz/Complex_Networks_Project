@@ -1,0 +1,79 @@
+Results for Barabási-Albert with 500 nodes and 1 edges over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dlp of 10 iterations was 0.8331142125085282.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 10 iterations was 0.2589722379541482.
+The average fraction of correct guesses with r = 1 and method dmv of 10 iterations was 0.8331142125085282.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 10 iterations was 0.2589722379541482.
+The average fraction of correct guesses with r = 1 and method dvm of 10 iterations was 0.8331142125085282.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 10 iterations was 0.2589722379541482.
+The average fraction of correct guesses with r = 1 and method dwmv of 10 iterations was 0.8331142125085282.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 10 iterations was 0.2589722379541482.
+
+Results for Barabási-Albert with 500 nodes and 2 edges over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dmv of 10 iterations was 0.5566848740817163.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 10 iterations was 0.6368247434597893.
+The average fraction of correct guesses with r = 1 and method dlp of 10 iterations was 0.5566848740817163.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 10 iterations was 0.6368247434597893.
+The average fraction of correct guesses with r = 1 and method dwmv of 10 iterations was 0.5553735849607955.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 10 iterations was 0.6386621206133873.
+The average fraction of correct guesses with r = 1 and method dvm of 10 iterations was 0.5563443547985856.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 10 iterations was 0.637842603180041.
+
+Results for Barabási-Albert with 500 nodes and 3 edges over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dlp of 10 iterations was 0.5016290359463454.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 10 iterations was 0.7442179436511525.
+The average fraction of correct guesses with r = 1 and method dmv of 10 iterations was 0.5016290359463454.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 10 iterations was 0.7442179436511525.
+The average fraction of correct guesses with r = 1 and method dvm of 10 iterations was 0.501446771539555.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 10 iterations was 0.7455368793481101.
+The average fraction of correct guesses with r = 1 and method dwmv of 10 iterations was 0.5004205885133721.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 10 iterations was 0.746129695958071.
+
+Results for Barabási-Albert with 500 nodes and 4 edges over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dmv of 10 iterations was 0.5214075983760967.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 10 iterations was 0.7049736749074734.
+The average fraction of correct guesses with r = 1 and method dwmv of 10 iterations was 0.5197608030788816.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 10 iterations was 0.7071780574433522.
+The average fraction of correct guesses with r = 1 and method dvm of 10 iterations was 0.5210535684752763.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 10 iterations was 0.7065703763093575.
+The average fraction of correct guesses with r = 1 and method dlp of 10 iterations was 0.5214075983760967.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 10 iterations was 0.7049736749074734.
+
+Results for Barabási-Albert with 500 nodes and 5 edges over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dmv of 10 iterations was 0.49922874668693656.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 10 iterations was 0.8257855960910995.
+The average fraction of correct guesses with r = 1 and method dwmv of 10 iterations was 0.4971754684109778.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 10 iterations was 0.8294929360211546.
+The average fraction of correct guesses with r = 1 and method dlp of 10 iterations was 0.49922874668693656.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 10 iterations was 0.8257855960910995.
+The average fraction of correct guesses with r = 1 and method dvm of 10 iterations was 0.4979078748711728.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 10 iterations was 0.8262614104444447.
+
+Results for Barabási-Albert with 500 nodes and 6 edges over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dwmv of 10 iterations was 0.4948497987822966.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 10 iterations was 0.8203445716181654.
+The average fraction of correct guesses with r = 1 and method dmv of 10 iterations was 0.49694065857290537.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 10 iterations was 0.8171761965137992.
+The average fraction of correct guesses with r = 1 and method dvm of 10 iterations was 0.4946545455114218.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 10 iterations was 0.8196840258865293.
+The average fraction of correct guesses with r = 1 and method dlp of 10 iterations was 0.49694065857290537.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 10 iterations was 0.8171761965137992.
+
+Results for Barabási-Albert with 500 nodes and 7 edges over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dvm of 10 iterations was 0.47277491320087384.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 10 iterations was 0.8136181941940107.
+The average fraction of correct guesses with r = 1 and method dlp of 10 iterations was 0.4775879068348634.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 10 iterations was 0.8065298141943826.
+The average fraction of correct guesses with r = 1 and method dmv of 10 iterations was 0.4775879068348634.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 10 iterations was 0.8065298141943826.
+The average fraction of correct guesses with r = 1 and method dwmv of 10 iterations was 0.4746773512086323.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 10 iterations was 0.8086918632420478.
+
+Results for Barabási-Albert with 500 nodes and 8 edges over 1/3 of the node set.
+The average fraction of correct guesses with r = 1 and method dmv of 10 iterations was 0.4485737289954165.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dmv of 10 iterations was 0.8120901409695225.
+The average fraction of correct guesses with r = 1 and method dvm of 10 iterations was 0.4445140805633379.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 10 iterations was 0.819760435622374.
+The average fraction of correct guesses with r = 1 and method dlp of 10 iterations was 0.4485737289954165.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 10 iterations was 0.8120901409695225.
+The average fraction of correct guesses with r = 1 and method dwmv of 10 iterations was 0.44497492600432487.
+The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 10 iterations was 0.8168988836852608.

@@ -36,8 +36,31 @@ def load_snap_graph(file_path, directed=False):
 
     return G
 
+def proportion_of_labels(num_communities, nodes_per_comm, Graph, label):
+    if len(Graph.nodes) != num_communities*nodes_per_comm:
+        raise ValueError("Number of nodes of the graph must be equal to the number of communities times the number of nodes per community.")
+    labels = {}
+    for n in range(num_communities):
+        labels[n] = {}
+        for node in range(n*nodes_per_comm, (n+1)*nodes_per_comm):
+            if Graph.nodes[node][label] is None:
+                raise KeyError(f"The node {node} does not have the label '{label}'.")
+            if Graph.nodes[node][label] not in labels[n].keys():
+                labels[n][Graph.nodes[node][label]] = 1
+            else:
+                labels[n][Graph.nodes[node][label]] += 1
+        print(f"In community {n} the proportion of {[key for key in labels[n].keys()]} \'s is {[prop/nodes_per_comm for prop in labels[n].values()]}")
 
-
+def proportion_of_labels_total(Graph, label):
+    labels = {}
+    for node in list(Graph.nodes):
+        if Graph.nodes[node][label] is None:
+            raise KeyError(f"The node {node} does not have the label '{label}'.")
+        if Graph.nodes[node][label] not in labels.keys():
+            labels[Graph.nodes[node][label]] = 1
+        else:
+            labels[Graph.nodes[node][label]] += 1
+    print(f"The proportion of {[key for key in labels.keys()]} \'s is {[prop/len(Graph.nodes) for prop in labels.values()]}")
 
 
 

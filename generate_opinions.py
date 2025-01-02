@@ -2,6 +2,7 @@ import networkx as nx
 import numpy as np
 from tqdm import tqdm
 import random
+from collections import Counter
 
 
 def all_nodes_labeled(graph, attribute='label'):
@@ -96,7 +97,55 @@ class OpinionDistribution:
                     else:
                         self.graph.nodes[node][label] = np.random.choice(emergency_states, p=emergency_probs)
                         self.graph.nodes[neighbor][label] = np.random.choice(emergency_states, p=emergency_probs)
+    def opinion_generator_biased_voter_model(self, label='opinion', num_iterations=1000,
+                                            delta=0.1):
+        """
+        Infers the discrete attribute label for every node in the graph by assigning them the label 
+        of one of their neighbors chosen randomly with probability based on 'how close' opinions are.
+        :param graph_inference: inherits GraphInference class self and methods
+        :param node: node
+        :param radius: radius
+        :param num_iterations: number of iterations the process will be done
+        :param delta: fixed variable >=0 to fix a minimum probability for every vertex
+                    to change their label to their neighbor's
+        :param label: label of the attribute to be inferred
+        """
 
+        for _ in range(num_iterations):
+            node = random.choice(list(self.graph.nodes()))
+            neighbors = set(self.graph.neighbors(node))
+            random_neighbor = random.choice(list(neighbors))
+            prob = (abs(self.graph.nodes[node][label] +
+                        self.graph.nodes[random_neighbor][label])+delta)/(2+delta)
+            if prob > random.random():
+                self.graph.nodes[node][label] = self.graph.nodes[random_neighbor][label]
+                
+                
+    def opinion_generator_majority_biased_voter_model(self, label='opinion', num_iterations=1000,
+                                                        delta=0.1):
+        """
+        Infers the discrete attribute label for every node in the graph by assigning them the label 
+        of one of their neighbors chosen randomly with probability based on 'how close' opinions are.
+        :param graph_inference: inherits GraphInference class self and methods
+        :param node: node
+        :param radius: radius
+        :param num_iterations: number of iterations the process will be done
+        :param delta: fixed variable >=0 to fix a minimum probability for every vertex
+                    to change their label to their neighbor's
+        :param label: label of the attribute to be inferred
+        """
+
+        for _ in range(num_iterations):
+            node = random.choice(list(self.graph.nodes()))
+            neighbors = set(self.graph.neighbors(node))
+            # random_neighbor = random.choice(list(neighbors))
+            neighbor_opinions = [self.graph.nodes[neighbor][label] for neighbor in neighbors]
+            opinion_counts = Counter(neighbor_opinions)
+            majority_opinion = opinion_counts.most_common(1)[0][0]
+            prob = (abs(self.graph.nodes[node][label] +
+                        majority_opinion) + delta)/(2+delta)
+            if prob > random.random():
+                self.graph.nodes[node][label] = majority_opinion
 
 
 
@@ -153,7 +202,7 @@ def basic_opinion_generator(G, states=None, probabilities=None, num_steps=10000)
 
     return opinions
 
-def opinion_generator_biased_voter_model(G, node, label='opinion', num_iterations=1000,
+def opinion_generator_biased_voter_model(G, label='opinion', num_iterations=1000,
                                          delta=0.1):
     """
     Infers the discrete attribute label for every node in the graph by assigning them the label 

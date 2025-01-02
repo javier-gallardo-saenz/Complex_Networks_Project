@@ -1,6 +1,6 @@
 import networkx as nx
 import random
-
+from collections import Counter
 
 def generate_erdos_renyi_graph(n, p):
     """
@@ -163,3 +163,66 @@ def generate_hierarchical_configuration_model(in_degree_sequence, ext_degree_seq
     G.add_edges_from(ext_edges)
 
     return G
+
+
+
+def preferential_attachment_with_colors(num_nodes, num_edges, labels, size_init_graph, label, delta):
+    """At each step adds a node with a number of edges (predefined), which gets attached to other nodes
+       with probability based on the degree of each nodes (the greater the degree, the greater the probability).
+       This node gets a label according to the most common label between its neighbors.
+
+    Args:
+        num_nodes (int): number of nodes to be added to the initial graph
+        num_edges (int): number of edges each new node has
+        labels (dict): dict with possible labels as keys, and probability of each label as values (to generate initial graph)
+        size_init_graph (int): size of initial graph
+        label (str): attribute to update.
+        delta (float): positive parameter to assure probability of matching a degree 0 verter is positive
+
+    Returns:
+        graph
+    """
+    # Initialize a small random graph with labeled nodes
+    initial_labels=[]
+    for _ in range(size_init_graph):
+        initial_labels += [random.choices(population=list(labels.keys()),
+                                         weights=list(labels.values()),
+                                         k=1)[0]]
+    initial_graph = nx.gnm_random_graph(len(initial_labels), len(initial_labels) // 2)
+    for i, feature in enumerate(initial_labels):
+        initial_graph.nodes[i][label] = feature
+
+    # Create a copy to work on
+    graph = initial_graph.copy()
+
+    for new_node in range(len(labels), len(labels) + num_nodes):
+        # Compute the degrees and probabilities for existing nodes
+        degrees = nx.degree(graph)
+        total_degree = sum(dict(degrees).values())
+
+        # Attach the new node to num_edges existing nodes based on preferential attachment
+        targets = set()
+        while len(targets) < num_edges:
+            chosen = random.choices(
+                population=list(graph.nodes),
+                weights=[(degrees[node]+delta)/(total_degree+delta) for node in graph.nodes],
+                k=1
+            )[0]
+            targets.add(chosen)
+
+        # Add the new node and connect it to the chosen targets
+        graph.add_node(new_node)
+        for target in targets:
+            graph.add_edge(new_node, target)
+
+        # Determine the label for the new node based on majority vote of neighbors
+        neighbor_labels = [graph.nodes[neighbor][label] for neighbor in targets]
+        label_counter = Counter(neighbor_labels)
+        majority_label = label_counter.most_common(1)[0][0]  # Get the most common label
+        graph.nodes[new_node][label] = majority_label
+    if not nx.is_connected(graph):
+        # Extrae el componente conectado más grande si el grafo no está conectado
+        print(f"Scale-Free graph with m={num_edges} is not connected. Extracting the largest connected component.")
+        graph = graph.subgraph(max(nx.connected_components(graph), key=len)).copy()
+
+    return graph
