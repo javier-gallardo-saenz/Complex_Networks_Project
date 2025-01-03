@@ -20,12 +20,17 @@ def degree_distribution(g):
     return degrees_g
 
 
-def get_all_stats(inferred_results, true_results):
+def get_all_stats(inferred_results, true_results, labels):
     n = len(inferred_results)
     if n != len(true_results):
         raise ValueError("Number of inferred results and true results do not match")
 
     stats = {'success_rate': 0, 'error_mean': 0, 'error_std': 0}
+    falses = {}
+    true_total = {}
+    for i in labels:
+        falses[i] = 0
+        true_total[i] = 0
 
     aux = true_results[0] - inferred_results[0]
     successes = 1 if aux == 0 else 0
@@ -35,10 +40,12 @@ def get_all_stats(inferred_results, true_results):
 
     for i in range(1, n):
         aux = true_results[i] - inferred_results[i]
+        true_total[true_results[i]] += 1
         if aux == 0:
             successes += 1
         else:
             cummulative_error += abs(aux)
+            falses[inferred_results[i]] += 1
 
         welford_M += (aux - previous_cummulative_error/i)*(aux - cummulative_error/(i + 1))
         previous_cummulative_error = cummulative_error
@@ -46,6 +53,8 @@ def get_all_stats(inferred_results, true_results):
     stats['success_rate'] = successes/n
     stats['error_mean'] = cummulative_error/n
     stats['error_std'] = math.sqrt(welford_M/(n-1))
+    for i in labels:
+        stats[f'false_{i}'] = falses[i]/true_total[i]
 
     return stats
 
