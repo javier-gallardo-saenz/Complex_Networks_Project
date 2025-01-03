@@ -27,9 +27,11 @@ def get_all_stats(inferred_results, true_results, labels):
 
     stats = {'success_rate': 0, 'error_mean': 0, 'error_std': 0}
     falses = {}
+    trues = {}
     true_total = {}
     for i in labels:
         falses[i] = 0
+        trues[i] = 0
         true_total[i] = 0
 
     aux = true_results[0] - inferred_results[0]
@@ -43,6 +45,7 @@ def get_all_stats(inferred_results, true_results, labels):
         true_total[true_results[i]] += 1
         if aux == 0:
             successes += 1
+            trues[inferred_results[i]] += 1
         else:
             cummulative_error += abs(aux)
             falses[inferred_results[i]] += 1
@@ -54,7 +57,14 @@ def get_all_stats(inferred_results, true_results, labels):
     stats['error_mean'] = cummulative_error/n
     stats['error_std'] = math.sqrt(welford_M/(n-1))
     for i in labels:
-        stats[f'false_{i}'] = falses[i]/true_total[i]
+        if true_total[i] == n:
+            print(f" Todas las labels del grafo original tienen valor {i}.")
+        else:
+            stats[f'false_{i}'] = falses[i]/(n - true_total[i])
+        if true_total[i] == 0:
+            print(f" No hay labels {i} en el grafo original.")
+        else:
+            stats[f'true_{i}'] = trues[i]/(true_total[i])
 
     return stats
 
