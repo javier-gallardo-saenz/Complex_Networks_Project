@@ -81,6 +81,7 @@ The average distance of the inferred opinion to the true opinion with r = 1 and 
 The average fraction of correct guesses with r = 1 and method dvm of 1 iterations was 0.4955464226238675.
 The average distance of the inferred opinion to the true opinion with r = 1 and method dvm of 1 iterations was 0.6753090003513972.
 The average fraction of correct guesses with r = 1 and method dlp of 1 iterations was 0.5734038164790002.
+
 Results for Hierarchical with [200, 200, 200, 200] communities, 1 degree inter-communities and 60 degree intra-communities over 1/3 of the node set.
 The average fraction of correct guesses with r = 1 and method dwmv of 1 iterations was 0.5734038164790002.
 The average distance of the inferred opinion to the true opinion with r = 1 and method dwmv of 1 iterations was 0.5787969993735963.
@@ -92,3 +93,240 @@ The average fraction of correct guesses with r = 1 and method dlp of 1 iteration
 03513972.
 The average fraction of correct guesses with r = 1 and method dlp of 1 iterations was 0.5734038164790002.
 The average distance of the inferred opinion to the true opinion with r = 1 and method dlp of 1 iterations was 0.5787969993735963.
+
+
+Basic opinion generator
+Results for Hierarchical with [300, 300, 300, 300] communities, 1 degree inter-communities and 60 degree intra-communities over 1/3 of the node set.
+
+dmv :
+success_rate : 0.39378588530896635
+error_mean : 0.7919135355669134
+error_std : 1.3273312490950402
+false_-1 : 0.3259186307703284
+true_-1 : 0.40184314864409576
+false_0 : 0.33474242146835886
+true_0 : 0.3931947018103768
+false_1 : 0.26587222041394276
+true_1 : 0.34666336590617447
+
+dwmv :
+success_rate : 0.39378588530896635
+error_mean : 0.7919135355669134
+error_std : 1.3273312490950402
+false_-1 : 0.3259186307703284
+true_-1 : 0.40184314864409576
+false_0 : 0.33474242146835886
+true_0 : 0.3931947018103768
+false_1 : 0.26587222041394276
+true_1 : 0.34666336590617447
+
+dlp :
+success_rate : 0.39378588530896635
+error_mean : 0.7919135355669134
+error_std : 1.3273312490950402
+false_-1 : 0.3259186307703284
+true_-1 : 0.40184314864409576
+false_0 : 0.33474242146835886
+true_0 : 0.3931947018103768
+false_1 : 0.26587222041394276
+true_1 : 0.34666336590617447
+
+dvm :
+success_rate : 0.3663973748619506
+error_mean : 0.8327990502077371
+error_std : 1.3913982446449884
+false_-1 : 0.32816974891009376
+true_-1 : 0.3696111313772268
+false_0 : 0.33652931210230125
+true_0 : 0.36888331245790584
+false_1 : 0.2952104830813262
+true_1 : 0.33948939467058464
+
+Results for Hierarchical with [300, 300, 300, 300] communities, 1 degree inter-communities and 60 degree intra-communities over 1/3 of the node set.
+
+dmv :
+success_rate : 0.4061158388832471
+error_mean : 0.8233552122867692
+error_std : 1.4066613995149282
+false_-1 : 0.30287821607194254
+true_-1 : 0.36554322996583466
+false_0 : 0.2862753688994492
+true_0 : 0.40107555294894304
+false_1 : 0.3297260938835016
+true_1 : 0.39111386644910157
+
+dvm :
+success_rate : 0.37210351496513266
+error_mean : 0.8593734644288763
+error_std : 1.4356276782883852
+false_-1 : 0.3219432653188261
+true_-1 : 0.35189105993306546
+false_0 : 0.30123958522983
+true_0 : 0.36331757868222825
+false_1 : 0.33497331068145136
+true_1 : 0.36689564480411113
+
+dwmv :
+success_rate : 0.4061158388832471
+error_mean : 0.8233552122867692
+error_std : 1.4066613995149282
+false_-1 : 0.30287821607194254
+true_-1 : 0.36554322996583466
+false_0 : 0.2862753688994492
+true_0 : 0.40107555294894304
+false_1 : 0.3297260938835016
+true_1 : 0.39111386644910157
+
+dlp :
+success_rate : 0.4061158388832471
+error_mean : 0.8233552122867692
+error_std : 1.4066613995149282
+false_-1 : 0.30287821607194254
+true_-1 : 0.36554322996583466
+false_0 : 0.2862753688994492
+true_0 : 0.40107555294894304
+false_1 : 0.3297260938835016
+true_1 : 0.39111386644910157
+
+opinion_generator_majority_biased_voter_model
+Results for Hierarchical with [300, 300, 300, 300, 300, 300] communities, 5 degree inter-communities and 150 degree intra-communities over 1/3 of the node set.
+
+dmv :
+success_rate : 0.3625394860376273
+error_mean : 0.8637112768562344
+error_std : 1.435485623196414
+false_-1 : 0.3309773677373924
+true_-1 : 0.36044659656942096
+false_0 : 0.3072355462508033
+true_0 : 0.35611489766585747
+false_1 : 0.3252656625336591
+true_1 : 0.3544796846278722
+
+dvm :
+success_rate : 0.34973895853456904
+error_mean : 0.8773332670512269
+error_std : 1.4513449936874372
+false_-1 : 0.33257946807570005
+true_-1 : 0.34690417257119605
+false_0 : 0.3167262646307524
+true_0 : 0.3448065525332218
+false_1 : 0.33095626330475236
+true_1 : 0.3465704928321299
+
+dwmv :
+success_rate : 0.3625394860376273
+error_mean : 0.8637112768562344
+error_std : 1.435485623196414
+false_-1 : 0.3309773677373924
+true_-1 : 0.36044659656942096
+false_0 : 0.3072355462508033
+true_0 : 0.35611489766585747
+false_1 : 0.3252656625336591
+true_1 : 0.3544796846278722
+
+dlp :
+success_rate : 0.3625394860376273
+error_mean : 0.8637112768562344
+error_std : 1.435485623196414
+false_-1 : 0.3309773677373924
+true_-1 : 0.36044659656942096
+false_0 : 0.3072355462508033
+true_0 : 0.35611489766585747
+false_1 : 0.3252656625336591
+true_1 : 0.3544796846278722
+
+
+basic 10000 iterations
+Results for Hierarchical with [300, 300, 300, 300, 300, 300] communities, 5 degree inter-communities and 150 degree intra-communities over 1/3 of the node set.
+
+dvm :
+success_rate : 0.34765251808379966
+error_mean : 0.8821904631922375
+error_std : 1.4503199758955636
+false_-1 : 0.3446348965596382
+true_-1 : 0.36427176865835076
+false_0 : 0.3054830719978784
+true_0 : 0.32163603417033393
+false_1 : 0.32945114773396117
+true_1 : 0.3546757948658694
+
+dwmv :
+success_rate : 0.3573215829255136
+error_mean : 0.8741461781928549
+error_std : 1.4381498737729967
+false_-1 : 0.3508166213057459
+true_-1 : 0.38397271316673576
+false_0 : 0.28298107113596865
+true_0 : 0.3084183277245664
+false_1 : 0.33208750245242297
+true_1 : 0.37525757313151153
+
+dmv :
+success_rate : 0.3573215829255136
+error_mean : 0.8741461781928549
+error_std : 1.4381498737729967
+false_-1 : 0.3508166213057459
+true_-1 : 0.38397271316673576
+false_0 : 0.28298107113596865
+true_0 : 0.3084183277245664
+false_1 : 0.33208750245242297
+true_1 : 0.37525757313151153
+
+dlp :
+success_rate : 0.3573215829255136
+error_mean : 0.8741461781928549
+error_std : 1.4381498737729967
+false_-1 : 0.3508166213057459
+true_-1 : 0.38397271316673576
+false_0 : 0.28298107113596865
+true_0 : 0.3084183277245664
+false_1 : 0.33208750245242297
+true_1 : 0.37525757313151153
+
+
+opinion_generator_majority_biased_voter_model con 2000 iteraciones, mejora pero es que los 0s desaparecen
+Results for Hierarchical with [300, 300, 300, 300, 300, 300] communities, 5 degree inter-communities and 150 degree intra-communities over 1/3 of the node set.
+
+dvm :
+success_rate : 0.4763405604811008
+error_mean : 0.6936075720625535
+error_std : 1.2393364670169122
+false_-1 : 0.228814193247471
+true_-1 : 0.3426990208599404
+false_0 : 0.3277100849781934
+true_0 : 0.6153796816596174
+false_1 : 0.24599660290297382
+true_1 : 0.3746966333490528
+
+dwmv :
+success_rate : 0.5005746770900826
+error_mean : 0.6619075372237724
+error_std : 1.1971329931004853
+false_-1 : 0.21598544417701077
+true_-1 : 0.36649512934164724
+false_0 : 0.32266534778112493
+true_0 : 0.6460841709930409
+false_1 : 0.22925636274456374
+true_1 : 0.3888901668947907
+
+dmv :
+success_rate : 0.5005746770900826
+error_mean : 0.6619075372237724
+error_std : 1.1971329931004853
+false_-1 : 0.21598544417701077
+true_-1 : 0.36649512934164724
+false_0 : 0.32266534778112493
+true_0 : 0.6460841709930409
+false_1 : 0.22925636274456374
+true_1 : 0.3888901668947907
+
+dlp :
+success_rate : 0.5005746770900826
+error_mean : 0.6619075372237724
+error_std : 1.1971329931004853
+false_-1 : 0.21598544417701077
+true_-1 : 0.36649512934164724
+false_0 : 0.32266534778112493
+true_0 : 0.6460841709930409
+false_1 : 0.22925636274456374
+true_1 : 0.3888901668947907

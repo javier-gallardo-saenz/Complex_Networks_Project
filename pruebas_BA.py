@@ -9,7 +9,7 @@ from utils import *
 from graph_inference import *
 
 num_nodes = 5000
-num_edges = 2
+num_edges = 4
 r_values = [1]  # radius of the known ball
 
 num_iterations = 10
