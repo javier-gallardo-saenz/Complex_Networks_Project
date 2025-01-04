@@ -117,7 +117,7 @@ def discrete_label_propagation(graph_inference, node, radius, label='opinion', n
         graph_inference.graph.nodes[node][inferred_label] = majority_opinion
 
     aux_str = "Performing label propagation after all nodes in boundary have had an initial opinion assigned"
-    for _ in tqdm(range(num_steps), desc=aux_str):
+    for _ in tqdm(range(num_steps)):
         # now perform label propagation on them
         node = random.choice(list(boundary))
         neighbors_in_ball = set(graph_inference.graph.neighbors(node)) & ball
