@@ -104,7 +104,6 @@ class OpinionDistribution:
         """
         Infers the discrete attribute label for every node in the graph by assigning them the label 
         of one of their neighbors chosen randomly with probability based on 'how close' opinions are.
-        :param graph_inference: inherits GraphInference class self and methods
         :param node: node
         :param radius: radius
         :param num_iterations: number of iterations the process will be done
@@ -128,7 +127,6 @@ class OpinionDistribution:
         """
         Infers the discrete attribute label for every node in the graph by assigning them the label 
         of one of their neighbors chosen randomly with probability based on 'how close' opinions are.
-        :param graph_inference: inherits GraphInference class self and methods
         :param node: node
         :param radius: radius
         :param num_iterations: number of iterations the process will be done

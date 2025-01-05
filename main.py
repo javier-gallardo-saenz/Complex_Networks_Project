@@ -11,11 +11,18 @@ from graph_inference import *
 num_nodes = 500
 num_comm = 4
 comms = [num_nodes] * num_comm  #communities
-intra_degree_seq = [15] * sum(comms)
-inter_degree_seq = [1] * sum(comms)
-G = generate_sbm(comms, 0.75, 0.01)
+p = 0.005
+intra_degree_seq = [20] * sum(comms)
+inter_degree_seq = np.random.choice([0, 1], size=sum(comms), p=[1-p, p])
+if sum(inter_degree_seq) % 2 != 0:
+    if inter_degree_seq[-1] == 0:
+        inter_degree_seq[-1] = 1
+    else:
+        inter_degree_seq[-1] = 0
+
+G = generate_hierarchical_configuration_model(intra_degree_seq, inter_degree_seq, comms)
 #v = random.choice(G) # choose one single node
-v = random.sample(list(G.nodes()), 100)  # choose a random set of nodes
+v = random.sample(list(G.nodes()), 50)  # choose a random set of nodes
 r_values = [1]  # radius of the known ball
 
 # ----------------------------------------------------
@@ -23,7 +30,7 @@ r_values = [1]  # radius of the known ball
 # ----------------------------------------------------
 opinion_dist = OpinionDistribution(G)  # create instance of class OpinionDistribution with graph G
 opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[0.4, 0.2, 0.4], label='opinion')
-opinion_dist.basic_opinion_generator(label='opinion', num_steps=10000)
+opinion_dist.basic_opinion_generator(label='opinion', num_steps=100000)
 proportion_of_labels(nodes_per_comm=num_nodes, num_communities=num_comm, Graph=G, label='opinion')
 
 # ----------------------------------------------------
@@ -36,7 +43,7 @@ proportion_of_labels(nodes_per_comm=num_nodes, num_communities=num_comm, Graph=G
 # create instance of class GraphInference with graph G, now we can play with it
 graph_inf = GraphInference(opinion_dist.graph)
 graph_inf.which_inference_methods()  # shows available inference methods
-methods = {'dvm'}
+methods = {'dlp'}
 results_dmv = graph_inf.do_inference(node_set=v, radius_values=r_values, methods=methods, label='opinion',
                                                           count_results=2, clear_results=False, num_iterations=1)
 
@@ -49,7 +56,7 @@ results_dmv = graph_inf.do_inference(node_set=v, radius_values=r_values, methods
 
 for method in methods:
     for r in r_values:
-        aux = get_all_stats(results_dmv[method][r]['inferred'], results_dmv[method][r]['true'])
+        aux = get_all_stats(results_dmv[method][r]['inferred'], results_dmv[method][r]['true'], [-1, 0, 1])
         print(f"The stats for method {method} and r = {r} are:")
         print(aux)
 
