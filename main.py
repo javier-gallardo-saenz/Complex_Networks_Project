@@ -11,7 +11,7 @@ from graph_inference import *
 num_nodes = 500
 num_comm = 4
 comms = [num_nodes] * num_comm  #communities
-p = 0.005
+p = 1
 intra_degree_seq = [20] * sum(comms)
 inter_degree_seq = np.random.choice([0, 1], size=sum(comms), p=[1-p, p])
 if sum(inter_degree_seq) % 2 != 0:
@@ -80,7 +80,7 @@ opinion_colors = {-1: 'red', -0.5: 'pink', 0: 'blue', 0.5: 'yellow', 1: 'green'}
 # Get the 'opinion' values and map them to colors
 node_colors = [opinion_colors[G.nodes[node]['opinion']] for node in G.nodes()]
 
-#nx.draw(G, with_labels=True, node_color=node_colors, edge_color="gray", node_size=500, font_size=4)
-#plt.show()
+nx.draw(G, with_labels=True, node_color=node_colors, edge_color="gray", node_size=500, font_size=4)
+plt.show()
 #print("Resulting Graph")
 #print(G.edges())

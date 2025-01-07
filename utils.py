@@ -1,7 +1,7 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 import math
-
+import random
 
 # ----------------------------------------------------
 # Statistics
@@ -132,7 +132,47 @@ def proportion_of_labels_total(Graph, label):
             labels[Graph.nodes[node][label]] += 1
     print(f"The proportion of {[key for key in labels.keys()]} \'s is {[prop/len(Graph.nodes) for prop in labels.values()]}")
 
+def normal_degree_seq(num_nodes, mean, var):
+    """ Generates a degree sequence (list) with num_nodes components. 
+    Each entry x_i is the degree of node i, which is a number generated with normal distribution with 
+    mean mean and variance var.
+    
 
+    Args:
+        num_nodes (int): num nodes for the degree sequence
+        mean (float): mean degree of a vertex
+        var (float): variance of degree of a vertex
+    """
+    deg_seq = []
+    for n in range(num_nodes):
+        deg_seq += [random.choices(
+            population=range(num_nodes//2),
+            weights=[1/(math.sqrt(2*math.pi*var))*(math.e)**(-(k-mean)**2/2*var) for k in range(num_nodes//2)],
+            k=1
+        )[0]]
+    
+    return deg_seq
+
+def one_sided_normal_degree_seq(num_nodes, mean, var):
+    """ Generates a degree sequence (list) with num_nodes components. 
+    Each entry x_i is the degree of node i, which is a number generated with normal distribution with 
+    mean mean and variance var.
+    
+
+    Args:
+        num_nodes (int): num nodes for the degree sequence
+        mean (float): mean degree of a vertex
+        var (float): variance of degree of a vertex
+    """
+    deg_seq = []
+    for n in range(num_nodes):
+        deg_seq += [random.choices(
+            population=range(0, mean+1),
+            weights=[1/(math.sqrt(2*math.pi*var))*(math.e)**(-(k-mean)**2/2*var) for k in range(num_nodes//2)],
+            k=1
+        )[0]]
+    
+    return deg_seq
 
 
 
