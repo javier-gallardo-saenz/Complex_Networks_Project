@@ -10,10 +10,14 @@ from graph_inference import *
 
 num_nodes = 1000
 prob_edge = 0.15
-r_values = [1]  # radius of the known ball
+r_values = [0, 1]  # radius of the known ball
+methods = {'dmv', 'dwmv', 'dvm', 'dlp'}
 
-num_iterations = 10
+num_iterations = 2
 avg_aux = {}
+total_results = {method: {r: {'inferred': [], 'true': []} for r in r_values} for method in methods}
+total_weighted_stats = {method: {r: {} for r in r_values} for method in methods}
+
 for n in range(num_iterations):
     G = generate_erdos_renyi_graph(n=num_nodes, p=prob_edge)
     v = random.sample(list(G.nodes()), len(list(G.nodes()))//3)  # choose a random set of nodes
@@ -22,15 +26,20 @@ for n in range(num_iterations):
     opinion_dist.basic_opinion_generator(label='opinion', num_steps=10000)
     graph_inf = GraphInference(opinion_dist.graph)
     graph_inf.which_inference_methods()  # shows available inference methods
-    methods = {'dmv', 'dwmv', 'dvm', 'dlp'}
+
     results_dmv = graph_inf.do_inference(node_set=v, radius_values=r_values, methods=methods, label='opinion',
                                                         count_results=2, clear_results=False, num_iterations=1)
-    
+
+
+
     for method in methods:
         if method not in avg_aux.keys():
            avg_aux[method] = {}
 
         for r in r_values:
+            total_results[method][r]['inferred'] += results_dmv[method][r]['inferred']
+            total_results[method][r]['true'] += results_dmv[method][r]['true']
+
             if r not in avg_aux[method].keys():
                 avg_aux[method][r] = {}
 
@@ -42,6 +51,13 @@ for n in range(num_iterations):
                 else:
                     avg_aux[method][r][key] += aux[key]/num_iterations
 
+
+for method in methods:
+    for r in r_values:
+        total_weighted_stats[method][r] = get_all_stats(total_results[method][r]['inferred'],
+                                                        total_results[method][r]['true'], labels=[-1, 0, 1])
+
+
 print(f"Results for Erdos-Renyi with {num_nodes} nodes and {prob_edge} probability of"
       f" an edge over 1/3 of the node set.")
 
@@ -50,5 +66,6 @@ for method in avg_aux.keys():
     for r in avg_aux[method].keys():
         print(f"\t{r} : ")
         for key2 in avg_aux[method][r].keys():
-            print(f"\t{key2} : {avg_aux[method][r][key2]}")
+            print(f"\t Iterations averaged {key2} : {avg_aux[method][r][key2]}")
+            print(f"\t Inferred nodes averaged {key2} : {total_weighted_stats[method][r][key2]}")
 
