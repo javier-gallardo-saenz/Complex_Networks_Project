@@ -29,19 +29,26 @@ for n in range(num_iterations):
     for method in methods:
         if method not in avg_aux.keys():
            avg_aux[method] = {}
+
         for r in r_values:
+            if r not in avg_aux[method].keys():
+                avg_aux[method][r] = {}
+
             aux = get_all_stats(results_dmv[method][r]['inferred'], results_dmv[method][r]['true'], labels=[-1, 0, 1])
-            print(f"The stats for method {method} and r = {r} are:")
-            print(aux)
+
             for key in aux.keys():
-                if key not in avg_aux[method].keys():
-                    avg_aux[method][key] = aux[key]/num_iterations
+                if key not in avg_aux[method][r].keys():
+                    avg_aux[method][r][key] = aux[key]/num_iterations
                 else:
-                    avg_aux[method][key] += aux[key]/num_iterations
+                    avg_aux[method][r][key] += aux[key]/num_iterations
 
 print(f"Results for Erdos-Renyi with {num_nodes} nodes and {prob_edge} probability of"
       f" an edge over 1/3 of the node set.")
-for key in avg_aux.keys():
-    print(f"\n{key} :")
-    for key2 in avg_aux[key].keys():
-        print(f"{key2} : {avg_aux[key][key2]}")
+
+for method in avg_aux.keys():
+    print(f"\n{method} :")
+    for r in avg_aux[method].keys():
+        print(f"\t{r} : ")
+        for key2 in avg_aux[method][r].keys():
+            print(f"\t{key2} : {avg_aux[method][r][key2]}")
+

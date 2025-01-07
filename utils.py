@@ -25,7 +25,7 @@ def get_all_stats(inferred_results, true_results, labels):
     if n != len(true_results):
         raise ValueError("Number of inferred results and true results do not match")
 
-    stats = {'success_rate': 0, 'error_mean': 0, 'error_std': 0}
+    stats = {'success_rate': 0, 'error_mean': 0, 'error_std': 0, 'num_nodes_inferred': len(inferred_results)}
     falses = {}
     trues = {}
     true_total = {}
