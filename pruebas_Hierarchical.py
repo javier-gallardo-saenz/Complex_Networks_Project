@@ -9,13 +9,13 @@ from utils import *
 from graph_inference import *
 from visualize_graphs import *
 
-num_nodes = 200
-num_comm = 5
+num_nodes = 100
+num_comm = 100
 comms = [num_nodes] * num_comm  #communities
-mean_intra = 100
-var_intra = 50
-mean_inter = 40
-var_inter = 38
+mean_intra = 50
+var_intra = 25
+mean_inter = 10
+var_inter = 10
 #degree_intra = 150
 #degree_inter = 5
 intra_degree_seq = one_sided_normal_degree_seq(num_nodes=sum(comms), mean=mean_intra, var=var_intra)
@@ -28,13 +28,13 @@ methods = {'dmv', 'dwmv', 'dvm', 'dlp'}
 total_results = {method: {r: {'inferred': [], 'true': []} for r in r_values} for method in methods}
 total_weighted_stats = {method: {r: {} for r in r_values} for method in methods}
 
-num_iterations = 50
+num_iterations = 10
 avg_aux = {}
 for n in range(num_iterations):
     G = generate_hierarchical_configuration_model(ext_degree_sequence=inter_degree_seq, 
                                                   in_degree_sequence=intra_degree_seq,
                                                   community_sizes=comms)
-    v = random.sample(list(G.nodes()), 10)  # choose a random set of nodes
+    v = random.sample(list(G.nodes()), 5)  # choose a random set of nodes
     opinion_dist = OpinionDistribution(G)  # create instance of class OpinionDistribution with graph G
     opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[1/3, 1/3, 1/3], label='opinion')
     # opinion_dist.basic_opinion_generator(label='opinion', num_steps=10000)

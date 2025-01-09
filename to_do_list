@@ -28,7 +28,7 @@ PARAMETERS:
     - inner degree seq: mean 100, var 50
     - ext degree seq: mean 8, var 8; mean 40, var 38
 
-10000 nodes: (100 iterations, 5 studied nodes)
+10000 nodes: (10 iterations, 5 studied nodes)
 - E-R:
     - p = 0.005; 0.01
 - B-A:
