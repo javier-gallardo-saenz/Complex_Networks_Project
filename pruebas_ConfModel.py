@@ -13,13 +13,16 @@ num_nodes = 1500
 mean = 50
 var = 20
 deg_seq = []
-r_values = [1] 
+r_values = [0, 1] 
+methods = {'dmv', 'dwmv', 'dvm', 'dlp'}
 for n in range(num_nodes):
     deg_seq += [random.choices(
         population=range(num_nodes//2),
         weights=[1/(math.sqrt(2*math.pi*var))*(math.e)**(-(k-mean)**2/2*var) for k in range(num_nodes//2)],
         k=1
     )[0]]
+total_results = {method: {r: {'inferred': [], 'true': []} for r in r_values} for method in methods}
+total_weighted_stats = {method: {r: {} for r in r_values} for method in methods}
 
 num_iterations = 10
 avg_aux = {}
@@ -34,23 +37,37 @@ for n in range(num_iterations):
     methods = {'dmv', 'dwmv', 'dvm', 'dlp'}
     results_dmv = graph_inf.do_inference(node_set=v, radius_values=r_values, methods=methods, label='opinion',
                                                         count_results=2, clear_results=False, num_iterations=1)
-    
     for method in methods:
         if method not in avg_aux.keys():
            avg_aux[method] = {}
+
         for r in r_values:
+            total_results[method][r]['inferred'] += results_dmv[method][r]['inferred']
+            total_results[method][r]['true'] += results_dmv[method][r]['true']
+
+            if r not in avg_aux[method].keys():
+                avg_aux[method][r] = {}
+
             aux = get_all_stats(results_dmv[method][r]['inferred'], results_dmv[method][r]['true'], labels=[-1, 0, 1])
-            print(f"The stats for method {method} and r = {r} are:")
-            print(aux)
+
             for key in aux.keys():
-                if key not in avg_aux[method].keys():
-                    avg_aux[method][key] = aux[key]/num_iterations
+                if key not in avg_aux[method][r].keys():
+                    avg_aux[method][r][key] = aux[key]/num_iterations
                 else:
-                    avg_aux[method][key] += aux[key]/num_iterations
+                    avg_aux[method][r][key] += aux[key]/num_iterations
+
+
+for method in methods:
+    for r in r_values:
+        total_weighted_stats[method][r] = get_all_stats(total_results[method][r]['inferred'],
+                                                        total_results[method][r]['true'], labels=[-1, 0, 1])
 
 print(f"Results for Configuration Model with {num_nodes} nodes and degree of each vertex generated with"
       f" normal distribution with mean {mean} and variance {var} over 1/3 of the node set.")
-for key in avg_aux.keys():
-    print(f"\n{key} :")
-    for key2 in avg_aux[key].keys():
-        print(f"{key2} : {avg_aux[key][key2]}")
+for method in avg_aux.keys():
+    print(f"\n{method} :")
+    for r in avg_aux[method].keys():
+        print(f"\t{r} : ")
+        for key2 in avg_aux[method][r].keys():
+            print(f"\t Iterations averaged {key2} : {avg_aux[method][r][key2]}")
+            print(f"\t Inferred nodes averaged {key2} : {total_weighted_stats[method][r][key2]}")
