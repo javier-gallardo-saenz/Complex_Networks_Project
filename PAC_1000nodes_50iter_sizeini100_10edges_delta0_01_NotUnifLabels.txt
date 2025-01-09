@@ -1,0 +1,572 @@
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 1 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 1 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 1 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 1 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 1 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 1 en el grafo original.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 1 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels -1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels 0 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels -1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 1 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 1 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 1 en el grafo original.
+ No hay labels 0 en el grafo original.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels -1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels 0 en el grafo original.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels -1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels -1 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels -1 en el grafo original.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+Scale-Free graph with m=10 is not connected. Extracting the largest connected component.
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+Results for Pref. Attach. with Colors with 1000 nodes, 10 num_edges, 100 initial size, and {1: 0.4, 0: 0.2, -1: 0.4} labels probabilities over 1/3 of the node set.
+
+dwmv :
+	0 : 
+	 Iterations averaged success_rate : 0.9687951899481986
+	 Inferred nodes averaged success_rate : 0.97166719526377
+	 Iterations averaged error_mean : 0.050336590813827596
+	 Inferred nodes averaged error_mean : 0.047256581033935936
+	 Iterations averaged error_std : 0.21308054186718609
+	 Inferred nodes averaged error_std : 0.29780940899425806
+	 Iterations averaged num_nodes_inferred : 189.18
+	 Inferred nodes averaged num_nodes_inferred : 9459
+	 Iterations averaged false_-1 : 0.26973992479874837
+	 Inferred nodes averaged false_-1 : 0.035866983372921615
+	 Iterations averaged true_-1 : 0.5663380281690142
+	 Inferred nodes averaged true_-1 : 0.9834254143646409
+	 Iterations averaged false_0 : 0.003611111111111111
+	 Inferred nodes averaged false_0 : 0.001388147357180993
+	 Iterations averaged false_1 : 0.26250952380952386
+	 Inferred nodes averaged false_1 : 0.019461077844311378
+	 Iterations averaged true_1 : 0.43366120218579246
+	 Inferred nodes averaged true_1 : 0.9744835965978129
+	 Iterations averaged true_0 : 0.0072
+	 Inferred nodes averaged true_0 : 0.19148936170212766
+	1 : 
+	 Iterations averaged success_rate : 0.9393905839783175
+	 Inferred nodes averaged success_rate : 0.9414812221833275
+	 Iterations averaged error_mean : 0.10055242165926463
+	 Inferred nodes averaged error_mean : 0.09792968945341801
+	 Iterations averaged error_std : 0.35089101332767053
+	 Inferred nodes averaged error_std : 0.45073566239567353
+	 Iterations averaged num_nodes_inferred : 3999.4
+	 Inferred nodes averaged num_nodes_inferred : 199970
+	 Iterations averaged false_-1 : 0.4637789041861855
+	 Inferred nodes averaged false_-1 : 0.05906395077633888
+	 Iterations averaged true_-1 : 0.5636559817304932
+	 Inferred nodes averaged true_-1 : 0.9582560128079176
+	 Iterations averaged false_0 : 0.017778242560756816
+	 Inferred nodes averaged false_0 : 0.014373975539024083
+	 Iterations averaged false_1 : 0.39132760420101265
+	 Inferred nodes averaged false_1 : 0.03164976529186226
+	 Iterations averaged true_1 : 0.43158765007803296
+	 Inferred nodes averaged true_1 : 0.9304860655181001
+	 Iterations averaged true_0 : 0.025223055714480462
+	 Inferred nodes averaged true_0 : 0.4271386430678466
+
+dmv :
+	0 : 
+	 Iterations averaged success_rate : 0.9687951899481986
+	 Inferred nodes averaged success_rate : 0.97166719526377
+	 Iterations averaged error_mean : 0.050336590813827596
+	 Inferred nodes averaged error_mean : 0.047256581033935936
+	 Iterations averaged error_std : 0.21308054186718609
+	 Inferred nodes averaged error_std : 0.29780940899425806
+	 Iterations averaged num_nodes_inferred : 189.18
+	 Inferred nodes averaged num_nodes_inferred : 9459
+	 Iterations averaged false_-1 : 0.26973992479874837
+	 Inferred nodes averaged false_-1 : 0.035866983372921615
+	 Iterations averaged true_-1 : 0.5663380281690142
+	 Inferred nodes averaged true_-1 : 0.9834254143646409
+	 Iterations averaged false_0 : 0.003611111111111111
+	 Inferred nodes averaged false_0 : 0.001388147357180993
+	 Iterations averaged false_1 : 0.26250952380952386
+	 Inferred nodes averaged false_1 : 0.019461077844311378
+	 Iterations averaged true_1 : 0.43366120218579246
+	 Inferred nodes averaged true_1 : 0.9744835965978129
+	 Iterations averaged true_0 : 0.0072
+	 Inferred nodes averaged true_0 : 0.19148936170212766
+	1 : 
+	 Iterations averaged success_rate : 0.9473702927699592
+	 Inferred nodes averaged success_rate : 0.9495774366154923
+	 Iterations averaged error_mean : 0.08687272234577435
+	 Inferred nodes averaged error_mean : 0.0840876131419713
+	 Iterations averaged error_std : 0.3273310271624592
+	 Inferred nodes averaged error_std : 0.41579794203656
+	 Iterations averaged num_nodes_inferred : 3999.4
+	 Inferred nodes averaged num_nodes_inferred : 199970
+	 Iterations averaged false_-1 : 0.468909146516112
+	 Inferred nodes averaged false_-1 : 0.04899042626446611
+	 Iterations averaged true_-1 : 0.5548984098838867
+	 Inferred nodes averaged true_-1 : 0.9623403558563476
+	 Iterations averaged false_0 : 0.015525848065175192
+	 Inferred nodes averaged false_0 : 0.012048921951834574
+	 Iterations averaged false_1 : 0.40597750303415453
+	 Inferred nodes averaged false_1 : 0.02940122549897875
+	 Iterations averaged true_1 : 0.4308341389897906
+	 Inferred nodes averaged true_1 : 0.943628172330262
+	 Iterations averaged true_0 : 0.0228146567088684
+	 Inferred nodes averaged true_0 : 0.4324483775811209
+
+dlp :
+	0 : 
+	 Iterations averaged success_rate : 0.9687951899481986
+	 Inferred nodes averaged success_rate : 0.97166719526377
+	 Iterations averaged error_mean : 0.050336590813827596
+	 Inferred nodes averaged error_mean : 0.047256581033935936
+	 Iterations averaged error_std : 0.21308054186718609
+	 Inferred nodes averaged error_std : 0.29780940899425806
+	 Iterations averaged num_nodes_inferred : 189.18
+	 Inferred nodes averaged num_nodes_inferred : 9459
+	 Iterations averaged false_-1 : 0.26973992479874837
+	 Inferred nodes averaged false_-1 : 0.035866983372921615
+	 Iterations averaged true_-1 : 0.5663380281690142
+	 Inferred nodes averaged true_-1 : 0.9834254143646409
+	 Iterations averaged false_0 : 0.003611111111111111
+	 Inferred nodes averaged false_0 : 0.001388147357180993
+	 Iterations averaged false_1 : 0.26250952380952386
+	 Inferred nodes averaged false_1 : 0.019461077844311378
+	 Iterations averaged true_1 : 0.43366120218579246
+	 Inferred nodes averaged true_1 : 0.9744835965978129
+	 Iterations averaged true_0 : 0.0072
+	 Inferred nodes averaged true_0 : 0.19148936170212766
+	1 : 
+	 Iterations averaged success_rate : 0.9473702927699592
+	 Inferred nodes averaged success_rate : 0.9495774366154923
+	 Iterations averaged error_mean : 0.08687272234577435
+	 Inferred nodes averaged error_mean : 0.0840876131419713
+	 Iterations averaged error_std : 0.3273310271624592
+	 Inferred nodes averaged error_std : 0.41579794203656
+	 Iterations averaged num_nodes_inferred : 3999.4
+	 Inferred nodes averaged num_nodes_inferred : 199970
+	 Iterations averaged false_-1 : 0.468909146516112
+	 Inferred nodes averaged false_-1 : 0.04899042626446611
+	 Iterations averaged true_-1 : 0.5548984098838867
+	 Inferred nodes averaged true_-1 : 0.9623403558563476
+	 Iterations averaged false_0 : 0.015525848065175192
+	 Inferred nodes averaged false_0 : 0.012048921951834574
+	 Iterations averaged false_1 : 0.40597750303415453
+	 Inferred nodes averaged false_1 : 0.02940122549897875
+	 Iterations averaged true_1 : 0.4308341389897906
+	 Inferred nodes averaged true_1 : 0.943628172330262
+	 Iterations averaged true_0 : 0.0228146567088684
+	 Inferred nodes averaged true_0 : 0.4324483775811209
+
+dvm :
+	0 : 
+	 Iterations averaged success_rate : 0.9687951899481986
+	 Inferred nodes averaged success_rate : 0.97166719526377
+	 Iterations averaged error_mean : 0.050336590813827596
+	 Inferred nodes averaged error_mean : 0.047256581033935936
+	 Iterations averaged error_std : 0.21308054186718609
+	 Inferred nodes averaged error_std : 0.29780940899425806
+	 Iterations averaged num_nodes_inferred : 189.18
+	 Inferred nodes averaged num_nodes_inferred : 9459
+	 Iterations averaged false_-1 : 0.26973992479874837
+	 Inferred nodes averaged false_-1 : 0.035866983372921615
+	 Iterations averaged true_-1 : 0.5663380281690142
+	 Inferred nodes averaged true_-1 : 0.9834254143646409
+	 Iterations averaged false_0 : 0.003611111111111111
+	 Inferred nodes averaged false_0 : 0.001388147357180993
+	 Iterations averaged false_1 : 0.26250952380952386
+	 Inferred nodes averaged false_1 : 0.019461077844311378
+	 Iterations averaged true_1 : 0.43366120218579246
+	 Inferred nodes averaged true_1 : 0.9744835965978129
+	 Iterations averaged true_0 : 0.0072
+	 Inferred nodes averaged true_0 : 0.19148936170212766
+	1 : 
+	 Iterations averaged success_rate : 0.9427917841527262
+	 Inferred nodes averaged success_rate : 0.9448567285092764
+	 Iterations averaged error_mean : 0.09446907795139294
+	 Inferred nodes averaged error_mean : 0.09193879081862279
+	 Iterations averaged error_std : 0.3426757736782622
+	 Inferred nodes averaged error_std : 0.4341157989992147
+	 Iterations averaged num_nodes_inferred : 3999.4
+	 Inferred nodes averaged num_nodes_inferred : 199970
+	 Iterations averaged false_-1 : 0.4698781302683684
+	 Inferred nodes averaged false_-1 : 0.05473244630045092
+	 Iterations averaged true_-1 : 0.563166610227023
+	 Inferred nodes averaged true_-1 : 0.95979332678383
+	 Iterations averaged false_0 : 0.017030321705994157
+	 Inferred nodes averaged false_0 : 0.013612407010465262
+	 Iterations averaged false_1 : 0.3916528423247978
+	 Inferred nodes averaged false_1 : 0.03044934962554198
+	 Iterations averaged true_1 : 0.4276266083333535
+	 Inferred nodes averaged true_1 : 0.9362024857938467
+	 Iterations averaged true_0 : 0.025350457690728374
+	 Inferred nodes averaged true_0 : 0.4277286135693215

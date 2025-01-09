@@ -1,0 +1,277 @@
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+SBM Graph: 1000 nodes, 53665 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+Results for SBM with [200, 200, 200, 200, 200] nodes/comm, 0.01 probability inter-communities and 0.5 probability intra-communities over 1/3 of the node set.
+
+dvm :
+	0 : 
+	 Iterations averaged success_rate : 0.3943358525254289
+	 Inferred nodes averaged success_rate : 0.39427583128765903
+	 Iterations averaged error_mean : 0.8879353587118495
+	 Inferred nodes averaged error_mean : 0.8881945994197724
+	 Iterations averaged error_std : 1.5195975150891528
+	 Inferred nodes averaged error_std : 1.5162061791209809
+	 Iterations averaged num_nodes_inferred : 1075.44
+	 Inferred nodes averaged num_nodes_inferred : 53772
+	 Iterations averaged false_-1 : 0.3420180601341445
+	 Inferred nodes averaged false_-1 : 0.3326575123644518
+	 Iterations averaged true_-1 : 0.3822639738905063
+	 Inferred nodes averaged true_-1 : 0.39931193741458126
+	 Iterations averaged false_0 : 0.2232748651897612
+	 Inferred nodes averaged false_0 : 0.2166658822421989
+	 Iterations averaged true_0 : 0.2504415091467774
+	 Inferred nodes averaged true_0 : 0.2751374357155524
+	 Iterations averaged false_1 : 0.3946481998453012
+	 Inferred nodes averaged false_1 : 0.3857160440642501
+	 Iterations averaged true_1 : 0.4390913699752624
+	 Inferred nodes averaged true_1 : 0.4523831907492714
+	1 : 
+	 Iterations averaged success_rate : 0.38594021085439734
+	 Inferred nodes averaged success_rate : 0.38585906967027256
+	 Iterations averaged error_mean : 0.9097571304383762
+	 Inferred nodes averaged error_mean : 0.9097032911598804
+	 Iterations averaged error_std : 1.5229277404188821
+	 Inferred nodes averaged error_std : 1.51989867154872
+	 Iterations averaged num_nodes_inferred : 7850.119999999998
+	 Inferred nodes averaged num_nodes_inferred : 392506
+	 Iterations averaged false_-1 : 0.38780989406619937
+	 Inferred nodes averaged false_-1 : 0.37812441669070607
+	 Iterations averaged true_-1 : 0.4164196469056838
+	 Inferred nodes averaged true_-1 : 0.4325050069523287
+	 Iterations averaged false_0 : 0.20829530818006792
+	 Inferred nodes averaged false_0 : 0.20356618877248978
+	 Iterations averaged true_0 : 0.2266802925544912
+	 Inferred nodes averaged true_0 : 0.2438860192415971
+	 Iterations averaged false_1 : 0.37998291815938695
+	 Inferred nodes averaged false_1 : 0.3717277267371405
+	 Iterations averaged true_1 : 0.40105620790512403
+	 Inferred nodes averaged true_1 : 0.41368608992046746
+
+dlp :
+	0 : 
+	 Iterations averaged success_rate : 0.3943358525254289
+	 Inferred nodes averaged success_rate : 0.39427583128765903
+	 Iterations averaged error_mean : 0.8879353587118495
+	 Inferred nodes averaged error_mean : 0.8881945994197724
+	 Iterations averaged error_std : 1.5195975150891528
+	 Inferred nodes averaged error_std : 1.5162061791209809
+	 Iterations averaged num_nodes_inferred : 1075.44
+	 Inferred nodes averaged num_nodes_inferred : 53772
+	 Iterations averaged false_-1 : 0.3420180601341445
+	 Inferred nodes averaged false_-1 : 0.3326575123644518
+	 Iterations averaged true_-1 : 0.3822639738905063
+	 Inferred nodes averaged true_-1 : 0.39931193741458126
+	 Iterations averaged false_0 : 0.2232748651897612
+	 Inferred nodes averaged false_0 : 0.2166658822421989
+	 Iterations averaged true_0 : 0.2504415091467774
+	 Inferred nodes averaged true_0 : 0.2751374357155524
+	 Iterations averaged false_1 : 0.3946481998453012
+	 Inferred nodes averaged false_1 : 0.3857160440642501
+	 Iterations averaged true_1 : 0.4390913699752624
+	 Inferred nodes averaged true_1 : 0.4523831907492714
+	1 : 
+	 Iterations averaged success_rate : 0.40154658826059564
+	 Inferred nodes averaged success_rate : 0.4014817607883701
+	 Iterations averaged error_mean : 0.8963952486153483
+	 Inferred nodes averaged error_mean : 0.8963353426444437
+	 Iterations averaged error_std : 1.5086983428607912
+	 Inferred nodes averaged error_std : 1.505169284468918
+	 Iterations averaged num_nodes_inferred : 7850.119999999998
+	 Inferred nodes averaged num_nodes_inferred : 392506
+	 Iterations averaged false_-1 : 0.399659774887186
+	 Inferred nodes averaged false_-1 : 0.38648589027846125
+	 Iterations averaged true_-1 : 0.43957210038013594
+	 Inferred nodes averaged true_-1 : 0.4617047875393859
+	 Iterations averaged false_0 : 0.17961523751923522
+	 Inferred nodes averaged false_0 : 0.17449357802887958
+	 Iterations averaged true_0 : 0.20040636470954848
+	 Inferred nodes averaged true_0 : 0.21916081177017796
+	 Iterations averaged false_1 : 0.3869908994653496
+	 Inferred nodes averaged false_1 : 0.3756399880912945
+	 Iterations averaged true_1 : 0.41990432725094257
+	 Inferred nodes averaged true_1 : 0.4368901152410323
+
+dmv :
+	0 : 
+	 Iterations averaged success_rate : 0.3943358525254289
+	 Inferred nodes averaged success_rate : 0.39427583128765903
+	 Iterations averaged error_mean : 0.8879353587118495
+	 Inferred nodes averaged error_mean : 0.8881945994197724
+	 Iterations averaged error_std : 1.5195975150891528
+	 Inferred nodes averaged error_std : 1.5162061791209809
+	 Iterations averaged num_nodes_inferred : 1075.44
+	 Inferred nodes averaged num_nodes_inferred : 53772
+	 Iterations averaged false_-1 : 0.3420180601341445
+	 Inferred nodes averaged false_-1 : 0.3326575123644518
+	 Iterations averaged true_-1 : 0.3822639738905063
+	 Inferred nodes averaged true_-1 : 0.39931193741458126
+	 Iterations averaged false_0 : 0.2232748651897612
+	 Inferred nodes averaged false_0 : 0.2166658822421989
+	 Iterations averaged true_0 : 0.2504415091467774
+	 Inferred nodes averaged true_0 : 0.2751374357155524
+	 Iterations averaged false_1 : 0.3946481998453012
+	 Inferred nodes averaged false_1 : 0.3857160440642501
+	 Iterations averaged true_1 : 0.4390913699752624
+	 Inferred nodes averaged true_1 : 0.4523831907492714
+	1 : 
+	 Iterations averaged success_rate : 0.40154658826059564
+	 Inferred nodes averaged success_rate : 0.4014817607883701
+	 Iterations averaged error_mean : 0.8963952486153483
+	 Inferred nodes averaged error_mean : 0.8963353426444437
+	 Iterations averaged error_std : 1.5086983428607912
+	 Inferred nodes averaged error_std : 1.505169284468918
+	 Iterations averaged num_nodes_inferred : 7850.119999999998
+	 Inferred nodes averaged num_nodes_inferred : 392506
+	 Iterations averaged false_-1 : 0.399659774887186
+	 Inferred nodes averaged false_-1 : 0.38648589027846125
+	 Iterations averaged true_-1 : 0.43957210038013594
+	 Inferred nodes averaged true_-1 : 0.4617047875393859
+	 Iterations averaged false_0 : 0.17961523751923522
+	 Inferred nodes averaged false_0 : 0.17449357802887958
+	 Iterations averaged true_0 : 0.20040636470954848
+	 Inferred nodes averaged true_0 : 0.21916081177017796
+	 Iterations averaged false_1 : 0.3869908994653496
+	 Inferred nodes averaged false_1 : 0.3756399880912945
+	 Iterations averaged true_1 : 0.41990432725094257
+	 Inferred nodes averaged true_1 : 0.4368901152410323
+
+dwmv :
+	0 : 
+	 Iterations averaged success_rate : 0.3943358525254289
+	 Inferred nodes averaged success_rate : 0.39427583128765903
+	 Iterations averaged error_mean : 0.8879353587118495
+	 Inferred nodes averaged error_mean : 0.8881945994197724
+	 Iterations averaged error_std : 1.5195975150891528
+	 Inferred nodes averaged error_std : 1.5162061791209809
+	 Iterations averaged num_nodes_inferred : 1075.44
+	 Inferred nodes averaged num_nodes_inferred : 53772
+	 Iterations averaged false_-1 : 0.3420180601341445
+	 Inferred nodes averaged false_-1 : 0.3326575123644518
+	 Iterations averaged true_-1 : 0.3822639738905063
+	 Inferred nodes averaged true_-1 : 0.39931193741458126
+	 Iterations averaged false_0 : 0.2232748651897612
+	 Inferred nodes averaged false_0 : 0.2166658822421989
+	 Iterations averaged true_0 : 0.2504415091467774
+	 Inferred nodes averaged true_0 : 0.2751374357155524
+	 Iterations averaged false_1 : 0.3946481998453012
+	 Inferred nodes averaged false_1 : 0.3857160440642501
+	 Iterations averaged true_1 : 0.4390913699752624
+	 Inferred nodes averaged true_1 : 0.4523831907492714
+	1 : 
+	 Iterations averaged success_rate : 0.40187055065207833
+	 Inferred nodes averaged success_rate : 0.40181041818469015
+	 Iterations averaged error_mean : 0.8965901189505416
+	 Inferred nodes averaged error_mean : 0.8965213270625162
+	 Iterations averaged error_std : 1.507722959546212
+	 Inferred nodes averaged error_std : 1.5044710429464172
+	 Iterations averaged num_nodes_inferred : 7850.119999999998
+	 Inferred nodes averaged num_nodes_inferred : 392506
+	 Iterations averaged false_-1 : 0.40161759489556664
+	 Inferred nodes averaged false_-1 : 0.388076733807334
+	 Iterations averaged true_-1 : 0.4415656074289569
+	 Inferred nodes averaged true_-1 : 0.46371394675409167
+	 Iterations averaged false_0 : 0.17791859913190952
+	 Inferred nodes averaged false_0 : 0.17280764973874546
+	 Iterations averaged true_0 : 0.19804050971049308
+	 Inferred nodes averaged true_0 : 0.2168106930402213
+	 Iterations averaged false_1 : 0.3868994320228489
+	 Inferred nodes averaged false_1 : 0.37572385221464183
+	 Iterations averaged true_1 : 0.42034401534814986
+	 Inferred nodes averaged true_1 : 0.4369290699561759

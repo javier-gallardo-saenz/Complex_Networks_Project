@@ -2,6 +2,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import math
 import random
+import numpy as np
 
 # ----------------------------------------------------
 # Statistics
@@ -144,10 +145,13 @@ def normal_degree_seq(num_nodes, mean, var):
         var (float): variance of degree of a vertex
     """
     deg_seq = []
+    vector = [1/(math.sqrt(2*math.pi*var))*(math.e)**(-(k-mean)**2/(2*var)) for k in range(num_nodes//2)]
+    norma = math.sqrt(sum(x**2 for x in vector))
+    norm_vector = [x/norma for x in vector]
     for n in range(num_nodes):
         deg_seq += [random.choices(
             population=range(num_nodes//2),
-            weights=[1/(math.sqrt(2*math.pi*var))*(math.e)**(-(k-mean)**2/2*var) for k in range(num_nodes//2)],
+            weights=norm_vector,
             k=1
         )[0]]
     
@@ -164,14 +168,18 @@ def one_sided_normal_degree_seq(num_nodes, mean, var):
         mean (float): mean degree of a vertex
         var (float): variance of degree of a vertex
     """
+    vector = [1/(math.sqrt(2*math.pi*var))*(math.e)**(-(k-mean)**2/(2*var)) for k in range(0, mean+1)]
+    norma = math.sqrt(sum(x**2 for x in vector))
+    norm_vector = [x/norma for x in vector]
     deg_seq = []
     for n in range(num_nodes):
         deg_seq += [random.choices(
             population=range(0, mean+1),
-            weights=[1/(math.sqrt(2*math.pi*var))*(math.e)**(-(k-mean)**2/2*var) for k in range(num_nodes//2)],
+            weights=norm_vector,
             k=1
         )[0]]
-    
+    print(norm_vector)
+    print(1/(math.sqrt(2*math.pi*var))*(math.e)**(-(1)**2/2*var))
     return deg_seq
 
 

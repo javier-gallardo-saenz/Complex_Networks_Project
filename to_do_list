@@ -26,7 +26,7 @@ PARAMETERS:
 - Hierarchical:
     - communities sizes: 200
     - inner degree seq: mean 100, var 50
-    - ext degree seq: mean 8, var 7.9; mean 40, var 38
+    - ext degree seq: mean 8, var 8; mean 40, var 38
 
 10000 nodes: (100 iterations, 5 studied nodes)
 - E-R:
@@ -44,7 +44,7 @@ PARAMETERS:
 - Hierarchical:
     - communities sizes: 100
     - inner degree seq: mean 50, var 25
-    - ext degree seq: mean 10, var 9.9; mean 5, var 4.95
+    - ext degree seq: mean 10, var 10; mean 5, var 5
 
 50000 nodes: (500 iterations, 1 studied node)
 - P-A 
@@ -56,4 +56,4 @@ PARAMETERS:
 - Hierarchical:
     - communities sizes: 250
     - inner degree seq: mean 100, var 60
-    - ext degree seq: mean 10, var 9.9
+    - ext degree seq: mean 10, var 10

@@ -10,19 +10,20 @@ from graph_inference import *
 
 n_nodes = 1000
 size_ini = 100
-n_edges = 3
-labels_prob = {1:1/3, 0:1/3, -1:1/3}
+n_edges = 10
+delta = 0.01
+labels_prob = {1: 0.4, 0: 0.2, -1: 0.4}
 r_values = [0, 1]  # radius of the known ball
 methods = {'dmv', 'dwmv', 'dvm', 'dlp'}
 total_results = {method: {r: {'inferred': [], 'true': []} for r in r_values} for method in methods}
 total_weighted_stats = {method: {r: {} for r in r_values} for method in methods}
 
-num_iterations = 10
+num_iterations = 50
 avg_aux = {}
 for n in range(num_iterations):
     G = preferential_attachment_with_colors(num_nodes=n_nodes, num_edges=n_edges, labels=labels_prob, 
-                                            size_init_graph=size_ini, label='opinion', delta=0.1)
-    v = random.sample(list(G.nodes()), len(list(G.nodes()))//3)  # choose a random set of nodes
+                                            size_init_graph=size_ini, label='opinion', delta=delta)
+    v = random.sample(list(G.nodes()), 10)  # choose a random set of nodes
     graph_inf = GraphInference(G)
     graph_inf.which_inference_methods()  # shows available inference methods
     methods = {'dmv', 'dwmv', 'dvm', 'dlp'}

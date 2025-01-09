@@ -1,0 +1,481 @@
+[1.430103594312831e-44, 1.0461971127795726e-43, 7.50194103878458e-43, 5.272879980961847e-42, 3.632756063146587e-41, 2.453232427783174e-40, 1.6238849899787226e-39, 1.0536247133334729e-38, 6.700863021353941e-38, 4.177242058941988e-37, 2.5524818012867834e-36, 1.528796842011523e-35, 8.975342078794419e-35, 5.16495275446972e-34, 2.9133710941347355e-33, 1.6107916549494147e-32, 8.729654293984696e-32, 4.637338842102987e-31, 2.4146529802627948e-30, 1.2324086300002581e-29, 6.165507731444296e-29, 3.0234101930659577e-28, 1.4532469143541847e-27, 6.84692950492177e-27, 3.162033114355027e-26, 1.4313672671392268e-25, 6.351113287071997e-25, 2.7622485093003996e-24, 1.1775781714501909e-23, 4.920744953465399e-23, 2.0155151884202504e-22, 8.091991261039664e-22, 3.1844823436873347e-21, 1.2283903494593279e-20, 4.6445972081764874e-20, 1.7213684076748614e-19, 6.253364008898852e-19, 2.2267307254429332e-18, 7.772053905713639e-18, 2.6589980379862936e-17, 8.91690911154501e-17, 2.931060436850283e-16, 9.443855150613755e-16, 2.982551637680551e-15, 9.232955364143424e-15, 2.801609561463848e-14, 8.332754680106702e-14, 2.429314217272046e-13, 6.942132489114207e-13, 1.944537013521223e-12, 5.338922798061842e-12, 1.4368293079355386e-11, 3.790275911906224e-11, 9.800553036888093e-11, 2.4839591617723403e-10, 6.170955717598686e-10, 1.5027077244721355e-09, 3.586829377217312e-09, 8.391914060802128e-09, 1.9245333782324055e-08, 4.326173951554069e-08, 9.532276224215749e-08, 2.0587488510817494e-07, 4.3583713519413873e-07, 9.043971873456011e-07, 1.8395359734056615e-06, 3.667511444138299e-06, 7.167187737994475e-06, 1.3729040741336171e-05, 2.5777792139083993e-05, 4.744225804403662e-05, 8.558528391175785e-05, 0.0001513376376287632, 0.000262306417136976, 0.00044564084683198325, 0.0007421217783375299, 0.0012113774159624808, 0.0019381968313346195, 0.0030396977084605173, 0.0046727981716434, 0.0070410553912751, 0.010399503581577159, 0.015055721310364464, 0.021365085532202167, 0.02971815303719584, 0.040518476196536264, 0.05415000536195684, 0.0709345820311782, 0.09108180625015436, 0.11463556225083905, 0.1414233780396656, 0.17101616299379496, 0.20270628765073953, 0.23551110620895854, 0.26820673233894154, 0.2993932936593926, 0.3275884426359096, 0.35134128481134064, 0.369354937685779, 0.38060347017642965, 0.38442859864451695]
+7.835433265508677e-13
+[0.010562953967888993, 0.026973447898405296, 0.06078560317013934, 0.12088660663561625, 0.212162601939966, 0.32860386612167225, 0.44914823183149627, 0.5417761837090983, 0.5767177455319994]
+0.0025833731692615075
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, -1, 0] 's is [0.525, 0.295, 0.18]
+In community 1 the proportion of [-1, 1, 0] 's is [0.375, 0.56, 0.065]
+In community 2 the proportion of [-1, 1, 0] 's is [0.38, 0.435, 0.185]
+In community 3 the proportion of [0, -1, 1] 's is [0.345, 0.445, 0.21]
+In community 4 the proportion of [1, 0, -1] 's is [0.49, 0.255, 0.255]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, -1, 0] 's is [0.585, 0.28, 0.135]
+In community 1 the proportion of [1, -1, 0] 's is [0.435, 0.265, 0.3]
+In community 2 the proportion of [0, -1, 1] 's is [0.34, 0.46, 0.2]
+In community 3 the proportion of [-1, 1, 0] 's is [0.345, 0.525, 0.13]
+In community 4 the proportion of [-1, 1, 0] 's is [0.405, 0.51, 0.085]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [-1, 1, 0] 's is [0.5, 0.325, 0.175]
+In community 1 the proportion of [-1, 1, 0] 's is [0.485, 0.26, 0.255]
+In community 2 the proportion of [1, -1, 0] 's is [0.33, 0.42, 0.25]
+In community 3 the proportion of [1, -1, 0] 's is [0.31, 0.52, 0.17]
+In community 4 the proportion of [-1, 1, 0] 's is [0.53, 0.305, 0.165]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, -1, 0] 's is [0.43, 0.465, 0.105]
+In community 1 the proportion of [-1, 1, 0] 's is [0.51, 0.33, 0.16]
+In community 2 the proportion of [-1, 0, 1] 's is [0.35, 0.195, 0.455]
+In community 3 the proportion of [1, 0, -1] 's is [0.515, 0.265, 0.22]
+In community 4 the proportion of [-1, 0, 1] 's is [0.46, 0.16, 0.38]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, -1, 0] 's is [0.44, 0.225, 0.335]
+In community 1 the proportion of [0, -1, 1] 's is [0.16, 0.48, 0.36]
+In community 2 the proportion of [1, -1, 0] 's is [0.505, 0.41, 0.085]
+In community 3 the proportion of [-1, 1, 0] 's is [0.43, 0.365, 0.205]
+In community 4 the proportion of [-1, 1, 0] 's is [0.175, 0.605, 0.22]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, 0, -1] 's is [0.325, 0.26, 0.415]
+In community 1 the proportion of [-1, 1, 0] 's is [0.33, 0.43, 0.24]
+In community 2 the proportion of [-1, 0, 1] 's is [0.425, 0.165, 0.41]
+In community 3 the proportion of [1, -1, 0] 's is [0.415, 0.325, 0.26]
+In community 4 the proportion of [1, -1, 0] 's is [0.335, 0.505, 0.16]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, 0, -1] 's is [0.395, 0.455, 0.15]
+In community 1 the proportion of [1, -1, 0] 's is [0.165, 0.545, 0.29]
+In community 2 the proportion of [-1, 1, 0] 's is [0.33, 0.355, 0.315]
+In community 3 the proportion of [1, -1, 0] 's is [0.47, 0.275, 0.255]
+In community 4 the proportion of [0, -1, 1] 's is [0.29, 0.47, 0.24]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [0, 1, -1] 's is [0.295, 0.415, 0.29]
+In community 1 the proportion of [-1, 1, 0] 's is [0.465, 0.325, 0.21]
+In community 2 the proportion of [-1, 1, 0] 's is [0.345, 0.445, 0.21]
+In community 3 the proportion of [-1, 1, 0] 's is [0.555, 0.29, 0.155]
+In community 4 the proportion of [-1, 1, 0] 's is [0.305, 0.295, 0.4]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [-1, 0, 1] 's is [0.28, 0.35, 0.37]
+In community 1 the proportion of [0, -1, 1] 's is [0.2, 0.46, 0.34]
+In community 2 the proportion of [-1, 0, 1] 's is [0.5, 0.255, 0.245]
+In community 3 the proportion of [-1, 0, 1] 's is [0.335, 0.305, 0.36]
+In community 4 the proportion of [-1, 1, 0] 's is [0.37, 0.49, 0.14]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [-1, 1, 0] 's is [0.585, 0.255, 0.16]
+In community 1 the proportion of [1, -1, 0] 's is [0.345, 0.6, 0.055]
+In community 2 the proportion of [1, 0, -1] 's is [0.495, 0.095, 0.41]
+In community 3 the proportion of [1, -1, 0] 's is [0.36, 0.49, 0.15]
+In community 4 the proportion of [-1, 1, 0] 's is [0.51, 0.35, 0.14]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [0, -1, 1] 's is [0.18, 0.455, 0.365]
+In community 1 the proportion of [-1, 1, 0] 's is [0.35, 0.53, 0.12]
+In community 2 the proportion of [1, 0, -1] 's is [0.565, 0.225, 0.21]
+In community 3 the proportion of [0, -1, 1] 's is [0.135, 0.57, 0.295]
+In community 4 the proportion of [1, -1, 0] 's is [0.38, 0.355, 0.265]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, -1, 0] 's is [0.59, 0.29, 0.12]
+In community 1 the proportion of [1, -1, 0] 's is [0.395, 0.485, 0.12]
+In community 2 the proportion of [0, 1, -1] 's is [0.16, 0.445, 0.395]
+In community 3 the proportion of [-1, 1, 0] 's is [0.345, 0.515, 0.14]
+In community 4 the proportion of [-1, 1, 0] 's is [0.29, 0.485, 0.225]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [0, -1, 1] 's is [0.165, 0.4, 0.435]
+In community 1 the proportion of [-1, 1, 0] 's is [0.37, 0.505, 0.125]
+In community 2 the proportion of [-1, 0, 1] 's is [0.315, 0.26, 0.425]
+In community 3 the proportion of [1, -1, 0] 's is [0.33, 0.345, 0.325]
+In community 4 the proportion of [-1, 0, 1] 's is [0.375, 0.2, 0.425]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [0, -1, 1] 's is [0.31, 0.535, 0.155]
+In community 1 the proportion of [1, -1, 0] 's is [0.41, 0.365, 0.225]
+In community 2 the proportion of [0, -1, 1] 's is [0.32, 0.38, 0.3]
+In community 3 the proportion of [-1, 1, 0] 's is [0.495, 0.195, 0.31]
+In community 4 the proportion of [0, 1, -1] 's is [0.48, 0.19, 0.33]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [-1, 0, 1] 's is [0.365, 0.345, 0.29]
+In community 1 the proportion of [-1, 1, 0] 's is [0.49, 0.425, 0.085]
+In community 2 the proportion of [1, 0, -1] 's is [0.42, 0.25, 0.33]
+In community 3 the proportion of [1, 0, -1] 's is [0.4, 0.285, 0.315]
+In community 4 the proportion of [1, 0, -1] 's is [0.51, 0.2, 0.29]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [0, 1, -1] 's is [0.205, 0.52, 0.275]
+In community 1 the proportion of [1, -1, 0] 's is [0.455, 0.31, 0.235]
+In community 2 the proportion of [1, -1, 0] 's is [0.425, 0.435, 0.14]
+In community 3 the proportion of [-1, 1, 0] 's is [0.405, 0.385, 0.21]
+In community 4 the proportion of [1, -1, 0] 's is [0.57, 0.21, 0.22]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [0, -1, 1] 's is [0.265, 0.25, 0.485]
+In community 1 the proportion of [-1, 1, 0] 's is [0.345, 0.36, 0.295]
+In community 2 the proportion of [-1, 1, 0] 's is [0.445, 0.515, 0.04]
+In community 3 the proportion of [0, 1, -1] 's is [0.265, 0.56, 0.175]
+In community 4 the proportion of [-1, 1, 0] 's is [0.36, 0.365, 0.275]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, -1, 0] 's is [0.355, 0.475, 0.17]
+In community 1 the proportion of [1, 0, -1] 's is [0.41, 0.305, 0.285]
+In community 2 the proportion of [1, 0, -1] 's is [0.255, 0.25, 0.495]
+In community 3 the proportion of [1, -1, 0] 's is [0.57, 0.24, 0.19]
+In community 4 the proportion of [1, 0, -1] 's is [0.38, 0.235, 0.385]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [-1, 0, 1] 's is [0.44, 0.12, 0.44]
+In community 1 the proportion of [0, 1, -1] 's is [0.11, 0.635, 0.255]
+In community 2 the proportion of [0, -1, 1] 's is [0.24, 0.21, 0.55]
+In community 3 the proportion of [-1, 1, 0] 's is [0.355, 0.405, 0.24]
+In community 4 the proportion of [1, 0, -1] 's is [0.475, 0.38, 0.145]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [-1, 1, 0] 's is [0.48, 0.345, 0.175]
+In community 1 the proportion of [-1, 1, 0] 's is [0.345, 0.37, 0.285]
+In community 2 the proportion of [1, -1, 0] 's is [0.635, 0.225, 0.14]
+In community 3 the proportion of [-1, 1, 0] 's is [0.655, 0.32, 0.025]
+In community 4 the proportion of [1, 0, -1] 's is [0.56, 0.07, 0.37]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, -1, 0] 's is [0.19, 0.63, 0.18]
+In community 1 the proportion of [0, 1, -1] 's is [0.225, 0.33, 0.445]
+In community 2 the proportion of [-1, 1, 0] 's is [0.395, 0.44, 0.165]
+In community 3 the proportion of [1, -1, 0] 's is [0.425, 0.45, 0.125]
+In community 4 the proportion of [0, -1, 1] 's is [0.295, 0.515, 0.19]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [-1, 1, 0] 's is [0.435, 0.36, 0.205]
+In community 1 the proportion of [-1, 1, 0] 's is [0.445, 0.34, 0.215]
+In community 2 the proportion of [-1, 0, 1] 's is [0.425, 0.225, 0.35]
+In community 3 the proportion of [1, -1, 0] 's is [0.33, 0.35, 0.32]
+In community 4 the proportion of [1, -1, 0] 's is [0.485, 0.45, 0.065]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, -1, 0] 's is [0.45, 0.34, 0.21]
+In community 1 the proportion of [-1, 0, 1] 's is [0.42, 0.17, 0.41]
+In community 2 the proportion of [0, -1, 1] 's is [0.21, 0.465, 0.325]
+In community 3 the proportion of [1, -1, 0] 's is [0.505, 0.395, 0.1]
+In community 4 the proportion of [1, 0, -1] 's is [0.465, 0.175, 0.36]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, 0, -1] 's is [0.34, 0.245, 0.415]
+In community 1 the proportion of [1, -1, 0] 's is [0.37, 0.515, 0.115]
+In community 2 the proportion of [-1, 1, 0] 's is [0.475, 0.36, 0.165]
+In community 3 the proportion of [-1, 0, 1] 's is [0.49, 0.1, 0.41]
+In community 4 the proportion of [1, 0, -1] 's is [0.555, 0.135, 0.31]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, 0, -1] 's is [0.5, 0.2, 0.3]
+In community 1 the proportion of [-1, 0, 1] 's is [0.49, 0.105, 0.405]
+In community 2 the proportion of [1, -1, 0] 's is [0.525, 0.375, 0.1]
+In community 3 the proportion of [0, 1, -1] 's is [0.175, 0.43, 0.395]
+In community 4 the proportion of [1, -1, 0] 's is [0.35, 0.34, 0.31]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [-1, 0, 1] 's is [0.455, 0.265, 0.28]
+In community 1 the proportion of [1, 0, -1] 's is [0.165, 0.405, 0.43]
+In community 2 the proportion of [0, -1, 1] 's is [0.335, 0.455, 0.21]
+In community 3 the proportion of [-1, 0, 1] 's is [0.625, 0.24, 0.135]
+In community 4 the proportion of [-1, 1, 0] 's is [0.535, 0.295, 0.17]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, 0, -1] 's is [0.565, 0.215, 0.22]
+In community 1 the proportion of [1, -1, 0] 's is [0.48, 0.41, 0.11]
+In community 2 the proportion of [1, -1, 0] 's is [0.59, 0.26, 0.15]
+In community 3 the proportion of [0, 1, -1] 's is [0.22, 0.34, 0.44]
+In community 4 the proportion of [1, -1, 0] 's is [0.57, 0.345, 0.085]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [-1, 0, 1] 's is [0.38, 0.26, 0.36]
+In community 1 the proportion of [1, -1, 0] 's is [0.465, 0.44, 0.095]
+In community 2 the proportion of [1, -1, 0] 's is [0.61, 0.185, 0.205]
+In community 3 the proportion of [-1, 1, 0] 's is [0.34, 0.39, 0.27]
+In community 4 the proportion of [0, 1, -1] 's is [0.385, 0.36, 0.255]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, -1, 0] 's is [0.6, 0.3, 0.1]
+In community 1 the proportion of [1, 0, -1] 's is [0.57, 0.12, 0.31]
+In community 2 the proportion of [-1, 1, 0] 's is [0.595, 0.345, 0.06]
+In community 3 the proportion of [-1, 0, 1] 's is [0.205, 0.28, 0.515]
+In community 4 the proportion of [1, 0, -1] 's is [0.435, 0.145, 0.42]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, -1, 0] 's is [0.66, 0.27, 0.07]
+In community 1 the proportion of [1, -1, 0] 's is [0.575, 0.36, 0.065]
+In community 2 the proportion of [-1, 0, 1] 's is [0.34, 0.21, 0.45]
+In community 3 the proportion of [-1, 1, 0] 's is [0.405, 0.485, 0.11]
+In community 4 the proportion of [-1, 1, 0] 's is [0.625, 0.355, 0.02]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [-1, 1, 0] 's is [0.5, 0.155, 0.345]
+In community 1 the proportion of [1, -1, 0] 's is [0.26, 0.47, 0.27]
+In community 2 the proportion of [-1, 0, 1] 's is [0.43, 0.14, 0.43]
+In community 3 the proportion of [1, -1, 0] 's is [0.385, 0.465, 0.15]
+In community 4 the proportion of [-1, 0, 1] 's is [0.325, 0.375, 0.3]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [-1, 0, 1] 's is [0.35, 0.27, 0.38]
+In community 1 the proportion of [1, -1, 0] 's is [0.46, 0.23, 0.31]
+In community 2 the proportion of [0, 1, -1] 's is [0.285, 0.135, 0.58]
+In community 3 the proportion of [-1, 1, 0] 's is [0.345, 0.55, 0.105]
+In community 4 the proportion of [-1, 1, 0] 's is [0.355, 0.26, 0.385]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [-1, 1, 0] 's is [0.4, 0.52, 0.08]
+In community 1 the proportion of [0, -1, 1] 's is [0.15, 0.46, 0.39]
+In community 2 the proportion of [-1, 1, 0] 's is [0.355, 0.49, 0.155]
+In community 3 the proportion of [1, -1, 0] 's is [0.685, 0.13, 0.185]
+In community 4 the proportion of [1, 0, -1] 's is [0.44, 0.11, 0.45]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, -1, 0] 's is [0.51, 0.225, 0.265]
+In community 1 the proportion of [1, 0, -1] 's is [0.535, 0.145, 0.32]
+In community 2 the proportion of [1, -1, 0] 's is [0.535, 0.205, 0.26]
+In community 3 the proportion of [-1, 1, 0] 's is [0.46, 0.38, 0.16]
+In community 4 the proportion of [0, -1, 1] 's is [0.34, 0.365, 0.295]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, 0, -1] 's is [0.49, 0.25, 0.26]
+In community 1 the proportion of [1, -1, 0] 's is [0.63, 0.2, 0.17]
+In community 2 the proportion of [-1, 1, 0] 's is [0.35, 0.5, 0.15]
+In community 3 the proportion of [1, 0, -1] 's is [0.64, 0.145, 0.215]
+In community 4 the proportion of [-1, 0, 1] 's is [0.395, 0.235, 0.37]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, 0, -1] 's is [0.25, 0.185, 0.565]
+In community 1 the proportion of [0, -1, 1] 's is [0.365, 0.445, 0.19]
+In community 2 the proportion of [0, 1, -1] 's is [0.195, 0.235, 0.57]
+In community 3 the proportion of [0, -1, 1] 's is [0.11, 0.39, 0.5]
+In community 4 the proportion of [0, 1, -1] 's is [0.345, 0.195, 0.46]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, 0, -1] 's is [0.44, 0.16, 0.4]
+In community 1 the proportion of [-1, 1, 0] 's is [0.57, 0.36, 0.07]
+In community 2 the proportion of [1, -1, 0] 's is [0.36, 0.44, 0.2]
+In community 3 the proportion of [-1, 1, 0] 's is [0.325, 0.465, 0.21]
+In community 4 the proportion of [1, -1, 0] 's is [0.34, 0.29, 0.37]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, -1, 0] 's is [0.47, 0.365, 0.165]
+In community 1 the proportion of [1, 0, -1] 's is [0.475, 0.215, 0.31]
+In community 2 the proportion of [1, 0, -1] 's is [0.44, 0.045, 0.515]
+In community 3 the proportion of [1, -1, 0] 's is [0.54, 0.32, 0.14]
+In community 4 the proportion of [1, -1, 0] 's is [0.66, 0.175, 0.165]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, -1, 0] 's is [0.58, 0.28, 0.14]
+In community 1 the proportion of [0, 1, -1] 's is [0.195, 0.515, 0.29]
+In community 2 the proportion of [1, -1, 0] 's is [0.58, 0.25, 0.17]
+In community 3 the proportion of [1, 0, -1] 's is [0.32, 0.135, 0.545]
+In community 4 the proportion of [1, -1, 0] 's is [0.465, 0.29, 0.245]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [0, -1, 1] 's is [0.18, 0.375, 0.445]
+In community 1 the proportion of [1, 0, -1] 's is [0.345, 0.225, 0.43]
+In community 2 the proportion of [-1, 1, 0] 's is [0.365, 0.54, 0.095]
+In community 3 the proportion of [1, 0, -1] 's is [0.37, 0.185, 0.445]
+In community 4 the proportion of [1, -1, 0] 's is [0.325, 0.58, 0.095]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [-1, 0, 1] 's is [0.36, 0.175, 0.465]
+In community 1 the proportion of [-1, 1, 0] 's is [0.54, 0.38, 0.08]
+In community 2 the proportion of [-1, 0, 1] 's is [0.42, 0.235, 0.345]
+In community 3 the proportion of [1, 0, -1] 's is [0.29, 0.335, 0.375]
+In community 4 the proportion of [1, -1, 0] 's is [0.33, 0.395, 0.275]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, 0, -1] 's is [0.53, 0.185, 0.285]
+In community 1 the proportion of [1, 0, -1] 's is [0.6, 0.155, 0.245]
+In community 2 the proportion of [-1, 1, 0] 's is [0.175, 0.595, 0.23]
+In community 3 the proportion of [1, -1, 0] 's is [0.635, 0.225, 0.14]
+In community 4 the proportion of [0, -1, 1] 's is [0.31, 0.195, 0.495]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [0, 1, -1] 's is [0.36, 0.28, 0.36]
+In community 1 the proportion of [0, -1, 1] 's is [0.42, 0.425, 0.155]
+In community 2 the proportion of [-1, 0, 1] 's is [0.395, 0.275, 0.33]
+In community 3 the proportion of [1, -1, 0] 's is [0.525, 0.355, 0.12]
+In community 4 the proportion of [0, -1, 1] 's is [0.11, 0.575, 0.315]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, 0, -1] 's is [0.345, 0.21, 0.445]
+In community 1 the proportion of [0, -1, 1] 's is [0.225, 0.5, 0.275]
+In community 2 the proportion of [1, -1, 0] 's is [0.51, 0.31, 0.18]
+In community 3 the proportion of [0, 1, -1] 's is [0.235, 0.4, 0.365]
+In community 4 the proportion of [1, 0, -1] 's is [0.5, 0.145, 0.355]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [-1, 1, 0] 's is [0.355, 0.395, 0.25]
+In community 1 the proportion of [0, -1, 1] 's is [0.165, 0.285, 0.55]
+In community 2 the proportion of [0, 1, -1] 's is [0.305, 0.425, 0.27]
+In community 3 the proportion of [1, -1, 0] 's is [0.425, 0.415, 0.16]
+In community 4 the proportion of [-1, 0, 1] 's is [0.36, 0.32, 0.32]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [-1, 1, 0] 's is [0.23, 0.54, 0.23]
+In community 1 the proportion of [1, -1, 0] 's is [0.485, 0.445, 0.07]
+In community 2 the proportion of [-1, 1, 0] 's is [0.485, 0.44, 0.075]
+In community 3 the proportion of [1, -1, 0] 's is [0.63, 0.27, 0.1]
+In community 4 the proportion of [1, 0, -1] 's is [0.55, 0.185, 0.265]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [-1, 1, 0] 's is [0.34, 0.475, 0.185]
+In community 1 the proportion of [-1, 1, 0] 's is [0.37, 0.485, 0.145]
+In community 2 the proportion of [1, -1, 0] 's is [0.615, 0.35, 0.035]
+In community 3 the proportion of [1, -1, 0] 's is [0.52, 0.24, 0.24]
+In community 4 the proportion of [-1, 1, 0] 's is [0.5, 0.44, 0.06]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [-1, 1, 0] 's is [0.24, 0.63, 0.13]
+In community 1 the proportion of [1, 0, -1] 's is [0.61, 0.14, 0.25]
+In community 2 the proportion of [-1, 1, 0] 's is [0.455, 0.415, 0.13]
+In community 3 the proportion of [1, -1, 0] 's is [0.41, 0.435, 0.155]
+In community 4 the proportion of [-1, 1, 0] 's is [0.36, 0.49, 0.15]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [1, -1, 0] 's is [0.5, 0.335, 0.165]
+In community 1 the proportion of [1, -1, 0] 's is [0.605, 0.215, 0.18]
+In community 2 the proportion of [0, 1, -1] 's is [0.145, 0.46, 0.395]
+In community 3 the proportion of [1, -1, 0] 's is [0.295, 0.465, 0.24]
+In community 4 the proportion of [-1, 1, 0] 's is [0.325, 0.375, 0.3]
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [-1, 1, 0] 's is [0.57, 0.235, 0.195]
+In community 1 the proportion of [-1, 1, 0] 's is [0.4, 0.46, 0.14]
+In community 2 the proportion of [1, 0, -1] 's is [0.425, 0.135, 0.44]
+In community 3 the proportion of [-1, 1, 0] 's is [0.345, 0.49, 0.165]
+In community 4 the proportion of [-1, 0, 1] 's is [0.395, 0.235, 0.37]
+Results for Hierarchical with [200, 200, 200, 200, 200] communities, mean 100, var 50 degree inter-communities and mean 8, var 8 degree intra-communities over 10 nodes of the set.
+
+dwmv :
+	0 : 
+	 Iterations averaged success_rate : 0.3851810819312998
+	 Inferred nodes averaged success_rate : 0.385402857563706
+	 Iterations averaged error_mean : 0.89589065230877
+	 Inferred nodes averaged error_mean : 0.8957873029901311
+	 Iterations averaged error_std : 1.483462408851118
+	 Inferred nodes averaged error_std : 1.5000587770986733
+	 Iterations averaged num_nodes_inferred : 814.6799999999998
+	 Inferred nodes averaged num_nodes_inferred : 40734
+	 Iterations averaged false_-1 : 0.3439824619283861
+	 Inferred nodes averaged false_-1 : 0.33820008634561793
+	 Iterations averaged true_-1 : 0.3792096153750911
+	 Inferred nodes averaged true_-1 : 0.3872828580793183
+	 Iterations averaged false_0 : 0.2368002583265827
+	 Inferred nodes averaged false_0 : 0.23278809721837168
+	 Iterations averaged true_0 : 0.2579226167105385
+	 Inferred nodes averaged true_0 : 0.2716721073630758
+	 Iterations averaged false_1 : 0.38572342113965524
+	 Inferred nodes averaged false_1 : 0.37658860033153396
+	 Iterations averaged true_1 : 0.4229118829300153
+	 Inferred nodes averaged true_1 : 0.4384262218864416
+	1 : 
+	 Iterations averaged success_rate : 0.4010196103607411
+	 Inferred nodes averaged success_rate : 0.40112231725503833
+	 Iterations averaged error_mean : 0.9038324902734264
+	 Inferred nodes averaged error_mean : 0.9040460008606004
+	 Iterations averaged error_std : 1.5443293064707448
+	 Inferred nodes averaged error_std : 1.5450089482928073
+	 Iterations averaged num_nodes_inferred : 6785.96
+	 Inferred nodes averaged num_nodes_inferred : 339298
+	 Iterations averaged false_-1 : 0.3656834928472486
+	 Inferred nodes averaged false_-1 : 0.35839162502974065
+	 Iterations averaged true_-1 : 0.3976614477851523
+	 Inferred nodes averaged true_-1 : 0.4101341097035959
+	 Iterations averaged false_0 : 0.1721731311525259
+	 Inferred nodes averaged false_0 : 0.1682905062544253
+	 Iterations averaged true_0 : 0.19354292562775768
+	 Inferred nodes averaged true_0 : 0.20711874357845295
+	 Iterations averaged false_1 : 0.43041380114682465
+	 Inferred nodes averaged false_1 : 0.416901951043953
+	 Iterations averaged true_1 : 0.466964295891101
+	 Inferred nodes averaged true_1 : 0.48599835233313854
+
+dlp :
+	0 : 
+	 Iterations averaged success_rate : 0.3851810819312998
+	 Inferred nodes averaged success_rate : 0.385402857563706
+	 Iterations averaged error_mean : 0.89589065230877
+	 Inferred nodes averaged error_mean : 0.8957873029901311
+	 Iterations averaged error_std : 1.483462408851118
+	 Inferred nodes averaged error_std : 1.5000587770986733
+	 Iterations averaged num_nodes_inferred : 814.6799999999998
+	 Inferred nodes averaged num_nodes_inferred : 40734
+	 Iterations averaged false_-1 : 0.3439824619283861
+	 Inferred nodes averaged false_-1 : 0.33820008634561793
+	 Iterations averaged true_-1 : 0.3792096153750911
+	 Inferred nodes averaged true_-1 : 0.3872828580793183
+	 Iterations averaged false_0 : 0.2368002583265827
+	 Inferred nodes averaged false_0 : 0.23278809721837168
+	 Iterations averaged true_0 : 0.2579226167105385
+	 Inferred nodes averaged true_0 : 0.2716721073630758
+	 Iterations averaged false_1 : 0.38572342113965524
+	 Inferred nodes averaged false_1 : 0.37658860033153396
+	 Iterations averaged true_1 : 0.4229118829300153
+	 Inferred nodes averaged true_1 : 0.4384262218864416
+	1 : 
+	 Iterations averaged success_rate : 0.4008052822981544
+	 Inferred nodes averaged success_rate : 0.400907167151
+	 Iterations averaged error_mean : 0.9040794669486528
+	 Inferred nodes averaged error_mean : 0.9043112544135244
+	 Iterations averaged error_std : 1.5436897378397654
+	 Inferred nodes averaged error_std : 1.5460056382158534
+	 Iterations averaged num_nodes_inferred : 6785.96
+	 Inferred nodes averaged num_nodes_inferred : 339298
+	 Iterations averaged false_-1 : 0.36474644941423934
+	 Inferred nodes averaged false_-1 : 0.3574922674280276
+	 Iterations averaged true_-1 : 0.39758146753368306
+	 Inferred nodes averaged true_-1 : 0.41005667915879457
+	 Iterations averaged false_0 : 0.17282126242884557
+	 Inferred nodes averaged false_0 : 0.16888792187868776
+	 Iterations averaged true_0 : 0.19478303882153003
+	 Inferred nodes averaged true_0 : 0.20867459269044475
+	 Iterations averaged false_1 : 0.4310176083685584
+	 Inferred nodes averaged false_1 : 0.41740884736844774
+	 Iterations averaged true_1 : 0.46577597535953275
+	 Inferred nodes averaged true_1 : 0.4848083707109612
+
+dmv :
+	0 : 
+	 Iterations averaged success_rate : 0.3851810819312998
+	 Inferred nodes averaged success_rate : 0.385402857563706
+	 Iterations averaged error_mean : 0.89589065230877
+	 Inferred nodes averaged error_mean : 0.8957873029901311
+	 Iterations averaged error_std : 1.483462408851118
+	 Inferred nodes averaged error_std : 1.5000587770986733
+	 Iterations averaged num_nodes_inferred : 814.6799999999998
+	 Inferred nodes averaged num_nodes_inferred : 40734
+	 Iterations averaged false_-1 : 0.3439824619283861
+	 Inferred nodes averaged false_-1 : 0.33820008634561793
+	 Iterations averaged true_-1 : 0.3792096153750911
+	 Inferred nodes averaged true_-1 : 0.3872828580793183
+	 Iterations averaged false_0 : 0.2368002583265827
+	 Inferred nodes averaged false_0 : 0.23278809721837168
+	 Iterations averaged true_0 : 0.2579226167105385
+	 Inferred nodes averaged true_0 : 0.2716721073630758
+	 Iterations averaged false_1 : 0.38572342113965524
+	 Inferred nodes averaged false_1 : 0.37658860033153396
+	 Iterations averaged true_1 : 0.4229118829300153
+	 Inferred nodes averaged true_1 : 0.4384262218864416
+	1 : 
+	 Iterations averaged success_rate : 0.4008052822981544
+	 Inferred nodes averaged success_rate : 0.400907167151
+	 Iterations averaged error_mean : 0.9040794669486528
+	 Inferred nodes averaged error_mean : 0.9043112544135244
+	 Iterations averaged error_std : 1.5436897378397654
+	 Inferred nodes averaged error_std : 1.5460056382158534
+	 Iterations averaged num_nodes_inferred : 6785.96
+	 Inferred nodes averaged num_nodes_inferred : 339298
+	 Iterations averaged false_-1 : 0.36474644941423934
+	 Inferred nodes averaged false_-1 : 0.3574922674280276
+	 Iterations averaged true_-1 : 0.39758146753368306
+	 Inferred nodes averaged true_-1 : 0.41005667915879457
+	 Iterations averaged false_0 : 0.17282126242884557
+	 Inferred nodes averaged false_0 : 0.16888792187868776
+	 Iterations averaged true_0 : 0.19478303882153003
+	 Inferred nodes averaged true_0 : 0.20867459269044475
+	 Iterations averaged false_1 : 0.4310176083685584
+	 Inferred nodes averaged false_1 : 0.41740884736844774
+	 Iterations averaged true_1 : 0.46577597535953275
+	 Inferred nodes averaged true_1 : 0.4848083707109612
+
+dvm :
+	0 : 
+	 Iterations averaged success_rate : 0.3851810819312998
+	 Inferred nodes averaged success_rate : 0.385402857563706
+	 Iterations averaged error_mean : 0.89589065230877
+	 Inferred nodes averaged error_mean : 0.8957873029901311
+	 Iterations averaged error_std : 1.483462408851118
+	 Inferred nodes averaged error_std : 1.5000587770986733
+	 Iterations averaged num_nodes_inferred : 814.6799999999998
+	 Inferred nodes averaged num_nodes_inferred : 40734
+	 Iterations averaged false_-1 : 0.3439824619283861
+	 Inferred nodes averaged false_-1 : 0.33820008634561793
+	 Iterations averaged true_-1 : 0.3792096153750911
+	 Inferred nodes averaged true_-1 : 0.3872828580793183
+	 Iterations averaged false_0 : 0.2368002583265827
+	 Inferred nodes averaged false_0 : 0.23278809721837168
+	 Iterations averaged true_0 : 0.2579226167105385
+	 Inferred nodes averaged true_0 : 0.2716721073630758
+	 Iterations averaged false_1 : 0.38572342113965524
+	 Inferred nodes averaged false_1 : 0.37658860033153396
+	 Iterations averaged true_1 : 0.4229118829300153
+	 Inferred nodes averaged true_1 : 0.4384262218864416
+	1 : 
+	 Iterations averaged success_rate : 0.3839502202084712
+	 Inferred nodes averaged success_rate : 0.3840429357084333
+	 Iterations averaged error_mean : 0.9188942422555499
+	 Inferred nodes averaged error_mean : 0.9191124026666824
+	 Iterations averaged error_std : 1.542947002044496
+	 Inferred nodes averaged error_std : 1.5456558219613956
+	 Iterations averaged num_nodes_inferred : 6785.96
+	 Inferred nodes averaged num_nodes_inferred : 339298
+	 Iterations averaged false_-1 : 0.3666110114227926
+	 Inferred nodes averaged false_-1 : 0.3616083749702593
+	 Iterations averaged true_-1 : 0.3856744730786065
+	 Inferred nodes averaged true_-1 : 0.394632514634373
+	 Iterations averaged false_0 : 0.202367928008816
+	 Inferred nodes averaged false_0 : 0.19877714184564552
+	 Iterations averaged true_0 : 0.22211902848402432
+	 Inferred nodes averaged true_0 : 0.23337736679876706
+	 Iterations averaged false_1 : 0.41077375466222527
+	 Inferred nodes averaged false_1 : 0.4009448547488582
+	 Iterations averaged true_1 : 0.43285263960204534
+	 Inferred nodes averaged true_1 : 0.446693752244418

@@ -8,19 +8,19 @@ from generate_opinions import *
 from utils import *
 from graph_inference import *
 
-num_nodes = 5000
-num_edges = 4
+num_nodes = 1000
+num_edges = 10
 r_values = [0, 1]  # radius of the known ball
 methods = {'dmv', 'dwmv', 'dvm', 'dlp'}
 
-num_iterations = 10
+num_iterations = 50
 avg_aux = {}
 total_results = {method: {r: {'inferred': [], 'true': []} for r in r_values} for method in methods}
 total_weighted_stats = {method: {r: {} for r in r_values} for method in methods}
 
 for n in range(num_iterations):
     G = generate_albert_barabasi_graph(n=num_nodes, m=num_edges)
-    v = random.sample(list(G.nodes()), len(list(G.nodes()))//3)  # choose a random set of nodes
+    v = random.sample(list(G.nodes()), 10)  # choose a random set of nodes
     opinion_dist = OpinionDistribution(G)  # create instance of class OpinionDistribution with graph G
     opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[0.4, 0.2, 0.4], label='opinion')
     opinion_dist.basic_opinion_generator(label='opinion', num_steps=10000)

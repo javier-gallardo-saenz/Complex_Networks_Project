@@ -9,28 +9,36 @@ from utils import *
 from graph_inference import *
 from visualize_graphs import *
 
-num_nodes = 300
-num_comm = 6
+num_nodes = 200
+num_comm = 5
 comms = [num_nodes] * num_comm  #communities
-degree_intra = 150
-degree_inter = 5
-intra_degree_seq = [degree_intra] * sum(comms)
-inter_degree_seq = [degree_inter] * sum(comms)
+mean_intra = 100
+var_intra = 50
+mean_inter = 40
+var_inter = 38
+#degree_intra = 150
+#degree_inter = 5
+intra_degree_seq = one_sided_normal_degree_seq(num_nodes=sum(comms), mean=mean_intra, var=var_intra)
+for k in range(num_comm):
+    if sum(intra_degree_seq[num_nodes*k : num_nodes*(k+1)])%2 != 0:
+        intra_degree_seq[num_nodes*k] -= 1
+inter_degree_seq = one_sided_normal_degree_seq(num_nodes=sum(comms), mean=mean_inter, var=var_inter)
 r_values = [0, 1]  # radius of the known ball
 methods = {'dmv', 'dwmv', 'dvm', 'dlp'}
 total_results = {method: {r: {'inferred': [], 'true': []} for r in r_values} for method in methods}
 total_weighted_stats = {method: {r: {} for r in r_values} for method in methods}
 
-num_iterations = 1
+num_iterations = 50
 avg_aux = {}
 for n in range(num_iterations):
     G = generate_hierarchical_configuration_model(ext_degree_sequence=inter_degree_seq, 
                                                   in_degree_sequence=intra_degree_seq,
                                                   community_sizes=comms)
-    v = random.sample(list(G.nodes()), len(list(G.nodes()))//3)  # choose a random set of nodes
+    v = random.sample(list(G.nodes()), 10)  # choose a random set of nodes
     opinion_dist = OpinionDistribution(G)  # create instance of class OpinionDistribution with graph G
-    opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[0.33, 0.33, 0.34], label='opinion')
-    opinion_dist.opinion_generator_majority_biased_voter_model(label='opinion', num_iterations=5000, delta=0.1)
+    opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[0.4, 0.2, 0.4], label='opinion')
+    opinion_dist.basic_opinion_generator(label='opinion', num_steps=10000)
+    # opinion_dist.opinion_generator_majority_biased_voter_model(label='opinion', num_iterations=5000, delta=0.1)
     graph_inf = GraphInference(opinion_dist.graph)
     graph_inf.which_inference_methods()  # shows available inference methods
     methods = {'dmv', 'dwmv', 'dvm', 'dlp'}
@@ -67,8 +75,8 @@ for method in methods:
         total_weighted_stats[method][r] = get_all_stats(total_results[method][r]['inferred'],
                                                         total_results[method][r]['true'], labels=[-1, 0, 1])
 
-print(f"Results for Hierarchical with {comms} communities, {degree_inter} degree inter-communities"
-      f" and {degree_intra} degree intra-communities over 1/3 of the node set.")
+print(f"Results for Hierarchical with {comms} communities, mean {mean_intra}, var {var_intra} degree inter-communities"
+      f" and mean {mean_inter}, var {var_inter} degree intra-communities over 10 nodes of the set.")
 for method in avg_aux.keys():
     print(f"\n{method} :")
     for r in avg_aux[method].keys():
