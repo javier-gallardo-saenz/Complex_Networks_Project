@@ -30,8 +30,9 @@ for n in range(num_iterations):
     G = generate_configuration_model(degree_sequence=deg_seq)
     v = random.sample(list(G.nodes()), 10)  # choose a random set of nodes
     opinion_dist = OpinionDistribution(G)  # create instance of class OpinionDistribution with graph G
-    opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[0.4, 0.2, 0.4], label='opinion')
-    opinion_dist.basic_opinion_generator(label='opinion', num_steps=10000)
+    opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[1/3, 1/3, 1/3], label='opinion')
+    # opinion_dist.basic_opinion_generator(label='opinion', num_steps=10000)
+    opinion_dist.opinion_generator_majority_biased_voter_model(label='opinion', num_iterations=1000, delta=0.1)
     graph_inf = GraphInference(opinion_dist.graph)
     graph_inf.which_inference_methods()  # shows available inference methods
     methods = {'dmv', 'dwmv', 'dvm', 'dlp'}
