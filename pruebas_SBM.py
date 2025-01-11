@@ -8,31 +8,32 @@ from generate_opinions import *
 from utils import *
 from graph_inference import *
 
-num_nodes = 100
-num_comm = 100
-sizes = [num_nodes] * num_comm 
-prob_intra = 0.75
-prob_inter= 0.001
-r_values = [0,1]  # radius of the known ball
+num_nodes_community = 250
+num_comm = 200
+sizes = [num_nodes_community] * num_comm
+prob_intra = 0.4
+prob_inter= 0.0002
+r_values = [0, 1]  # radius of the known ball
 methods = {'dmv', 'dwmv', 'dvm', 'dlp'}
 total_results = {method: {r: {'inferred': [], 'true': []} for r in r_values} for method in methods}
 total_weighted_stats = {method: {r: {} for r in r_values} for method in methods}
+selected_nodes_per_graph = (num_nodes_community*num_comm)//100
 
-num_iterations = 10
+num_iterations = 1
 avg_aux = {}
 for n in range(num_iterations):
     G = generate_sbm(sizes_sbm=sizes, p_inter=prob_inter, p_intra=prob_intra)
-    v = random.sample(list(G.nodes()), 10)  # choose a random set of nodes
+    v = random.sample(list(G.nodes()), selected_nodes_per_graph)  # choose a random set of nodes
     opinion_dist = OpinionDistribution(G)  # create instance of class OpinionDistribution with graph G
-    opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[1/3, 1/3, 1/3], label='opinion')
-    # opinion_dist.basic_opinion_generator(label='opinion', num_steps=10000)
-    opinion_dist.opinion_generator_majority_biased_voter_model(label='opinion', num_iterations=100000, delta=0.1)
+    opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[0.4, 0.2, 0.4], label='opinion')
+    #opinion_dist.basic_opinion_generator(label='opinion', num_iterations=1000000)
+    #opinion_dist.opinion_generator_majority_biased_voter_model(label='opinion', num_iterations=500000, delta=0.1)
+    opinion_dist.opinion_generator_label
     graph_inf = GraphInference(opinion_dist.graph)
     graph_inf.which_inference_methods()  # shows available inference methods
-    methods = {'dmv', 'dwmv', 'dvm', 'dlp'}
     results_dmv = graph_inf.do_inference(node_set=v, radius_values=r_values, methods=methods, label='opinion',
                                                         count_results=2, clear_results=False, num_iterations=1)
-    proportion_of_labels(num_communities=num_comm, nodes_per_comm=num_nodes, Graph=G, label='opinion')
+    proportion_of_labels(num_communities=num_comm, nodes_per_comm=num_nodes_community, Graph=G, label='opinion')
     for method in methods:
         if method not in avg_aux.keys():
            avg_aux[method] = {}
@@ -58,12 +59,16 @@ for method in methods:
         total_weighted_stats[method][r] = get_all_stats(total_results[method][r]['inferred'],
                                                         total_results[method][r]['true'], labels=[-1, 0, 1])
 
-print(f"Results for SBM with {sizes} nodes/comm, {prob_inter} probability inter-communities"
-      f" and {prob_intra} probability intra-communities over 1/3 of the node set.")
+print(f"Results for SBM with {num_nodes_community*num_comm} nodes and {prob_intra} probability of"
+      f" an edge inside the community and {prob_inter} probability of"
+      f" an edge outside the community over {num_iterations} SBM graphs.")
+print(f"Inference was done independently on the frontier of balls centered on "
+      f"{selected_nodes_per_graph} nodes sampled randomly")
+
 for method in avg_aux.keys():
-    print(f"\n{method} :")
+    print(f"\n Method {method} :")
     for r in avg_aux[method].keys():
-        print(f"\t{r} : ")
+        print(f"\t Radius {r} : ")
         for key2 in avg_aux[method][r].keys():
             print(f"\t Iterations averaged {key2} : {avg_aux[method][r][key2]}")
             print(f"\t Inferred nodes averaged {key2} : {total_weighted_stats[method][r][key2]}")

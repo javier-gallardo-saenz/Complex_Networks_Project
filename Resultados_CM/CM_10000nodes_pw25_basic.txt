@@ -1,9 +1,4 @@
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-Results for the Configuration Model with 10000 nodes and a degree sequence with power law 2.5over 5 CM graphs.
+Results for the Configuration Model with 10000 nodes and a degree sequence with power law 2.5 over 5 CM graphs.
 Inference was done independently on the frontier of balls centered on 100 nodes sampled randomly
 
  Method dmv :
