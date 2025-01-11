@@ -1,6 +1,6 @@
 import networkx as nx
 
-def visualize_graph(G, labels, edge_color='lightgreen'):
+def visualize_graph(G, labels, edge_color='lightgrey'):
     """
     Visualizes the graph with nodes colored by their labels.
     
