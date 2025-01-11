@@ -14,8 +14,8 @@ num_comm = 100
 comms = [num_nodes] * num_comm  #communities
 mean_intra = 50
 var_intra = 25
-mean_inter = 10
-var_inter = 10
+mean_inter = 5
+var_inter = 5
 #degree_intra = 150
 #degree_inter = 5
 intra_degree_seq = one_sided_normal_degree_seq(num_nodes=sum(comms), mean=mean_intra, var=var_intra)

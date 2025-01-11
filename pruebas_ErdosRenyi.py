@@ -23,15 +23,21 @@ for n in range(num_iterations):
     G = generate_erdos_renyi_graph(n=num_nodes, p=prob_edge)
     v = random.sample(list(G.nodes()), selected_nodes_per_graph)  # choose a random set of nodes
     opinion_dist = OpinionDistribution(G)  # create instance of class OpinionDistribution with graph G
+<<<<<<< HEAD
     opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[0.4, 0.2, 0.4], label='opinion')
     opinion_dist.basic_opinion_generator(label='opinion', num_iterations=100000)
     #opinion_dist.opinion_generator_majority_biased_voter_model(label='opinion', num_iterations=10000, delta=0.1)
+=======
+    opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[1/3, 1/3, 1/3], label='opinion')
+    # opinion_dist.basic_opinion_generator(label='opinion', num_steps=10000)
+    opinion_dist.opinion_generator_majority_biased_voter_model(label='opinion', num_iterations=100000, delta=0.1)
+>>>>>>> 836edac (new metrics and visualize_graphs)
     graph_inf = GraphInference(opinion_dist.graph)
     #graph_inf.which_inference_methods()  # shows available inference methods
 
     results_dmv = graph_inf.do_inference(node_set=v, radius_values=r_values, methods=methods, label='opinion',
                                                         count_results=2, clear_results=False, num_iterations=1)
-
+    proportion_of_labels_total(Graph=G, label='opinion')
 
 
     for method in methods:
