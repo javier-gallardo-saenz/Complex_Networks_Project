@@ -148,8 +148,29 @@ class OpinionDistribution:
             if prob > random.random():
                 self.graph.nodes[node][label] = majority_opinion
 
+    def opinion_generator_discrete_label_propagation(self, label='opinion', num_iterations=10000):
+        """
+        Infers the discrete attribute label for the nodes in the boundary of a ball using label propagation.
+        Each iteration sweeps through all the nodes in the boundary.
 
+        :param graph_inference: inherits GraphInference class self and methods
+        :param node: node
+        :param radius: radius
+        :param label: label of the attribute to be inferred
+        :param num_iterations: number of steps
 
+        """
+        nodes = list(self.graph.nodes())
+
+        #for _ in tqdm(range(num_iterations)):
+        for _ in range(num_iterations):
+            # now perform label propagation on them
+            node = random.choice(nodes)
+            neighbors = self.graph.neighbors(node)
+            neighbor_opinions = [self.graph.nodes[neighbor][label] for neighbor in neighbors]
+            opinion_counts = Counter(neighbor_opinions)
+            majority_opinion = opinion_counts.most_common(1)[0][0]
+            self.graph.nodes[node][label] = majority_opinion
 
 
 

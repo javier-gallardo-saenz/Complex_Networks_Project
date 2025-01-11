@@ -1,0 +1,380 @@
+SBM Graph: 50000 nodes, 2740057 edges
+dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
+In community 0 the proportion of [-1, 1, 0] 's is [0.932, 0.032, 0.036]
+In community 1 the proportion of [0, 1, -1] 's is [0.892, 0.048, 0.06]
+In community 2 the proportion of [0, 1, -1] 's is [0.9, 0.072, 0.028]
+In community 3 the proportion of [-1, 1, 0] 's is [0.904, 0.052, 0.044]
+In community 4 the proportion of [-1, 0, 1] 's is [0.928, 0.024, 0.048]
+In community 5 the proportion of [0, 1, -1] 's is [0.916, 0.032, 0.052]
+In community 6 the proportion of [0, -1, 1] 's is [0.936, 0.044, 0.02]
+In community 7 the proportion of [-1, 1, 0] 's is [0.08, 0.884, 0.036]
+In community 8 the proportion of [-1, 0, 1] 's is [0.916, 0.04, 0.044]
+In community 9 the proportion of [-1, 1, 0] 's is [0.036, 0.92, 0.044]
+In community 10 the proportion of [-1, 0, 1] 's is [0.88, 0.044, 0.076]
+In community 11 the proportion of [-1, 1, 0] 's is [0.904, 0.048, 0.048]
+In community 12 the proportion of [1, -1, 0] 's is [0.888, 0.072, 0.04]
+In community 13 the proportion of [1, -1, 0] 's is [0.892, 0.064, 0.044]
+In community 14 the proportion of [-1, 0, 1] 's is [0.896, 0.068, 0.036]
+In community 15 the proportion of [-1, 1, 0] 's is [0.904, 0.048, 0.048]
+In community 16 the proportion of [-1, 1, 0] 's is [0.896, 0.06, 0.044]
+In community 17 the proportion of [-1, 0, 1] 's is [0.896, 0.044, 0.06]
+In community 18 the proportion of [-1, 0, 1] 's is [0.888, 0.068, 0.044]
+In community 19 the proportion of [1, 0, -1] 's is [0.904, 0.06, 0.036]
+In community 20 the proportion of [1, -1, 0] 's is [0.908, 0.072, 0.02]
+In community 21 the proportion of [1, 0, -1] 's is [0.908, 0.036, 0.056]
+In community 22 the proportion of [0, 1, -1] 's is [0.904, 0.068, 0.028]
+In community 23 the proportion of [0, -1, 1] 's is [0.916, 0.044, 0.04]
+In community 24 the proportion of [1, 0, -1] 's is [0.896, 0.048, 0.056]
+In community 25 the proportion of [0, -1, 1] 's is [0.088, 0.876, 0.036]
+In community 26 the proportion of [1, 0, -1] 's is [0.916, 0.052, 0.032]
+In community 27 the proportion of [-1, 1, 0] 's is [0.88, 0.072, 0.048]
+In community 28 the proportion of [1, 0, -1] 's is [0.032, 0.92, 0.048]
+In community 29 the proportion of [0, -1, 1] 's is [0.872, 0.068, 0.06]
+In community 30 the proportion of [-1, 1, 0] 's is [0.892, 0.06, 0.048]
+In community 31 the proportion of [-1, 1, 0] 's is [0.868, 0.044, 0.088]
+In community 32 the proportion of [1, -1, 0] 's is [0.9, 0.044, 0.056]
+In community 33 the proportion of [1, -1, 0] 's is [0.056, 0.888, 0.056]
+In community 34 the proportion of [-1, 0, 1] 's is [0.904, 0.048, 0.048]
+In community 35 the proportion of [1, 0, -1] 's is [0.916, 0.044, 0.04]
+In community 36 the proportion of [-1, 1, 0] 's is [0.908, 0.056, 0.036]
+In community 37 the proportion of [0, -1, 1] 's is [0.056, 0.904, 0.04]
+In community 38 the proportion of [0, 1, -1] 's is [0.896, 0.06, 0.044]
+In community 39 the proportion of [-1, 0, 1] 's is [0.9, 0.04, 0.06]
+In community 40 the proportion of [0, 1, -1] 's is [0.952, 0.028, 0.02]
+In community 41 the proportion of [0, -1, 1] 's is [0.908, 0.04, 0.052]
+In community 42 the proportion of [-1, 0, 1] 's is [0.044, 0.064, 0.892]
+In community 43 the proportion of [-1, 1, 0] 's is [0.9, 0.044, 0.056]
+In community 44 the proportion of [0, 1, -1] 's is [0.892, 0.052, 0.056]
+In community 45 the proportion of [1, 0, -1] 's is [0.916, 0.028, 0.056]
+In community 46 the proportion of [-1, 0, 1] 's is [0.944, 0.02, 0.036]
+In community 47 the proportion of [1, -1, 0] 's is [0.896, 0.064, 0.04]
+In community 48 the proportion of [-1, 0, 1] 's is [0.904, 0.052, 0.044]
+In community 49 the proportion of [0, 1, -1] 's is [0.884, 0.052, 0.064]
+In community 50 the proportion of [1, 0, -1] 's is [0.884, 0.052, 0.064]
+In community 51 the proportion of [1, 0, -1] 's is [0.888, 0.056, 0.056]
+In community 52 the proportion of [0, -1, 1] 's is [0.932, 0.036, 0.032]
+In community 53 the proportion of [0, 1, -1] 's is [0.928, 0.028, 0.044]
+In community 54 the proportion of [-1, 0, 1] 's is [0.04, 0.92, 0.04]
+In community 55 the proportion of [1, 0, -1] 's is [0.828, 0.072, 0.1]
+In community 56 the proportion of [0, 1, -1] 's is [0.88, 0.04, 0.08]
+In community 57 the proportion of [-1, 1, 0] 's is [0.044, 0.92, 0.036]
+In community 58 the proportion of [0, -1, 1] 's is [0.94, 0.04, 0.02]
+In community 59 the proportion of [-1, 0, 1] 's is [0.908, 0.048, 0.044]
+In community 60 the proportion of [-1, 1, 0] 's is [0.924, 0.032, 0.044]
+In community 61 the proportion of [0, -1, 1] 's is [0.916, 0.04, 0.044]
+In community 62 the proportion of [-1, 0, 1] 's is [0.928, 0.04, 0.032]
+In community 63 the proportion of [0, -1, 1] 's is [0.912, 0.044, 0.044]
+In community 64 the proportion of [-1, 1, 0] 's is [0.92, 0.04, 0.04]
+In community 65 the proportion of [1, -1, 0] 's is [0.928, 0.04, 0.032]
+In community 66 the proportion of [0, -1, 1] 's is [0.924, 0.04, 0.036]
+In community 67 the proportion of [1, -1, 0] 's is [0.86, 0.076, 0.064]
+In community 68 the proportion of [1, 0, -1] 's is [0.932, 0.036, 0.032]
+In community 69 the proportion of [1, 0, -1] 's is [0.816, 0.124, 0.06]
+In community 70 the proportion of [0, 1, -1] 's is [0.912, 0.052, 0.036]
+In community 71 the proportion of [-1, 0, 1] 's is [0.912, 0.056, 0.032]
+In community 72 the proportion of [1, -1, 0] 's is [0.832, 0.088, 0.08]
+In community 73 the proportion of [0, 1, -1] 's is [0.92, 0.044, 0.036]
+In community 74 the proportion of [0, -1, 1] 's is [0.912, 0.044, 0.044]
+In community 75 the proportion of [1, -1, 0] 's is [0.896, 0.06, 0.044]
+In community 76 the proportion of [1, 0, -1] 's is [0.916, 0.052, 0.032]
+In community 77 the proportion of [-1, 0, 1] 's is [0.912, 0.06, 0.028]
+In community 78 the proportion of [0, 1, -1] 's is [0.928, 0.036, 0.036]
+In community 79 the proportion of [0, -1, 1] 's is [0.936, 0.036, 0.028]
+In community 80 the proportion of [-1, 0, 1] 's is [0.064, 0.868, 0.068]
+In community 81 the proportion of [1, 0, -1] 's is [0.904, 0.044, 0.052]
+In community 82 the proportion of [1, 0, -1] 's is [0.908, 0.044, 0.048]
+In community 83 the proportion of [1, -1, 0] 's is [0.896, 0.064, 0.04]
+In community 84 the proportion of [-1, 1, 0] 's is [0.904, 0.036, 0.06]
+In community 85 the proportion of [1, -1, 0] 's is [0.92, 0.048, 0.032]
+In community 86 the proportion of [0, 1, -1] 's is [0.856, 0.08, 0.064]
+In community 87 the proportion of [1, -1, 0] 's is [0.94, 0.024, 0.036]
+In community 88 the proportion of [1, -1, 0] 's is [0.904, 0.06, 0.036]
+In community 89 the proportion of [1, 0, -1] 's is [0.924, 0.036, 0.04]
+In community 90 the proportion of [0, 1, -1] 's is [0.048, 0.912, 0.04]
+In community 91 the proportion of [-1, 1, 0] 's is [0.884, 0.056, 0.06]
+In community 92 the proportion of [1, 0, -1] 's is [0.908, 0.064, 0.028]
+In community 93 the proportion of [-1, 0, 1] 's is [0.908, 0.048, 0.044]
+In community 94 the proportion of [-1, 0, 1] 's is [0.904, 0.052, 0.044]
+In community 95 the proportion of [-1, 1, 0] 's is [0.892, 0.068, 0.04]
+In community 96 the proportion of [1, -1, 0] 's is [0.884, 0.056, 0.06]
+In community 97 the proportion of [1, 0, -1] 's is [0.904, 0.028, 0.068]
+In community 98 the proportion of [1, 0, -1] 's is [0.912, 0.04, 0.048]
+In community 99 the proportion of [0, -1, 1] 's is [0.056, 0.912, 0.032]
+In community 100 the proportion of [0, 1, -1] 's is [0.896, 0.048, 0.056]
+In community 101 the proportion of [1, -1, 0] 's is [0.92, 0.028, 0.052]
+In community 102 the proportion of [1, -1, 0] 's is [0.872, 0.076, 0.052]
+In community 103 the proportion of [-1, 1, 0] 's is [0.9, 0.048, 0.052]
+In community 104 the proportion of [0, 1, -1] 's is [0.932, 0.036, 0.032]
+In community 105 the proportion of [-1, 0, 1] 's is [0.912, 0.04, 0.048]
+In community 106 the proportion of [1, 0, -1] 's is [0.904, 0.044, 0.052]
+In community 107 the proportion of [1, 0, -1] 's is [0.924, 0.032, 0.044]
+In community 108 the proportion of [-1, 1, 0] 's is [0.924, 0.044, 0.032]
+In community 109 the proportion of [0, -1, 1] 's is [0.92, 0.04, 0.04]
+In community 110 the proportion of [1, -1, 0] 's is [0.908, 0.064, 0.028]
+In community 111 the proportion of [0, 1, -1] 's is [0.904, 0.04, 0.056]
+In community 112 the proportion of [1, -1, 0] 's is [0.9, 0.064, 0.036]
+In community 113 the proportion of [1, 0, -1] 's is [0.912, 0.032, 0.056]
+In community 114 the proportion of [0, 1, -1] 's is [0.908, 0.044, 0.048]
+In community 115 the proportion of [0, 1, -1] 's is [0.908, 0.056, 0.036]
+In community 116 the proportion of [0, 1, -1] 's is [0.044, 0.924, 0.032]
+In community 117 the proportion of [-1, 0, 1] 's is [0.924, 0.048, 0.028]
+In community 118 the proportion of [1, 0, -1] 's is [0.904, 0.06, 0.036]
+In community 119 the proportion of [1, 0, -1] 's is [0.904, 0.036, 0.06]
+In community 120 the proportion of [0, -1, 1] 's is [0.952, 0.012, 0.036]
+In community 121 the proportion of [0, -1, 1] 's is [0.904, 0.044, 0.052]
+In community 122 the proportion of [-1, 0, 1] 's is [0.916, 0.036, 0.048]
+In community 123 the proportion of [1, 0, -1] 's is [0.896, 0.048, 0.056]
+In community 124 the proportion of [0, -1, 1] 's is [0.928, 0.04, 0.032]
+In community 125 the proportion of [1, -1, 0] 's is [0.944, 0.028, 0.028]
+In community 126 the proportion of [-1, 0, 1] 's is [0.904, 0.028, 0.068]
+In community 127 the proportion of [-1, 0, 1] 's is [0.912, 0.052, 0.036]
+In community 128 the proportion of [0, 1, -1] 's is [0.924, 0.036, 0.04]
+In community 129 the proportion of [0, 1, -1] 's is [0.936, 0.032, 0.032]
+In community 130 the proportion of [-1, 0, 1] 's is [0.86, 0.088, 0.052]
+In community 131 the proportion of [1, 0, -1] 's is [0.916, 0.04, 0.044]
+In community 132 the proportion of [-1, 1, 0] 's is [0.916, 0.044, 0.04]
+In community 133 the proportion of [1, 0, -1] 's is [0.9, 0.048, 0.052]
+In community 134 the proportion of [1, 0, -1] 's is [0.904, 0.064, 0.032]
+In community 135 the proportion of [-1, 1, 0] 's is [0.904, 0.064, 0.032]
+In community 136 the proportion of [1, 0, -1] 's is [0.936, 0.04, 0.024]
+In community 137 the proportion of [1, -1, 0] 's is [0.908, 0.06, 0.032]
+In community 138 the proportion of [1, -1, 0] 's is [0.904, 0.048, 0.048]
+In community 139 the proportion of [1, 0, -1] 's is [0.936, 0.04, 0.024]
+In community 140 the proportion of [1, -1, 0] 's is [0.9, 0.044, 0.056]
+In community 141 the proportion of [0, -1, 1] 's is [0.896, 0.064, 0.04]
+In community 142 the proportion of [-1, 0, 1] 's is [0.896, 0.064, 0.04]
+In community 143 the proportion of [1, 0, -1] 's is [0.924, 0.028, 0.048]
+In community 144 the proportion of [-1, 0, 1] 's is [0.896, 0.036, 0.068]
+In community 145 the proportion of [1, -1, 0] 's is [0.036, 0.908, 0.056]
+In community 146 the proportion of [1, -1, 0] 's is [0.928, 0.028, 0.044]
+In community 147 the proportion of [0, 1, -1] 's is [0.928, 0.044, 0.028]
+In community 148 the proportion of [1, 0, -1] 's is [0.896, 0.056, 0.048]
+In community 149 the proportion of [0, 1, -1] 's is [0.908, 0.044, 0.048]
+In community 150 the proportion of [-1, 0, 1] 's is [0.892, 0.052, 0.056]
+In community 151 the proportion of [0, -1, 1] 's is [0.928, 0.044, 0.028]
+In community 152 the proportion of [0, -1, 1] 's is [0.908, 0.04, 0.052]
+In community 153 the proportion of [-1, 1, 0] 's is [0.92, 0.032, 0.048]
+In community 154 the proportion of [1, 0, -1] 's is [0.9, 0.064, 0.036]
+In community 155 the proportion of [-1, 1, 0] 's is [0.908, 0.04, 0.052]
+In community 156 the proportion of [0, 1, -1] 's is [0.904, 0.048, 0.048]
+In community 157 the proportion of [-1, 1, 0] 's is [0.912, 0.04, 0.048]
+In community 158 the proportion of [-1, 0, 1] 's is [0.88, 0.036, 0.084]
+In community 159 the proportion of [-1, 0, 1] 's is [0.892, 0.072, 0.036]
+In community 160 the proportion of [1, 0, -1] 's is [0.876, 0.044, 0.08]
+In community 161 the proportion of [1, 0, -1] 's is [0.892, 0.048, 0.06]
+In community 162 the proportion of [1, -1, 0] 's is [0.888, 0.052, 0.06]
+In community 163 the proportion of [-1, 1, 0] 's is [0.912, 0.064, 0.024]
+In community 164 the proportion of [1, -1, 0] 's is [0.92, 0.036, 0.044]
+In community 165 the proportion of [1, -1, 0] 's is [0.884, 0.06, 0.056]
+In community 166 the proportion of [-1, 0, 1] 's is [0.04, 0.928, 0.032]
+In community 167 the proportion of [1, 0, -1] 's is [0.888, 0.044, 0.068]
+In community 168 the proportion of [1, -1, 0] 's is [0.928, 0.04, 0.032]
+In community 169 the proportion of [1, 0, -1] 's is [0.916, 0.056, 0.028]
+In community 170 the proportion of [0, 1, -1] 's is [0.888, 0.052, 0.06]
+In community 171 the proportion of [-1, 1, 0] 's is [0.9, 0.056, 0.044]
+In community 172 the proportion of [1, 0, -1] 's is [0.928, 0.036, 0.036]
+In community 173 the proportion of [0, -1, 1] 's is [0.9, 0.064, 0.036]
+In community 174 the proportion of [1, -1, 0] 's is [0.916, 0.048, 0.036]
+In community 175 the proportion of [0, -1, 1] 's is [0.912, 0.04, 0.048]
+In community 176 the proportion of [0, 1, -1] 's is [0.936, 0.028, 0.036]
+In community 177 the proportion of [-1, 0, 1] 's is [0.912, 0.032, 0.056]
+In community 178 the proportion of [-1, 1, 0] 's is [0.924, 0.04, 0.036]
+In community 179 the proportion of [1, -1, 0] 's is [0.924, 0.028, 0.048]
+In community 180 the proportion of [1, -1, 0] 's is [0.936, 0.044, 0.02]
+In community 181 the proportion of [1, 0, -1] 's is [0.924, 0.048, 0.028]
+In community 182 the proportion of [-1, 0, 1] 's is [0.9, 0.048, 0.052]
+In community 183 the proportion of [0, -1, 1] 's is [0.9, 0.052, 0.048]
+In community 184 the proportion of [-1, 1, 0] 's is [0.928, 0.052, 0.02]
+In community 185 the proportion of [0, -1, 1] 's is [0.924, 0.032, 0.044]
+In community 186 the proportion of [0, 1, -1] 's is [0.884, 0.052, 0.064]
+In community 187 the proportion of [1, -1, 0] 's is [0.916, 0.048, 0.036]
+In community 188 the proportion of [-1, 1, 0] 's is [0.9, 0.036, 0.064]
+In community 189 the proportion of [0, 1, -1] 's is [0.884, 0.052, 0.064]
+In community 190 the proportion of [0, 1, -1] 's is [0.94, 0.04, 0.02]
+In community 191 the proportion of [0, 1, -1] 's is [0.908, 0.044, 0.048]
+In community 192 the proportion of [1, -1, 0] 's is [0.868, 0.068, 0.064]
+In community 193 the proportion of [1, 0, -1] 's is [0.872, 0.02, 0.108]
+In community 194 the proportion of [0, 1, -1] 's is [0.88, 0.06, 0.06]
+In community 195 the proportion of [0, -1, 1] 's is [0.904, 0.036, 0.06]
+In community 196 the proportion of [0, -1, 1] 's is [0.944, 0.02, 0.036]
+In community 197 the proportion of [-1, 1, 0] 's is [0.932, 0.036, 0.032]
+In community 198 the proportion of [0, 1, -1] 's is [0.928, 0.028, 0.044]
+In community 199 the proportion of [-1, 0, 1] 's is [0.876, 0.08, 0.044]
+Results for SBM with 50000 nodes and 0.4 probability of an edge inside the community and 0.0002 probability of an edge outside the community over 1 SBM graphs.
+Inference was done independently on the frontier of balls centered on 500 nodes sampled randomly
+
+ Method dlp :
+	 Radius 0 : 
+	 Iterations averaged success_rate : 0.7848327408622733
+	 Inferred nodes averaged success_rate : 0.7848327408622733
+	 Iterations averaged error_mean : 0.29488651900464863
+	 Inferred nodes averaged error_mean : 0.29488651900464863
+	 Iterations averaged error_std : 0.7477296989484757
+	 Inferred nodes averaged error_std : 0.7477296989484757
+	 Iterations averaged num_nodes_inferred : 54855.0
+	 Inferred nodes averaged num_nodes_inferred : 54855
+	 Iterations averaged false_-1 : 0.09281632653061224
+	 Inferred nodes averaged false_-1 : 0.09281632653061224
+	 Iterations averaged true_-1 : 0.7602872134769401
+	 Inferred nodes averaged true_-1 : 0.7602872134769401
+	 Iterations averaged false_0 : 0.09210661992163333
+	 Inferred nodes averaged false_0 : 0.09210661992163333
+	 Iterations averaged true_0 : 0.7598829608416858
+	 Inferred nodes averaged true_0 : 0.7598829608416858
+	 Iterations averaged false_1 : 0.14103427083028477
+	 Inferred nodes averaged false_1 : 0.14103427083028477
+	 Iterations averaged true_1 : 0.8256792033259209
+	 Inferred nodes averaged true_1 : 0.8256792033259209
+	 Radius 1 : 
+	 Iterations averaged success_rate : 0.5908555117910329
+	 Inferred nodes averaged success_rate : 0.5908555117910329
+	 Iterations averaged error_mean : 0.5573928796814136
+	 Inferred nodes averaged error_mean : 0.5573928796814136
+	 Iterations averaged error_std : 1.0758355734351908
+	 Inferred nodes averaged error_std : 1.0758355734351908
+	 Iterations averaged num_nodes_inferred : 1102872.0
+	 Inferred nodes averaged num_nodes_inferred : 1102872
+	 Iterations averaged false_-1 : 0.20161600513907083
+	 Inferred nodes averaged false_-1 : 0.20161600513907083
+	 Iterations averaged true_-1 : 0.5806909894171491
+	 Inferred nodes averaged true_-1 : 0.5806909894171491
+	 Iterations averaged false_0 : 0.1842935950323733
+	 Inferred nodes averaged false_0 : 0.1842935950323733
+	 Iterations averaged true_0 : 0.5679411342047458
+	 Inferred nodes averaged true_0 : 0.5679411342047458
+	 Iterations averaged false_1 : 0.2303043089212056
+	 Inferred nodes averaged false_1 : 0.2303043089212056
+	 Iterations averaged true_1 : 0.6181285297309523
+	 Inferred nodes averaged true_1 : 0.6181285297309523
+
+ Method dvm :
+	 Radius 0 : 
+	 Iterations averaged success_rate : 0.7848327408622733
+	 Inferred nodes averaged success_rate : 0.7848327408622733
+	 Iterations averaged error_mean : 0.29488651900464863
+	 Inferred nodes averaged error_mean : 0.29488651900464863
+	 Iterations averaged error_std : 0.7477296989484757
+	 Inferred nodes averaged error_std : 0.7477296989484757
+	 Iterations averaged num_nodes_inferred : 54855.0
+	 Inferred nodes averaged num_nodes_inferred : 54855
+	 Iterations averaged false_-1 : 0.09281632653061224
+	 Inferred nodes averaged false_-1 : 0.09281632653061224
+	 Iterations averaged true_-1 : 0.7602872134769401
+	 Inferred nodes averaged true_-1 : 0.7602872134769401
+	 Iterations averaged false_0 : 0.09210661992163333
+	 Inferred nodes averaged false_0 : 0.09210661992163333
+	 Iterations averaged true_0 : 0.7598829608416858
+	 Inferred nodes averaged true_0 : 0.7598829608416858
+	 Iterations averaged false_1 : 0.14103427083028477
+	 Inferred nodes averaged false_1 : 0.14103427083028477
+	 Iterations averaged true_1 : 0.8256792033259209
+	 Inferred nodes averaged true_1 : 0.8256792033259209
+	 Radius 1 : 
+	 Iterations averaged success_rate : 0.5855330446325594
+	 Inferred nodes averaged success_rate : 0.5855330446325594
+	 Iterations averaged error_mean : 0.5646838436373396
+	 Inferred nodes averaged error_mean : 0.5646838436373396
+	 Iterations averaged error_std : 1.0839846503459842
+	 Inferred nodes averaged error_std : 1.0839846503459842
+	 Iterations averaged num_nodes_inferred : 1102872.0
+	 Inferred nodes averaged num_nodes_inferred : 1102872
+	 Iterations averaged false_-1 : 0.20452127202576936
+	 Inferred nodes averaged false_-1 : 0.20452127202576936
+	 Iterations averaged true_-1 : 0.5755136219915395
+	 Inferred nodes averaged true_-1 : 0.5755136219915395
+	 Iterations averaged false_0 : 0.18700919945451658
+	 Inferred nodes averaged false_0 : 0.18700919945451658
+	 Iterations averaged true_0 : 0.5631607811624763
+	 Inferred nodes averaged true_0 : 0.5631607811624763
+	 Iterations averaged false_1 : 0.23263664074378543
+	 Inferred nodes averaged false_1 : 0.23263664074378543
+	 Iterations averaged true_1 : 0.6122403309134047
+	 Inferred nodes averaged true_1 : 0.6122403309134047
+
+ Method dwmv :
+	 Radius 0 : 
+	 Iterations averaged success_rate : 0.7848327408622733
+	 Inferred nodes averaged success_rate : 0.7848327408622733
+	 Iterations averaged error_mean : 0.29488651900464863
+	 Inferred nodes averaged error_mean : 0.29488651900464863
+	 Iterations averaged error_std : 0.7477296989484757
+	 Inferred nodes averaged error_std : 0.7477296989484757
+	 Iterations averaged num_nodes_inferred : 54855.0
+	 Inferred nodes averaged num_nodes_inferred : 54855
+	 Iterations averaged false_-1 : 0.09281632653061224
+	 Inferred nodes averaged false_-1 : 0.09281632653061224
+	 Iterations averaged true_-1 : 0.7602872134769401
+	 Inferred nodes averaged true_-1 : 0.7602872134769401
+	 Iterations averaged false_0 : 0.09210661992163333
+	 Inferred nodes averaged false_0 : 0.09210661992163333
+	 Iterations averaged true_0 : 0.7598829608416858
+	 Inferred nodes averaged true_0 : 0.7598829608416858
+	 Iterations averaged false_1 : 0.14103427083028477
+	 Inferred nodes averaged false_1 : 0.14103427083028477
+	 Iterations averaged true_1 : 0.8256792033259209
+	 Inferred nodes averaged true_1 : 0.8256792033259209
+	 Radius 1 : 
+	 Iterations averaged success_rate : 0.5908645790263966
+	 Inferred nodes averaged success_rate : 0.5908645790263966
+	 Iterations averaged error_mean : 0.5574536301583501
+	 Inferred nodes averaged error_mean : 0.5574536301583501
+	 Iterations averaged error_std : 1.0758067670512081
+	 Inferred nodes averaged error_std : 1.0758067670512081
+	 Iterations averaged num_nodes_inferred : 1102872.0
+	 Inferred nodes averaged num_nodes_inferred : 1102872
+	 Iterations averaged false_-1 : 0.20181823709251254
+	 Inferred nodes averaged false_-1 : 0.20181823709251254
+	 Iterations averaged true_-1 : 0.5811154584698901
+	 Inferred nodes averaged true_-1 : 0.5811154584698901
+	 Iterations averaged false_0 : 0.1841098421956889
+	 Inferred nodes averaged false_0 : 0.1841098421956889
+	 Iterations averaged true_0 : 0.5677856994125738
+	 Inferred nodes averaged true_0 : 0.5677856994125738
+	 Iterations averaged false_1 : 0.23027084439723844
+	 Inferred nodes averaged false_1 : 0.23027084439723844
+	 Iterations averaged true_1 : 0.61792640112422
+	 Inferred nodes averaged true_1 : 0.61792640112422
+
+ Method dmv :
+	 Radius 0 : 
+	 Iterations averaged success_rate : 0.7848327408622733
+	 Inferred nodes averaged success_rate : 0.7848327408622733
+	 Iterations averaged error_mean : 0.29488651900464863
+	 Inferred nodes averaged error_mean : 0.29488651900464863
+	 Iterations averaged error_std : 0.7477296989484757
+	 Inferred nodes averaged error_std : 0.7477296989484757
+	 Iterations averaged num_nodes_inferred : 54855.0
+	 Inferred nodes averaged num_nodes_inferred : 54855
+	 Iterations averaged false_-1 : 0.09281632653061224
+	 Inferred nodes averaged false_-1 : 0.09281632653061224
+	 Iterations averaged true_-1 : 0.7602872134769401
+	 Inferred nodes averaged true_-1 : 0.7602872134769401
+	 Iterations averaged false_0 : 0.09210661992163333
+	 Inferred nodes averaged false_0 : 0.09210661992163333
+	 Iterations averaged true_0 : 0.7598829608416858
+	 Inferred nodes averaged true_0 : 0.7598829608416858
+	 Iterations averaged false_1 : 0.14103427083028477
+	 Inferred nodes averaged false_1 : 0.14103427083028477
+	 Iterations averaged true_1 : 0.8256792033259209
+	 Inferred nodes averaged true_1 : 0.8256792033259209
+	 Radius 1 : 
+	 Iterations averaged success_rate : 0.5908555117910329
+	 Inferred nodes averaged success_rate : 0.5908555117910329
+	 Iterations averaged error_mean : 0.5573928796814136
+	 Inferred nodes averaged error_mean : 0.5573928796814136
+	 Iterations averaged error_std : 1.0758355734351908
+	 Inferred nodes averaged error_std : 1.0758355734351908
+	 Iterations averaged num_nodes_inferred : 1102872.0
+	 Inferred nodes averaged num_nodes_inferred : 1102872
+	 Iterations averaged false_-1 : 0.20161600513907083
+	 Inferred nodes averaged false_-1 : 0.20161600513907083
+	 Iterations averaged true_-1 : 0.5806909894171491
+	 Inferred nodes averaged true_-1 : 0.5806909894171491
+	 Iterations averaged false_0 : 0.1842935950323733
+	 Inferred nodes averaged false_0 : 0.1842935950323733
+	 Iterations averaged true_0 : 0.5679411342047458
+	 Inferred nodes averaged true_0 : 0.5679411342047458
+	 Iterations averaged false_1 : 0.2303043089212056
+	 Inferred nodes averaged false_1 : 0.2303043089212056
+	 Iterations averaged true_1 : 0.6181285297309523
+	 Inferred nodes averaged true_1 : 0.6181285297309523
