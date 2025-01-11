@@ -63,7 +63,7 @@ def discrete_weighted_majority_voting(graph_inference, node, radius, label='opin
         graph_inference.graph.nodes[node][inferred_label] = majority_opinion
 
 
-def discrete_voter_model(graph_inference, node, radius, label='opinion', num_iterations=1000):
+def discrete_voter_model(graph_inference, node, radius, label='opinion', num_iterations=10):
     """
     Infers the discrete attribute label for every node in the graph by assigning them the label 
     of one of their neighbors chosen randomly.
@@ -90,15 +90,16 @@ def discrete_voter_model(graph_inference, node, radius, label='opinion', num_ite
 
 
 
-def discrete_label_propagation(graph_inference, node, radius, label='opinion', num_steps=100000):
+def discrete_label_propagation(graph_inference, node, radius, label='opinion', num_iterations=10):
     """
-    Infers the discrete attribute label for the nodes in the boundary of a ball using label propagation
+    Infers the discrete attribute label for the nodes in the boundary of a ball using label propagation.
+    Each iteration sweeps through all the nodes in the boundary.
 
     :param graph_inference: inherits GraphInference class self and methods
     :param node: node
     :param radius: radius
     :param label: label of the attribute to be inferred
-    :param num_steps: number of steps
+    :param num_iterations: number of steps
 
     """
     ball, boundary = graph_inference.get_ball_and_boundary(node, radius)
@@ -117,7 +118,8 @@ def discrete_label_propagation(graph_inference, node, radius, label='opinion', n
         graph_inference.graph.nodes[node][inferred_label] = majority_opinion
 
     aux_str = "Performing label propagation after all nodes in boundary have had an initial opinion assigned"
-    for _ in tqdm(range(num_steps)):
+    #for _ in tqdm(range(num_iterations)):
+    for _ in range(num_iterations):
         # now perform label propagation on them
         node = random.choice(list(boundary))
         neighbors_in_ball = set(graph_inference.graph.neighbors(node)) & ball
