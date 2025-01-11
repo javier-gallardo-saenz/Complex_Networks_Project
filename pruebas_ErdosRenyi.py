@@ -8,11 +8,11 @@ from generate_opinions import *
 from utils import *
 from graph_inference import *
 
-num_nodes = 10000
-prob_edge = 0.005
+num_nodes = 50000
+prob_edge = 0.01
 r_values = [0, 1]  # radius of the known ball
 methods = {'dmv', 'dwmv', 'dvm', 'dlp'}
-selected_nodes_per_graph = 100
+selected_nodes_per_graph = num_nodes//100
 
 num_iterations = 5
 avg_aux = {}

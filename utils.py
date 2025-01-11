@@ -70,6 +70,28 @@ def get_all_stats(inferred_results, true_results, labels):
     return stats
 
 
+def generate_power_law_degree_sequence(N, gamma=2.5, k_min=2):
+    """
+    Generate a degree sequence that obeys a power law distribution.
+    N: (int) number of nodes in the graph (length of the degree sequence)
+    gamma: (float) power law exponent
+    k_min: (int) minimum degree of each node
+    """
+    # Generate a power-law degree sequence
+    degrees = []
+    while len(degrees) < N:
+        # Sample from a power-law distribution
+        k = int(k_min * (1 - np.random.uniform()) ** (-1 / (gamma - 1)))
+        if k >= k_min:
+            degrees.append(k)
+
+    # Ensure the sum of degrees is even
+    if sum(degrees) % 2 != 0:
+        degrees[np.random.randint(0, N)] += 1
+
+    return degrees
+
+
 
 
 # ----------------------------------------------------
