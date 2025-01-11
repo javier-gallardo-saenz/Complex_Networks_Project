@@ -44,6 +44,7 @@ for n in range(num_iterations):
     graph_inf.which_inference_methods()  # shows available inference methods
     results_dmv = graph_inf.do_inference(node_set=v, radius_values=r_values, methods=methods, label='opinion',
                                                         count_results=2, clear_results=False, num_iterations=1)
+    proportion_of_labels_total(Graph=G, label='opinion')
     for method in methods:
         if method not in avg_aux.keys():
            avg_aux[method] = {}
