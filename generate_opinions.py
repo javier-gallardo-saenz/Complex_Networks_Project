@@ -69,7 +69,7 @@ class OpinionDistribution:
 
         return self.graph.nodes[node][label]
 
-    def basic_opinion_generator(self, label='opinion', num_steps=10000, emergency_states=None, emergency_probs=None):
+    def basic_opinion_generator(self, label='opinion', num_iterations=10000, emergency_states=None, emergency_probs=None):
         """
         :param label: attribute to update.
         :param num_steps: (Integer) Number of time-steps to run the generating model for
@@ -83,7 +83,8 @@ class OpinionDistribution:
         if emergency_states is None:
             emergency_states = [-1, 0, 1]
 
-        for _ in tqdm(range(num_steps), desc="Evolving initial attribute distribution"):
+        #for _ in tqdm(range(num_steps), desc="Evolving initial attribute distribution"):
+        for _ in range(num_iterations):
             node = random.choice(list(self.graph.nodes()))
             neighbors = list(self.graph.neighbors(node))
             if neighbors:
