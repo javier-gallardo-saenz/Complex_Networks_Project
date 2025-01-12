@@ -8,7 +8,7 @@ from generate_opinions import *
 from utils import *
 from graph_inference import *
 
-n_nodes = 1000
+num_nodes = 10000
 size_ini = 100
 n_edges = 10
 delta = 0.01
@@ -17,16 +17,16 @@ r_values = [0, 1]  # radius of the known ball
 methods = {'dmv', 'dwmv', 'dvm', 'dlp'}
 total_results = {method: {r: {'inferred': [], 'true': []} for r in r_values} for method in methods}
 total_weighted_stats = {method: {r: {} for r in r_values} for method in methods}
+selected_nodes_per_graph = num_nodes//100
 
 num_iterations = 50
 avg_aux = {}
 for n in range(num_iterations):
-    G = preferential_attachment_with_colors(num_nodes=n_nodes, num_edges=n_edges, labels=labels_prob, 
+    G = preferential_attachment_with_colors(num_nodes=num_nodes, num_edges=n_edges, labels=labels_prob,
                                             size_init_graph=size_ini, label='opinion', delta=delta)
     v = random.sample(list(G.nodes()), 10)  # choose a random set of nodes
     graph_inf = GraphInference(G)
     graph_inf.which_inference_methods()  # shows available inference methods
-    methods = {'dmv', 'dwmv', 'dvm', 'dlp'}
     results_dmv = graph_inf.do_inference(node_set=v, radius_values=r_values, methods=methods, label='opinion',
                                                         count_results=2, clear_results=False, num_iterations=1)
     proportion_of_labels_total(Graph=G, label='opinion')
@@ -56,7 +56,8 @@ for method in methods:
                                                         total_results[method][r]['true'], labels=[-1, 0, 1])
 
 print(f"Results for Pref. Attach. with Colors with {n_nodes} nodes, {n_edges} num_edges,"
-      f" {size_ini} initial size, and {labels_prob} labels probabilities over 1/3 of the node set.")
+      f" {size_ini} initial size, and {labels_prob} labels probabilities "
+      f"over {selected_nodes_per_graph} of the node set.")
 for method in avg_aux.keys():
     print(f"\n{method} :")
     for r in avg_aux[method].keys():
