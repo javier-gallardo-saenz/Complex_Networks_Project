@@ -1,0 +1,5 @@
+In community 0 the proportion of [1, -1] 's is [0.95, 0.05]
+In community 1 the proportion of [1, -1, 0] 's is [0.75, 0.245, 0.005]
+In community 2 the proportion of [-1, 1, 0] 's is [0.63, 0.345, 0.025]
+In community 3 the proportion of [-1, 1] 's is [0.6, 0.4]
+In community 4 the proportion of [1, 0] 's is [0.595, 0.405]

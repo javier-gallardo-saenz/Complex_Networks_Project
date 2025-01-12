@@ -55,7 +55,7 @@ for method in methods:
         total_weighted_stats[method][r] = get_all_stats(total_results[method][r]['inferred'],
                                                         total_results[method][r]['true'], labels=[-1, 0, 1])
 
-print(f"Results for Pref. Attach. with Colors with {n_nodes} nodes, {n_edges} num_edges,"
+print(f"Results for Pref. Attach. with Colors with {num_nodes} nodes, {n_edges} num_edges,"
       f" {size_ini} initial size, and {labels_prob} labels probabilities "
       f"over {selected_nodes_per_graph} of the node set.")
 for method in avg_aux.keys():
