@@ -42,6 +42,8 @@ for j in range(len(num_nodes_list)):
                 else:
                     in_deg[i] = deg - deg // 10 + 1
                     out_deg[i] = deg // 10 - 1
+            if sum(out_deg) % 2 != 0:
+                out_deg[0] += 1
             G = generate_hierarchical_configuration_model(ext_degree_sequence=out_deg,
                                                           in_degree_sequence=in_deg,
                                                           community_sizes=comms)
@@ -108,6 +110,8 @@ for j in range(len(num_nodes_list)):
                 else:
                     in_deg[i] = deg - deg // 10 + 1
                     out_deg[i] = deg // 10 - 1
+            if sum(out_deg) % 2 != 0:
+                out_deg[0] += 1
             G = generate_hierarchical_configuration_model(ext_degree_sequence=out_deg,
                                                           in_degree_sequence=in_deg,
                                                           community_sizes=comms)
@@ -176,6 +180,8 @@ for j in range(len(num_nodes_list)):
                 else:
                     in_deg[i] = deg - deg // 10 + 1
                     out_deg[i] = deg // 10 - 1
+            if sum(out_deg) % 2 != 0:
+                out_deg[0] += 1
             G = generate_hierarchical_configuration_model(ext_degree_sequence=out_deg,
                                                           in_degree_sequence=in_deg,
                                                           community_sizes=comms)

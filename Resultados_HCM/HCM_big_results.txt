@@ -1,0 +1,9 @@
+In community 0 the proportion of [-1, 0, 1] 's is [0.815, 0.005, 0.18]
+In community 1 the proportion of [-1, 1] 's is [0.65, 0.35]
+In community 2 the proportion of [-1, 1, 0] 's is [0.73, 0.245, 0.025]
+In community 3 the proportion of [1, -1, 0] 's is [0.38, 0.615, 0.005]
+In community 4 the proportion of [-1, 1, 0] 's is [0.67, 0.315, 0.015]
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.

@@ -42,6 +42,8 @@ for n in range(num_iterations):
         else:
             in_deg[i] = deg - deg//10 + 1
             out_deg[i] = deg//10 - 1
+    if sum(out_deg) % 2 != 0:
+        out_deg[0] += 1
     # out_deg_skewed = generate_power_law_degree_sequence(num_nodes, gamma=gamma_out, k_min=1)
     # out_deg = [x - 1 for x in out_deg_skewed]
     # in_deg = [
@@ -56,7 +58,7 @@ for n in range(num_iterations):
     opinion_dist = OpinionDistribution(G)  # create instance of class OpinionDistribution with graph G
     opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[1/3, 1/3, 1/3], label='opinion')
     # opinion_dist.basic_opinion_generator(label='opinion', num_steps=100000)
-    opinion_dist.opinion_generator_majority_biased_voter_model(label='opinion', num_iterations=500, delta=0.1)
+    opinion_dist.opinion_generator_majority_biased_voter_model(label='opinion', num_iterations=10000, delta=0.1)
     graph_inf = GraphInference(opinion_dist.graph)
     results_dmv = graph_inf.do_inference(node_set=v, radius_values=r_values, methods=methods, label='opinion',
                                                         count_results=2, clear_results=False, num_iterations=1)

@@ -101,6 +101,9 @@ def generate_hierarchical_configuration_model(in_degree_sequence, ext_degree_seq
         raise ValueError("The length of the inside degrees sequence, the outside degrees sequence and the total "
                          "number of vertices specified by the community_sizes list must be equal")
 
+    if sum(ext_degree_sequence) % 2 != 0:
+        raise ValueError("The sum of the external degree sequence must be even.")
+
     # create graph
     G = nx.empty_graph(0, nx.MultiGraph)
 
@@ -143,10 +146,14 @@ def generate_hierarchical_configuration_model(in_degree_sequence, ext_degree_seq
         community.remove(half_edge)
         new_ext_edge = ()
         new_ext_edge += (half_edge,)
-
         #Select a random community and a random half-edge from that community
         # (excluding the one we sampled the first half-edge from)
-        selected_community = random.choice([lst for lst in non_empty_sublists if lst != community])
+        remaining_comms_available = [lst for lst in non_empty_sublists if lst != community]
+        if not remaining_comms_available:
+            print("With the given communities, it is impossible to satisfy the given outer degree sequence."
+                  " The closest possible random graph was created.")
+            return G
+        selected_community = random.choice(remaining_comms_available)
         selected_half_edge = random.choice(selected_community)
         selected_community.remove(selected_half_edge)
         new_ext_edge += (selected_half_edge,)
