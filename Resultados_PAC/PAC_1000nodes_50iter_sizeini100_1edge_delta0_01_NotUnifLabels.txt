@@ -1,34 +1,11 @@
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
  No hay labels 1 en el grafo original.
  No hay labels 1 en el grafo original.
  No hay labels 1 en el grafo original.
@@ -37,76 +14,34 @@ dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
  No hay labels 1 en el grafo original.
  No hay labels 1 en el grafo original.
  No hay labels 1 en el grafo original.
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
  No hay labels 1 en el grafo original.
  No hay labels 1 en el grafo original.
  No hay labels 1 en el grafo original.
  No hay labels 1 en el grafo original.
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
- No hay labels 0 en el grafo original.
- No hay labels 0 en el grafo original.
- No hay labels 0 en el grafo original.
- No hay labels 0 en el grafo original.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
  No hay labels -1 en el grafo original.
  No hay labels -1 en el grafo original.
  No hay labels -1 en el grafo original.
  No hay labels -1 en el grafo original.
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
@@ -115,25 +50,10 @@ dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
  No hay labels -1 en el grafo original.
  No hay labels -1 en el grafo original.
  No hay labels -1 en el grafo original.
  No hay labels -1 en el grafo original.
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
@@ -142,8 +62,6 @@ dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
@@ -152,15 +70,6 @@ dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
- No hay labels 0 en el grafo original.
- No hay labels 0 en el grafo original.
- No hay labels 0 en el grafo original.
- No hay labels 0 en el grafo original.
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
@@ -169,13 +78,16 @@ dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
-Scale-Free graph with m=1 is not connected. Extracting the largest connected component.
-dict_keys(['dmv', 'dwmv', 'dvm', 'dlp'])
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
  No hay labels 0 en el grafo original.
-Results for Pref. Attach. with Colors with 1000 nodes, 1 num_edges, 100 initial size, and {1: 0.4, 0: 0.2, -1: 0.4} labels probabilities over 1/3 of the node set.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+ No hay labels 0 en el grafo original.
+
+Results for Pref. Attach. with Colors with 1000 nodes, 1 num_edges, 100 initial size, and {1: 0.4, 0: 0.2, -1: 0.4} labels probabilities over 10 nodes.
 
 dmv :
 	0 : 

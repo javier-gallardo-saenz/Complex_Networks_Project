@@ -3,7 +3,7 @@ The proportion of [1, -1, 0] 's is [0.3468, 0.3323, 0.3209]
 The proportion of [1, -1, 0] 's is [0.3444, 0.3214, 0.3342]
 The proportion of [0, 1, -1] 's is [0.3948, 0.3161, 0.2891]
 The proportion of [-1, 0, 1] 's is [0.3345, 0.308, 0.3575]
-Results for Barabási-Albert with 10000 nodes and 10 edges over 100 of the node set.
+Results for Barabási-Albert with 10000 nodes and 10 edges over 100 nodes.
 Inference was done independently on the frontier of balls centered on 100 nodes sampled randomly
 
  Method dwmv :

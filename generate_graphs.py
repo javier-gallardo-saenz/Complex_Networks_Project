@@ -1,6 +1,7 @@
 import networkx as nx
 import random
 from collections import Counter
+import numpy as np
 
 def generate_erdos_renyi_graph(n, p):
     """
@@ -123,7 +124,10 @@ def generate_hierarchical_configuration_model(in_degree_sequence, ext_degree_seq
         half_h = len(half_edges_h) // 2
         random.shuffle(half_edges_h)
         first_half_h, second_half_h = half_edges_h[:half_h], half_edges_h[half_h:]
-        new_internal_edges = ((x, y) for x, y in zip(first_half_h, second_half_h))
+        first_half_h = np.array(first_half_h)
+        second_half_h = np.array(second_half_h)
+        stacked = np.vstack((first_half_h, second_half_h)).T
+        new_internal_edges = [tuple(row) for row in stacked]
         G.add_edges_from(new_internal_edges)
         offset += size_h
 

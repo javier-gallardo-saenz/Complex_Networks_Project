@@ -8,13 +8,13 @@ from generate_opinions import *
 from utils import *
 from graph_inference import *
 
-num_nodes = 50000
+num_nodes = 1000
 prob_edge = 0.01
-r_values = [0, 1]  # radius of the known ball
+r_values = [2]  # radius of the known ball
 methods = {'dmv', 'dwmv', 'dvm', 'dlp'}
 selected_nodes_per_graph = num_nodes//100
 
-num_iterations = 5
+num_iterations = 1
 avg_aux = {}
 total_results = {method: {r: {'inferred': [], 'true': []} for r in r_values} for method in methods}
 total_weighted_stats = {method: {r: {} for r in r_values} for method in methods}
@@ -23,9 +23,10 @@ for n in range(num_iterations):
     G = generate_erdos_renyi_graph(n=num_nodes, p=prob_edge)
     v = random.sample(list(G.nodes()), selected_nodes_per_graph)  # choose a random set of nodes
     opinion_dist = OpinionDistribution(G)  # create instance of class OpinionDistribution with graph G
-    opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[0.4, 0.2, 0.4], label='opinion')
-    opinion_dist.basic_opinion_generator(label='opinion', num_iterations=100000)
+    opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[1/3, 1/3, 1/3], label='opinion')
+    #opinion_dist.basic_opinion_generator(label='opinion', num_iterations=10000)
     #opinion_dist.opinion_generator_majority_biased_voter_model(label='opinion', num_iterations=10000, delta=0.1)
+    opinion_dist.opinion_generator_discrete_label_propagation(label='opinion', num_iterations=10000)
     graph_inf = GraphInference(opinion_dist.graph)
     #graph_inf.which_inference_methods()  # shows available inference methods
 

@@ -11,9 +11,9 @@ from utils import *
 from graph_inference import *
 import math
 
-num_nodes = 10000
-mean = 100
-var = 99
+num_nodes = 1000
+# mean = 100
+# var = 99
 #deg_seq = []
 gamma = 1.5 #power law
 r_values = [0, 1] 
@@ -30,18 +30,18 @@ for n in range(num_nodes):
 total_results = {method: {r: {'inferred': [], 'true': []} for r in r_values} for method in methods}
 total_weighted_stats = {method: {r: {} for r in r_values} for method in methods}
 
-num_iterations = 5
+num_iterations = 1
 avg_aux = {}
 for n in range(num_iterations):
-    deg_seq = generate_power_law_degree_sequence(num_nodes, gamma=2.5, k_min=2)
+    deg_seq = generate_power_law_degree_sequence(num_nodes, gamma=gamma, k_min=5)
     G = generate_configuration_model(degree_sequence=deg_seq)
     v = random.sample(list(G.nodes()), selected_nodes_per_graph)  # choose a random set of nodes
     opinion_dist = OpinionDistribution(G)  # create instance of class OpinionDistribution with graph G
-    opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[0.4, 0.2, 0.4], label='opinion')
-    opinion_dist.basic_opinion_generator(label='opinion', num_iterations=100000)
+    opinion_dist.initialize_opinions(states=[-1, 0, 1], probabilities=[1/3, 1/3, 1/3], label='opinion')
+    #opinion_dist.basic_opinion_generator(label='opinion', num_iterations=10000)
     #opinion_dist.opinion_generator_majority_biased_voter_model(label='opinion', num_iterations=10000, delta=0.1)
+    opinion_dist.opinion_generator_discrete_label_propagation(label='opinion', num_iterations=10000)
     graph_inf = GraphInference(opinion_dist.graph)
-    graph_inf.which_inference_methods()  # shows available inference methods
     results_dmv = graph_inf.do_inference(node_set=v, radius_values=r_values, methods=methods, label='opinion',
                                                         count_results=2, clear_results=False, num_iterations=1)
     proportion_of_labels_total(Graph=G, label='opinion')

@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import math
 import random
 import numpy as np
+import powerlaw
 
 # ----------------------------------------------------
 # Statistics
@@ -90,6 +91,19 @@ def generate_power_law_degree_sequence(N, gamma=2.5, k_min=2):
         degrees[np.random.randint(0, N)] += 1
 
     return degrees
+
+
+def fit_powerlaw(graph):
+    # Step 1: Extract degree sequence
+    degree_sequence = [d for _, d in graph.degree()]
+
+    # Step 2: Fit power-law distribution
+    fit = powerlaw.Fit(degree_sequence, xmin=1)
+
+    # Step 3: Print power-law exponent
+    print(f"Power-law exponent (gamma): {fit.power_law.alpha}")
+    print(f"Xmin (starting point for power-law fit): {fit.xmin}")
+    print(f"Log-likelihood: {fit.power_law.loglikelihoods}")
 
 
 
