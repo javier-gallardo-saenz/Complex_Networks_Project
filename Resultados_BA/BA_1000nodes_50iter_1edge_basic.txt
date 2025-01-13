@@ -1,4 +1,4 @@
-Results for Barab si-Albert with 1000 nodes and 1 edges over 10 nodes.
+Results for Barabasi-Albert with 1000 nodes and 1 initial edges per node over 10 nodes.
 
 dwmv :
 	0 : 
@@ -9,19 +9,8 @@ dwmv :
 	 Iterations averaged error_std : 0.5392998628855329
 	 Inferred nodes averaged error_std : 0.5740861422716643
 	 Iterations averaged num_nodes_inferred : 18.70000000000001
-	 Inferred nodes averaged num_nodes_inferred : 935
-	 Iterations averaged false_-1 : 0.07547288267288269
-	 Inferred nodes averaged false_-1 : 0.07857142857142857
-	 Iterations averaged true_-1 : 0.8689328449328452
-	 Inferred nodes averaged true_-1 : 0.88
-	 Iterations averaged false_0 : 0.061940217111694194
-	 Inferred nodes averaged false_0 : 0.06559571619812583
-	 Iterations averaged true_0 : 0.8284523809523813
-	 Inferred nodes averaged true_0 : 0.9042553191489362
-	 Iterations averaged false_1 : 0.04791524935332985
-	 Inferred nodes averaged false_1 : 0.05319148936170213
-	 Iterations averaged true_1 : 0.8271466413703258
-	 Inferred nodes averaged true_1 : 0.8382749326145552
+	 num_nodes_inferred : 935
+
 	1 : 
 	 Iterations averaged success_rate : 0.7628862990420593
 	 Inferred nodes averaged success_rate : 0.7592702169625246
@@ -30,19 +19,7 @@ dwmv :
 	 Iterations averaged error_std : 0.8479597629470349
 	 Inferred nodes averaged error_std : 0.9300275470359245
 	 Iterations averaged num_nodes_inferred : 202.8
-	 Inferred nodes averaged num_nodes_inferred : 10140
-	 Iterations averaged false_-1 : 0.1670010770892168
-	 Inferred nodes averaged false_-1 : 0.10643458410614924
-	 Iterations averaged true_-1 : 0.5702150287287132
-	 Inferred nodes averaged true_-1 : 0.6668795911849249
-	 Iterations averaged false_0 : 0.07659092285224814
-	 Inferred nodes averaged false_0 : 0.046764741059681855
-	 Iterations averaged true_0 : 0.4479318473290641
-	 Inferred nodes averaged true_0 : 0.6155143338954469
-	 Iterations averaged false_1 : 0.33763952410554166
-	 Inferred nodes averaged false_1 : 0.26552636937487273
-	 Iterations averaged true_1 : 0.7494934521691863
-	 Inferred nodes averaged true_1 : 0.8634538152610441
+	 num_nodes_inferred : 10140
 
 dmv :
 	0 : 
@@ -53,19 +30,8 @@ dmv :
 	 Iterations averaged error_std : 0.5392998628855329
 	 Inferred nodes averaged error_std : 0.5740861422716643
 	 Iterations averaged num_nodes_inferred : 18.70000000000001
-	 Inferred nodes averaged num_nodes_inferred : 935
-	 Iterations averaged false_-1 : 0.07547288267288269
-	 Inferred nodes averaged false_-1 : 0.07857142857142857
-	 Iterations averaged true_-1 : 0.8689328449328452
-	 Inferred nodes averaged true_-1 : 0.88
-	 Iterations averaged false_0 : 0.061940217111694194
-	 Inferred nodes averaged false_0 : 0.06559571619812583
-	 Iterations averaged true_0 : 0.8284523809523813
-	 Inferred nodes averaged true_0 : 0.9042553191489362
-	 Iterations averaged false_1 : 0.04791524935332985
-	 Inferred nodes averaged false_1 : 0.05319148936170213
-	 Iterations averaged true_1 : 0.8271466413703258
-	 Inferred nodes averaged true_1 : 0.8382749326145552
+	 num_nodes_inferred : 935
+
 	1 : 
 	 Iterations averaged success_rate : 0.7628862990420593
 	 Inferred nodes averaged success_rate : 0.7592702169625246
@@ -74,19 +40,7 @@ dmv :
 	 Iterations averaged error_std : 0.8479597629470349
 	 Inferred nodes averaged error_std : 0.9300275470359245
 	 Iterations averaged num_nodes_inferred : 202.8
-	 Inferred nodes averaged num_nodes_inferred : 10140
-	 Iterations averaged false_-1 : 0.1670010770892168
-	 Inferred nodes averaged false_-1 : 0.10643458410614924
-	 Iterations averaged true_-1 : 0.5702150287287132
-	 Inferred nodes averaged true_-1 : 0.6668795911849249
-	 Iterations averaged false_0 : 0.07659092285224814
-	 Inferred nodes averaged false_0 : 0.046764741059681855
-	 Iterations averaged true_0 : 0.4479318473290641
-	 Inferred nodes averaged true_0 : 0.6155143338954469
-	 Iterations averaged false_1 : 0.33763952410554166
-	 Inferred nodes averaged false_1 : 0.26552636937487273
-	 Iterations averaged true_1 : 0.7494934521691863
-	 Inferred nodes averaged true_1 : 0.8634538152610441
+	 num_nodes_inferred : 10140
 
 dvm :
 	0 : 
@@ -97,19 +51,8 @@ dvm :
 	 Iterations averaged error_std : 0.5392998628855329
 	 Inferred nodes averaged error_std : 0.5740861422716643
 	 Iterations averaged num_nodes_inferred : 18.70000000000001
-	 Inferred nodes averaged num_nodes_inferred : 935
-	 Iterations averaged false_-1 : 0.07547288267288269
-	 Inferred nodes averaged false_-1 : 0.07857142857142857
-	 Iterations averaged true_-1 : 0.8689328449328452
-	 Inferred nodes averaged true_-1 : 0.88
-	 Iterations averaged false_0 : 0.061940217111694194
-	 Inferred nodes averaged false_0 : 0.06559571619812583
-	 Iterations averaged true_0 : 0.8284523809523813
-	 Inferred nodes averaged true_0 : 0.9042553191489362
-	 Iterations averaged false_1 : 0.04791524935332985
-	 Inferred nodes averaged false_1 : 0.05319148936170213
-	 Iterations averaged true_1 : 0.8271466413703258
-	 Inferred nodes averaged true_1 : 0.8382749326145552
+	 num_nodes_inferred : 935
+
 	1 : 
 	 Iterations averaged success_rate : 0.7628862990420593
 	 Inferred nodes averaged success_rate : 0.7592702169625246
@@ -118,19 +61,8 @@ dvm :
 	 Iterations averaged error_std : 0.8479597629470349
 	 Inferred nodes averaged error_std : 0.9300275470359245
 	 Iterations averaged num_nodes_inferred : 202.8
-	 Inferred nodes averaged num_nodes_inferred : 10140
-	 Iterations averaged false_-1 : 0.1670010770892168
-	 Inferred nodes averaged false_-1 : 0.10643458410614924
-	 Iterations averaged true_-1 : 0.5702150287287132
-	 Inferred nodes averaged true_-1 : 0.6668795911849249
-	 Iterations averaged false_0 : 0.07659092285224814
-	 Inferred nodes averaged false_0 : 0.046764741059681855
-	 Iterations averaged true_0 : 0.4479318473290641
-	 Inferred nodes averaged true_0 : 0.6155143338954469
-	 Iterations averaged false_1 : 0.33763952410554166
-	 Inferred nodes averaged false_1 : 0.26552636937487273
-	 Iterations averaged true_1 : 0.7494934521691863
-	 Inferred nodes averaged true_1 : 0.8634538152610441
+	 num_nodes_inferred : 10140
+
 
 dlp :
 	0 : 
@@ -141,19 +73,8 @@ dlp :
 	 Iterations averaged error_std : 0.5392998628855329
 	 Inferred nodes averaged error_std : 0.5740861422716643
 	 Iterations averaged num_nodes_inferred : 18.70000000000001
-	 Inferred nodes averaged num_nodes_inferred : 935
-	 Iterations averaged false_-1 : 0.07547288267288269
-	 Inferred nodes averaged false_-1 : 0.07857142857142857
-	 Iterations averaged true_-1 : 0.8689328449328452
-	 Inferred nodes averaged true_-1 : 0.88
-	 Iterations averaged false_0 : 0.061940217111694194
-	 Inferred nodes averaged false_0 : 0.06559571619812583
-	 Iterations averaged true_0 : 0.8284523809523813
-	 Inferred nodes averaged true_0 : 0.9042553191489362
-	 Iterations averaged false_1 : 0.04791524935332985
-	 Inferred nodes averaged false_1 : 0.05319148936170213
-	 Iterations averaged true_1 : 0.8271466413703258
-	 Inferred nodes averaged true_1 : 0.8382749326145552
+	 num_nodes_inferred : 935
+
 	1 : 
 	 Iterations averaged success_rate : 0.7628862990420593
 	 Inferred nodes averaged success_rate : 0.7592702169625246
@@ -162,16 +83,5 @@ dlp :
 	 Iterations averaged error_std : 0.8479597629470349
 	 Inferred nodes averaged error_std : 0.9300275470359245
 	 Iterations averaged num_nodes_inferred : 202.8
-	 Inferred nodes averaged num_nodes_inferred : 10140
-	 Iterations averaged false_-1 : 0.1670010770892168
-	 Inferred nodes averaged false_-1 : 0.10643458410614924
-	 Iterations averaged true_-1 : 0.5702150287287132
-	 Inferred nodes averaged true_-1 : 0.6668795911849249
-	 Iterations averaged false_0 : 0.07659092285224814
-	 Inferred nodes averaged false_0 : 0.046764741059681855
-	 Iterations averaged true_0 : 0.4479318473290641
-	 Inferred nodes averaged true_0 : 0.6155143338954469
-	 Iterations averaged false_1 : 0.33763952410554166
-	 Inferred nodes averaged false_1 : 0.26552636937487273
-	 Iterations averaged true_1 : 0.7494934521691863
-	 Inferred nodes averaged true_1 : 0.8634538152610441
+	 averaged num_nodes_inferred : 10140
+

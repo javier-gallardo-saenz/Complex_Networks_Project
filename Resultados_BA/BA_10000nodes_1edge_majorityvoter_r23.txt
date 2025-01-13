@@ -3,8 +3,7 @@ The proportion of [1, -1, 0] 's is [0.3316, 0.3281, 0.3403]
 The proportion of [1, 0, -1] 's is [0.3564, 0.3104, 0.3332]
 The proportion of [1, -1, 0] 's is [0.3356, 0.3281, 0.3363]
 The proportion of [1, 0, -1] 's is [0.3329, 0.3466, 0.3205]
-Results for Barabási-Albert with 10000 nodes and 1 edges over 100 nodes and 5 iterations.
-In each iteration, inference was done independently on the frontier of balls centered on 100 nodes sampled randomly
+Results for Barabasi-Albert with 10000 nodes and 1 edges over 100 nodes and 5 iterations.
 
  Method dwmv :
 	 Radius 2 : 
@@ -15,19 +14,8 @@ In each iteration, inference was done independently on the frontier of balls cen
 	 Iterations averaged error_std : 1.0845942284466172
 	 Inferred nodes averaged error_std : 1.0454305671977435
 	 Iterations averaged num_nodes_inferred : 12078.0
-	 Inferred nodes averaged num_nodes_inferred : 60390
-	 Iterations averaged false_-1 : 0.07377659030862102
-	 Inferred nodes averaged false_-1 : 0.07168296168591066
-	 Iterations averaged true_-1 : 0.4326893020900524
-	 Inferred nodes averaged true_-1 : 0.43827804010547616
-	 Iterations averaged false_0 : 0.09040061056762073
-	 Inferred nodes averaged false_0 : 0.07466408425130129
-	 Iterations averaged true_0 : 0.7711562559808551
-	 Inferred nodes averaged true_0 : 0.831962274037202
-	 Iterations averaged false_1 : 0.3235290666665218
-	 Inferred nodes averaged false_1 : 0.2889554431667279
-	 Iterations averaged true_1 : 0.8149040818435972
-	 Inferred nodes averaged true_1 : 0.8358202984358123
+	 num_nodes_inferred : 60390
+
 	 Radius 3 : 
 	 Iterations averaged success_rate : 0.7321768966913293
 	 Inferred nodes averaged success_rate : 0.7325867139346574
@@ -36,19 +24,7 @@ In each iteration, inference was done independently on the frontier of balls cen
 	 Iterations averaged error_std : 1.0419954721669016
 	 Inferred nodes averaged error_std : 1.0228170223716289
 	 Iterations averaged num_nodes_inferred : 34752.2
-	 Inferred nodes averaged num_nodes_inferred : 173761
-	 Iterations averaged false_-1 : 0.10096749092859587
-	 Inferred nodes averaged false_-1 : 0.10016943018818265
-	 Iterations averaged true_-1 : 0.5437335415674088
-	 Inferred nodes averaged true_-1 : 0.545738543802825
-	 Iterations averaged false_0 : 0.07246207403510355
-	 Inferred nodes averaged false_0 : 0.06730968249368713
-	 Iterations averaged true_0 : 0.8027052119854701
-	 Inferred nodes averaged true_0 : 0.8243733011174872
-	 Iterations averaged false_1 : 0.25771196684091907
-	 Inferred nodes averaged false_1 : 0.24874945318295072
-	 Iterations averaged true_1 : 0.7961811714450024
-	 Inferred nodes averaged true_1 : 0.8038101068404099
+	 num_nodes_inferred : 173761
 
  Method dmv :
 	 Radius 2 : 
@@ -59,19 +35,8 @@ In each iteration, inference was done independently on the frontier of balls cen
 	 Iterations averaged error_std : 1.0845942284466172
 	 Inferred nodes averaged error_std : 1.0454305671977435
 	 Iterations averaged num_nodes_inferred : 12078.0
-	 Inferred nodes averaged num_nodes_inferred : 60390
-	 Iterations averaged false_-1 : 0.07377659030862102
-	 Inferred nodes averaged false_-1 : 0.07168296168591066
-	 Iterations averaged true_-1 : 0.4326893020900524
-	 Inferred nodes averaged true_-1 : 0.43827804010547616
-	 Iterations averaged false_0 : 0.09040061056762073
-	 Inferred nodes averaged false_0 : 0.07466408425130129
-	 Iterations averaged true_0 : 0.7711562559808551
-	 Inferred nodes averaged true_0 : 0.831962274037202
-	 Iterations averaged false_1 : 0.3235290666665218
-	 Inferred nodes averaged false_1 : 0.2889554431667279
-	 Iterations averaged true_1 : 0.8149040818435972
-	 Inferred nodes averaged true_1 : 0.8358202984358123
+	 num_nodes_inferred : 60390
+
 	 Radius 3 : 
 	 Iterations averaged success_rate : 0.7321768966913293
 	 Inferred nodes averaged success_rate : 0.7325867139346574
@@ -80,19 +45,7 @@ In each iteration, inference was done independently on the frontier of balls cen
 	 Iterations averaged error_std : 1.0419954721669016
 	 Inferred nodes averaged error_std : 1.0228170223716289
 	 Iterations averaged num_nodes_inferred : 34752.2
-	 Inferred nodes averaged num_nodes_inferred : 173761
-	 Iterations averaged false_-1 : 0.10096749092859587
-	 Inferred nodes averaged false_-1 : 0.10016943018818265
-	 Iterations averaged true_-1 : 0.5437335415674088
-	 Inferred nodes averaged true_-1 : 0.545738543802825
-	 Iterations averaged false_0 : 0.07246207403510355
-	 Inferred nodes averaged false_0 : 0.06730968249368713
-	 Iterations averaged true_0 : 0.8027052119854701
-	 Inferred nodes averaged true_0 : 0.8243733011174872
-	 Iterations averaged false_1 : 0.25771196684091907
-	 Inferred nodes averaged false_1 : 0.24874945318295072
-	 Iterations averaged true_1 : 0.7961811714450024
-	 Inferred nodes averaged true_1 : 0.8038101068404099
+	 num_nodes_inferred : 173761
 
  Method dlp :
 	 Radius 2 : 
@@ -103,19 +56,8 @@ In each iteration, inference was done independently on the frontier of balls cen
 	 Iterations averaged error_std : 1.0845942284466172
 	 Inferred nodes averaged error_std : 1.0454305671977435
 	 Iterations averaged num_nodes_inferred : 12078.0
-	 Inferred nodes averaged num_nodes_inferred : 60390
-	 Iterations averaged false_-1 : 0.07377659030862102
-	 Inferred nodes averaged false_-1 : 0.07168296168591066
-	 Iterations averaged true_-1 : 0.4326893020900524
-	 Inferred nodes averaged true_-1 : 0.43827804010547616
-	 Iterations averaged false_0 : 0.09040061056762073
-	 Inferred nodes averaged false_0 : 0.07466408425130129
-	 Iterations averaged true_0 : 0.7711562559808551
-	 Inferred nodes averaged true_0 : 0.831962274037202
-	 Iterations averaged false_1 : 0.3235290666665218
-	 Inferred nodes averaged false_1 : 0.2889554431667279
-	 Iterations averaged true_1 : 0.8149040818435972
-	 Inferred nodes averaged true_1 : 0.8358202984358123
+	 num_nodes_inferred : 60390
+
 	 Radius 3 : 
 	 Iterations averaged success_rate : 0.7321768966913293
 	 Inferred nodes averaged success_rate : 0.7325867139346574
@@ -124,19 +66,7 @@ In each iteration, inference was done independently on the frontier of balls cen
 	 Iterations averaged error_std : 1.0419954721669016
 	 Inferred nodes averaged error_std : 1.0228170223716289
 	 Iterations averaged num_nodes_inferred : 34752.2
-	 Inferred nodes averaged num_nodes_inferred : 173761
-	 Iterations averaged false_-1 : 0.10096749092859587
-	 Inferred nodes averaged false_-1 : 0.10016943018818265
-	 Iterations averaged true_-1 : 0.5437335415674088
-	 Inferred nodes averaged true_-1 : 0.545738543802825
-	 Iterations averaged false_0 : 0.07246207403510355
-	 Inferred nodes averaged false_0 : 0.06730968249368713
-	 Iterations averaged true_0 : 0.8027052119854701
-	 Inferred nodes averaged true_0 : 0.8243733011174872
-	 Iterations averaged false_1 : 0.25771196684091907
-	 Inferred nodes averaged false_1 : 0.24874945318295072
-	 Iterations averaged true_1 : 0.7961811714450024
-	 Inferred nodes averaged true_1 : 0.8038101068404099
+	 num_nodes_inferred : 173761
 
  Method dvm :
 	 Radius 2 : 
@@ -147,19 +77,8 @@ In each iteration, inference was done independently on the frontier of balls cen
 	 Iterations averaged error_std : 1.0845942284466172
 	 Inferred nodes averaged error_std : 1.0454305671977435
 	 Iterations averaged num_nodes_inferred : 12078.0
-	 Inferred nodes averaged num_nodes_inferred : 60390
-	 Iterations averaged false_-1 : 0.07377659030862102
-	 Inferred nodes averaged false_-1 : 0.07168296168591066
-	 Iterations averaged true_-1 : 0.4326893020900524
-	 Inferred nodes averaged true_-1 : 0.43827804010547616
-	 Iterations averaged false_0 : 0.09040061056762073
-	 Inferred nodes averaged false_0 : 0.07466408425130129
-	 Iterations averaged true_0 : 0.7711562559808551
-	 Inferred nodes averaged true_0 : 0.831962274037202
-	 Iterations averaged false_1 : 0.3235290666665218
-	 Inferred nodes averaged false_1 : 0.2889554431667279
-	 Iterations averaged true_1 : 0.8149040818435972
-	 Inferred nodes averaged true_1 : 0.8358202984358123
+	 num_nodes_inferred : 60390
+
 	 Radius 3 : 
 	 Iterations averaged success_rate : 0.7321768966913293
 	 Inferred nodes averaged success_rate : 0.7325867139346574
@@ -168,16 +87,5 @@ In each iteration, inference was done independently on the frontier of balls cen
 	 Iterations averaged error_std : 1.0419954721669016
 	 Inferred nodes averaged error_std : 1.0228170223716289
 	 Iterations averaged num_nodes_inferred : 34752.2
-	 Inferred nodes averaged num_nodes_inferred : 173761
-	 Iterations averaged false_-1 : 0.10096749092859587
-	 Inferred nodes averaged false_-1 : 0.10016943018818265
-	 Iterations averaged true_-1 : 0.5437335415674088
-	 Inferred nodes averaged true_-1 : 0.545738543802825
-	 Iterations averaged false_0 : 0.07246207403510355
-	 Inferred nodes averaged false_0 : 0.06730968249368713
-	 Iterations averaged true_0 : 0.8027052119854701
-	 Inferred nodes averaged true_0 : 0.8243733011174872
-	 Iterations averaged false_1 : 0.25771196684091907
-	 Inferred nodes averaged false_1 : 0.24874945318295072
-	 Iterations averaged true_1 : 0.7961811714450024
-	 Inferred nodes averaged true_1 : 0.8038101068404099
+	 num_nodes_inferred : 173761
+
